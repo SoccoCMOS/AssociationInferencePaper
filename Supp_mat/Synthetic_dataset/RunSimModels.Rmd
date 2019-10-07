@@ -1,0 +1,214 @@
+---
+output: html_document
+---
+#' ---
+#' title: "Functions to Simulate Communities"
+#' author: "LJ Pollock", edit: "S Si-moussi"
+#' date: "`r Sys.Date()`"
+#' output: pdf_document
+#'  
+#' ---
+
+
+
+This function simulates assembly of individuals into communities from a regional species pool according to three different types of 'filter':
+1- Habitat Filter
+2- Biotic Interaction Filter
+3- Reproduction filter
+
+Filtering in from a regional species pool is independent in each case (i.e. not spatially explicit)
+
+Parameters from 'VirtualCom':
+
+@param niche.breadth value of standard deviation of the Gaussian distributions that describe the niches (identical for all species)
+#Single value
+#Can we make it different for each species ? 
+@param niche.optima vector of niche optima (means of the Gaussian distributions that describe the niches) in species-pool
+#Mean for each species => vector of size #species
+@param env value of the environment in the simulated community (e.g. temperature)
+@param beta.env value of the strength of the environmental filter (see details)
+@param beta.comp value of the strength of the competition filter (see details)
+#Weight given to the competition filter
+@param beta.abun value of the strength of the recruitment filter (see details)
+#Weight given to recruitment/reproduction
+@param years number of simulated time-steps; if plots == TRUE equilibrium conditions can be checked by eye
+#Epochs, what are equilibrium conditions ?
+@param K value of carrying capacity, i.e. number of individuals in the community
+@param community.in vector of individuals (described by species names) already in the community; if NA community is initialized randomly from species pool
+#Initial communities
+@param species.pool.abundance vector of species frequency of occurrence in species pool; if NA than all are equally frequent
+#Prevalence of each species ??
+@param intra.sp.com assigns the strength of intraspecific competition; the value should range between 0 (no intraspecific competition) and 1 (intraspecific competition always higher than interspecific competition) 
+#Relative strength of intra vs inter specific competition ?
+Parameters modified from VirtualCom...
+
+```{r, eval=TRUE}
+
+simulate_community <- function(
+  ########## Intialize all simulation parameters ###############
+  ##Random uniform sampling in the environmental gradient
+  env = runif(1000, 0, 100), 
+  ##Spread the #species' optima over the gradient <-- here there is a possibility to manage the overlap 
+  niche_optima  = seq(2, 98, 20), niche_breadth = 20,
+  type = "original", comp_inter = NA, fac_inter = NA, 
+  ##Relative weights of the different assembly processes
+  beta_env = 1, beta_comp = 1, beta_fac = 1, beta_abun = 1,
+  ##Size of the problem: years, number of individuals
+  years = 20, K = 40,
+  interaction = "facilitation", #?????
+  ##Relative importance of intra vs inter specific competition
+  intra_sp_com  = 0
+) {
+  ########## Pass simulation parameters to sim function ###############
+  sim_com <- function( ##Simulates a single community
+    env, niche_breadth, niche_optima, type, comp_inter, fac_inter, beta_env,
+    beta_comp, beta_fac, beta_abun, years, K, interaction,intra_sp_com
+  ) {
+    ##Number of species
+    n_sp = length(niche_optima)
+    
+    if (type == "original") {  
+      ##Virtualcomm original competition definition
+      ##= summed traits distribution overlap (figure 1 paper Munkenmuller & Gallien 2015)
+      species_comp <- outer(
+        niche_optima,
+        niche_optima,
+        function(x, y) 2 * pnorm(-abs((x - y)) / 2, sd = niche_breadth)
+      ) 
+      ##Returns an (n_sp x n_sp) matrix such that each cell i,j gives the trait overlap of species i and j
+      ##It is by definition symmetric
+      ##Diagnoals either kept to 1 by default because of full overlap or set to the parameter value
+      diag(species_comp) <- intra_sp_com 
+      ##Same goes for facilitation
+      
+      ##Asymmetric competition
+      if(interaction=="asymmetric"){
+        species_comp <- outer(
+        niche_optima,
+        niche_optima,
+        function(x, y) {
+          sign <- ifelse(x > y, 1, 0)
+          overlap <- 2 * pnorm(-abs((x - y)) / 2, sd = niche_breadth)
+          sign * overlap
+        }
+      )
+      species_fac <- species_comp
+      }
+    } else { ##Type= "PRIOR"
+      ##Given matrices of competition and facilitation
+      if (length(comp_inter) == 1) comp_inter = matrix(comp_inter, n_sp, n_sp) ##If not NA, value broadcast
+      if (length(fac_inter)  == 1) fac_inter  = matrix(fac_inter, n_sp, n_sp) 
+      species_comp <- as.matrix(comp_inter) ##species_niche_overlap_sym=competition matrix
+      species_fac <- as.matrix(fac_inter) ##species fac sym = facilitation matrix
+    }
+    #print("Ok")
+    #print(comp_inter)
+    #print(species_comp)
+    #print("Ok")
+    diag(species_comp) <- intra_sp_com
+    diag(species_fac) <- 0
+    #print("Ok")
+    
+    ###log Penv => abiotic filter for each species in each environment value 
+    log_p_env <- sapply(
+      niche_optima, dnorm, mean = env, sd = niche_breadth, log = TRUE
+    )
+    ###Normalized density for each species in each environment value 
+    log_p_env <- log_p_env  - log(dnorm(0) / 10)
+    
+    ### Random initialization of the community with K individuals from the n_spec species pool
+    ## Init only one community
+    community <- factor(
+      x      = sample(seq_along(niche_optima), K, replace = TRUE),
+      levels = seq_len(n_sp)
+    )
+    
+    ### Transform into abundance table
+    abund <- table(community)
+    abunds=data.frame(matrix(0,0,n_sp))
+    abunds[nrow(abunds)+1,]<-abund
+    for (j in seq_len(years)) { ##Timesteps of community dynamics
+      ##At each step, test individual by individual among K
+      for (k in seq_len(K)) {
+        ##each individual of community identified by its species id 
+        # if(length(dim(species_fac))==1){
+        #   print(n_sp," ",interaction)
+        # }
+        # if(length(community)<=1){
+        #   print("check community")
+        # }
+        f_comp <- 1 - colSums(species_fac[community,]) / K
+         
+        ##average of the facilitation level of each species to this individual (includes species that are not           ##present though)
+        p_comp <- 1 - colSums(species_comp[community,]) / K 
+        ##average of the competition effect of   each species to this individual (includes species that are not         ##present though, no abundance weighted effect)
+        
+        if (interaction == "positive") { ##If we have a facilitation filter 
+          p_all <- exp(     ###Wic from paper
+            beta_env * log_p_env - beta_fac * log(f_comp) +   
+              log(1 + beta_abun * abund)  ##What is 1 here ? => to avoind undefinition (baseline abundance)
+          )
+        } else if(interaction == "negative") {  ##If we only have a competition filter
+          p_all <- exp(
+            beta_env * log_p_env + beta_comp * log(p_comp) +  
+              log(1 + beta_abun * abund)
+          )
+        }
+        else if(interaction == "both") { ##both competition adn facilitation
+          p_all <- exp(  ##For each species the probability for her to take this spot
+            beta_env * log_p_env + beta_comp * log(p_comp) - beta_fac *
+              log(f_comp) + log(1 + beta_abun * abund)
+          )
+        }
+        else{
+          p_all <- exp(  ## Just the environmental filtering => equivalent to None interaction
+            beta_env * log_p_env + log(1 + beta_abun * abund)
+            )
+        }
+        
+        p_all <- ifelse(is.na(p_all), min(p_all, na.rm = TRUE), p_all) ###Replace NA probabilities by the               smallest one
+        if (all(is.na(p_all)) || identical(min(p_all), max(p_all))) p_all = NULL ###If all NA or all the same           (min=max) then set to NULL
+        if (any(is.infinite(p_all))) {
+          community[sample(K, 1)] <- sample(seq_len(n_sp)[p_all == Inf], 1)
+        } else {
+          ##replace randomly one individual among K (sample(K,1))
+          community[sample(K, 1)] <- sample(n_sp, 1, prob = p_all) ##sample from multinomial with each mode             (species) its probability
+        }
+        ###UPDATE abundances
+        abund <- table(community)
+      }
+      ###Store at the end of the epoch
+      abunds[nrow(abunds)+1,]<-abund
+    }
+    as.integer(abund) > 0
+    return(list(data=community,trans=abunds))
+  }
+  ans <- mclapply( ##multi-core lapply, simulate communities independently
+    env, ##Each value of env defines an environmental variable level
+    sim_com, ##simulate one community per environmental variable => maybe it'd be useful to simulate multiple       communities for the same env (to test for robustness)
+    niche_breadth, niche_optima, type, comp_inter, fac_inter,
+    beta_env, beta_comp, beta_fac, beta_abun, years, K, interaction,
+    intra_sp_com, mc.cores = 1
+  )
+  datarun=lapply(ans,function(x) x$data)
+  abundrun=lapply(ans,function(x) x$trans)
+  
+  occur <- do.call(rbind, datarun)  ##Stack communities by row
+  res_run <- cbind(occur, env) ##Concatenate the value of the environment
+  sp_labs <- paste0(  ##Add species ids
+    "sp_", gsub(" ", 0, format(seq_along(niche_optima), width = 2))
+  )
+  #colnames(res_run) <- c(sp_labs, "env")
+  #as.data.frame(res_run)
+  
+  #temp_abund=do.call(rbind, abundrun)
+  #colnames(temp_abund) <- sp_labs
+  
+  return(list(data=res_run,hist=abundrun))
+}
+
+```
+
+   
+
+

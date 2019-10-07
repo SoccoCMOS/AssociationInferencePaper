@@ -1,0 +1,92 @@
+#' ---
+#' title: "Community Assembly Simulations"
+#' author: "S. Si-moussi"
+#' date: "`r Sys.Date()`"
+#' output: pdf_document
+#'  
+#' ---
+
+#+ setup, message=FALSE
+
+Input parameters and run functions from 'RunSimModels.Rmd'
+
+```{r, eval=FALSE}
+
+#lapply(list.files(path = "."),load,.GlobalEnv)
+
+workdir="D:\\Data-driven\\GeoAssocNet\\Evaluation\\Synthetic\\Virtual_comm\\Simulation_output\\Asym"
+facdir=paste(workdir,"Facilitation",sep="\\")
+compdir=paste(workdir,"Competition",sep="\\")
+outputdir=paste(workdir,"Communities",sep="\\")
+
+### Simulation ###
+sim_names=c(
+  ### Faciliation ###
+  "FacSparseSp10",
+  "FacDenseSp10",
+  
+  "FacSparseSp20",
+  "FacDenseSp20",
+  
+  ### Competition ###
+  "CompSparseSp10",
+  "CompDenseSp10",
+  
+  "CompSparseSp20",
+  "CompDenseSp20"
+)
+
+saveRDS(sim_names,paste(outputdir,"sim_names.rds",sep="\\"))
+
+#sim_names=lapply(1:nruns,function(x) paste("Sim_",x))
+set.seed(1023)
+
+lcomp_inter=lapply(sim_names, function(x)
+  as.matrix(read.csv2(paste(compdir,x,sep="\\"),row.names=1))
+)
+
+#saveRDS(lcomp_inter,paste("simcomp_inter"))
+
+lfac_inter=lapply(sim_names, function(x)
+  as.matrix(read.csv2(paste(facdir,x,sep="\\"),row.names=1))
+)
+
+nruns=length(sim_names)
+sim_params =list(
+    niche_optima = rep(rep(list(seq(2, 98, length.out = 10),seq(2, 98, length.out = 20)),each=2),2),
+    type         = list("PRIOR")[rep(1, nruns)],
+    comp_inter   = lcomp_inter,
+    fac_inter    = lfac_inter,
+    beta_comp    = rep(list(10),each=nruns),
+    beta_fac     = rep(list(5),each=nruns),
+    beta_env     = rep(list(1), each = nruns),
+    beta_abun    = rep(list(0), each = nruns),
+    K            = rep(rep(list(20,40),each=2),2),
+    interaction  = list("positive","negative")[c(rep(1, 4),rep(2,4))],
+    intra_sp_com = rep(list(0), nruns)
+) 
+
+saveRDS(sim_params,paste(outputdir,"sim_params.rds",sep="\\"))
+
+############ Begin simulation ################
+###Load params### ??
+sim_data = sim_params %>% pmap(simulate_community) 
+
+sim_data=sim_data %>% set_names(sim_names) 
+saveRDS(sim_data,file=paste(outputdir,"sim_data.rds",sep="\\"))
+
+lapply(sim_names, function(x){
+  hist=sim_data[[x]]$hist
+  env=data.frame(sim_data[[x]]$data)$env
+  env_poly<-poly(env,2)
+  occur=do.call(rbind,lapply(hist,function(y) y[nrow(y),]))  ###Keeping only the last community composition
+  occur[,c("enviro","enviro_2")]<-env_poly
+  write.csv2(occur,file=paste(outputdir,x,sep="\\"))
+})
+
+```
+
+
+
+
+
