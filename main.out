@@ -1,0 +1,32 @@
+\BOOKMARK [1][-]{section.1}{Background}{}% 1
+\BOOKMARK [1][-]{section.2}{Material and Methods}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Biogeographical associations and biotic context}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Representing species associations using embeddings}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Biotic context}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{A conditional generative model of abundance}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Formalization}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Inference}{subsection.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Unraveling inter-specific interactions}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.4}{Validation on simulated data}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Data Generation}{subsection.2.4}% 11
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Model training}{subsection.2.4}% 12
+\BOOKMARK [2][-]{subsection.2.5}{Evaluation on a dataset of Alpine plants}{section.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Data preparation}{subsection.2.5}% 14
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Model training}{subsection.2.5}% 15
+\BOOKMARK [1][-]{section.3}{Results}{}% 16
+\BOOKMARK [2][-]{subsection.3.1}{Recovering simulated associations}{section.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Association classification performances}{subsection.3.1}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Simulated patterns vs. inferred associations}{subsection.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Abiotic and biotic drivers of Alpine plant distributions}{section.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Hyperparameter search and model selection}{subsection.3.2}% 21
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Plant habitat suitability}{subsection.3.2}% 22
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Analyzing the functional meaning of plant embeddings}{subsection.3.2}% 23
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Plant associations on a mesotopographic gradient}{subsection.3.2}% 24
+\BOOKMARK [1][-]{section.4}{Discussion}{}% 25
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 26
+\BOOKMARK [1][-]{appendix.A}{Derivatives of the optimized objective}{}% 27
+\BOOKMARK [1][-]{appendix.B}{Extensions of the biotic context definition}{}% 28
+\BOOKMARK [2][-]{subsection.B.1}{Adding conditioning covariates}{appendix.B}% 29
+\BOOKMARK [2][-]{subsection.B.2}{Temporal extension}{appendix.B}% 30
+\BOOKMARK [2][-]{subsection.B.3}{Spatial extension}{appendix.B}% 31
+\BOOKMARK [2][-]{subsection.B.4}{Graph extension}{appendix.B}% 32

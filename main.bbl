@@ -1,0 +1,190 @@
+\begin{thebibliography}{10}
+
+\bibitem{callaway2002positive}
+{\sc Callaway, R.~M., Brooker, R., Choler, P., Kikvidze, Z., Lortie, C.~J.,
+  Michalet, R., Paolini, L., Pugnaire, F.~I., Newingham, B., Aschehoug, E.~T.,
+  et~al.}
+\newblock Positive interactions among alpine plants increase with stress.
+\newblock {\em Nature 417}, 6891 (2002), 844.
+
+\bibitem{cazelles2016theory}
+{\sc Cazelles, K., Ara{\'u}jo, M.~B., Mouquet, N., and Gravel, D.}
+\newblock A theory for species co-occurrence in interaction networks.
+\newblock {\em Theoretical Ecology 9}, 1 (2016), 39--48.
+
+\bibitem{chase2003ecological}
+{\sc Chase, J.~M., and Leibold, M.~A.}
+\newblock {\em Ecological niches: linking classical and contemporary
+  approaches}.
+\newblock University of Chicago Press, 2003.
+
+\bibitem{chiquet2018variational}
+{\sc Chiquet, J., Mariadassou, M., and Robin, S.}
+\newblock Variational inference for sparse network reconstruction from count
+  data.
+\newblock {\em arXiv preprint arXiv:1806.03120\/} (2018).
+
+\bibitem{choler2005consistent}
+{\sc Choler, P.}
+\newblock Consistent shifts in alpine plant traits along a mesotopographical
+  gradient.
+\newblock {\em Arctic, Antarctic, and Alpine Research 37}, 4 (2005), 444--453.
+
+\bibitem{choler2001facilitation}
+{\sc Choler, P., Michalet, R., and Callaway, R.~M.}
+\newblock Facilitation and competition on gradients in alpine plant
+  communities.
+\newblock {\em Ecology 82}, 12 (2001), 3295--3308.
+
+\bibitem{elith2009species}
+{\sc Elith, J., and Leathwick, J.~R.}
+\newblock Species distribution models: ecological explanation and prediction
+  across space and time.
+\newblock {\em Annual review of ecology, evolution, and systematics 40\/}
+  (2009), 677--697.
+
+\bibitem{gauzens2015trophic}
+{\sc Gauzens, B., Th{\'e}bault, E., Lacroix, G., and Legendre, S.}
+\newblock Trophic groups and modules: two levels of group detection in food
+  webs.
+\newblock {\em Journal of The Royal Society Interface 12}, 106 (2015),
+  20141176.
+
+\bibitem{grinnell1917niche}
+{\sc Grinnell, J.}
+\newblock The niche-relationships of the california thrasher.
+\newblock {\em Auk 34}, 4 (1917), 427--433.
+
+\bibitem{guisan2005predicting}
+{\sc Guisan, A., and Thuiller, W.}
+\newblock Predicting species distribution: offering more than simple habitat
+  models.
+\newblock {\em Ecology letters 8}, 9 (2005), 993--1009.
+
+\bibitem{guisan2017habitat}
+{\sc Guisan, A., Thuiller, W., and Zimmermann, N.~E.}
+\newblock {\em Habitat suitability and distribution models: with applications
+  in R}.
+\newblock Cambridge University Press, 2017.
+
+\bibitem{hardin1960competitive}
+{\sc Hardin, G.}
+\newblock The competitive exclusion principle.
+\newblock {\em science 131}, 3409 (1960), 1292--1297.
+
+\bibitem{harris2016inferring}
+{\sc Harris, D.~J.}
+\newblock Inferring species interactions from co-occurrence data with markov
+  networks.
+\newblock {\em Ecology 97}, 12 (2016), 3308--3314.
+
+\bibitem{humboldt1805essai}
+{\sc Humboldt, A.~v., Bonpland, A., et~al.}
+\newblock Essai sur la g{\'e}ographie des plantes.
+
+\bibitem{hutchinson1957multivariate}
+{\sc Hutchinson, G.}
+\newblock The multivariate niche.
+\newblock In {\em Cold Spring Harbor Symposia on Quantitative Biology\/}
+  (1957), vol.~22, pp.~415--421.
+
+\bibitem{lany2018asymmetric}
+{\sc Lany, N.~K., Zarnetske, P.~L., Schliep, E.~M., Schaeffer, R.~N., Orians,
+  C.~M., Orwig, D.~A., and Preisser, E.~L.}
+\newblock Asymmetric biotic interactions and abiotic niche differences revealed
+  by a dynamic joint species distribution model.
+\newblock {\em Ecology 99}, 5 (2018), 1018--1023.
+
+\bibitem{liu2017zero}
+{\sc Liu, L.-P., and Blei, D.~M.}
+\newblock Zero-inflated exponential family embeddings.
+\newblock In {\em Proceedings of the 34th International Conference on Machine
+  Learning-Volume 70\/} (2017), JMLR. org, pp.~2140--2148.
+
+\bibitem{mikolov2013distributed}
+{\sc Mikolov, T., Sutskever, I., Chen, K., Corrado, G.~S., and Dean, J.}
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock In {\em Advances in neural information processing systems\/} (2013),
+  pp.~3111--3119.
+
+\bibitem{milns2010revealing}
+{\sc Milns, I., Beale, C.~M., and Smith, V.~A.}
+\newblock Revealing ecological networks using bayesian network inference
+  algorithms.
+\newblock {\em Ecology 91}, 7 (2010), 1892--1899.
+
+\bibitem{newman2006modularity}
+{\sc Newman, M.~E.}
+\newblock Modularity and community structure in networks.
+\newblock {\em Proceedings of the national academy of sciences 103}, 23 (2006),
+  8577--8582.
+
+\bibitem{ovaskainen2017make}
+{\sc Ovaskainen, O., Tikhonov, G., Norberg, A., Guillaume~Blanchet, F., Duan,
+  L., Dunson, D., Roslin, T., and Abrego, N.}
+\newblock How to make more out of community data? a conceptual framework and
+  its implementation as models and software.
+\newblock {\em Ecology Letters 20}, 5 (2017), 561--576.
+
+\bibitem{poisot2015beyond}
+{\sc Poisot, T., Stouffer, D.~B., and Gravel, D.}
+\newblock Beyond species: why ecological interaction networks vary through
+  space and time.
+\newblock {\em Oikos 124}, 3 (2015), 243--251.
+
+\bibitem{pollock2014understanding}
+{\sc Pollock, L.~J., Tingley, R., Morris, W.~K., Golding, N., O'Hara, R.~B.,
+  Parris, K.~M., Vesk, P.~A., and McCarthy, M.~A.}
+\newblock Understanding co-occurrence by modelling species simultaneously with
+  a joint species distribution model (jsdm).
+\newblock {\em Methods in Ecology and Evolution 5}, 5 (2014), 397--406.
+
+\bibitem{pulliam2000relationship}
+{\sc Pulliam, H.~R.}
+\newblock On the relationship between niche and distribution.
+\newblock {\em Ecology letters 3}, 4 (2000), 349--361.
+
+\bibitem{rudolph2016exponential}
+{\sc Rudolph, M., Ruiz, F., Mandt, S., and Blei, D.}
+\newblock Exponential family embeddings.
+\newblock In {\em Advances in Neural Information Processing Systems\/} (2016),
+  pp.~478--486.
+
+\bibitem{sanderson2015patterns}
+{\sc Sanderson, J.~G., and Pimm, S.~L.}
+\newblock {\em Patterns in Nature: The analysis of species co-occurrences}.
+\newblock University of Chicago Press, 2015.
+
+\bibitem{schoener1974resource}
+{\sc Schoener, T.~W.}
+\newblock Resource partitioning in ecological communities.
+\newblock {\em Science 185}, 4145 (1974), 27--39.
+
+\bibitem{shannon1949mathematical}
+{\sc Shannon, C.~E., and Weaver, W.}
+\newblock A mathematical model of communication.
+\newblock {\em Urbana, IL: University of Illinois Press 11\/} (1949).
+
+\bibitem{staniczenko2017linking}
+{\sc Staniczenko, P.~P., Sivasubramaniam, P., Suttle, K.~B., and Pearson,
+  R.~G.}
+\newblock Linking macroecology and community ecology: refining predictions of
+  species distributions using biotic interaction networks.
+\newblock {\em Ecology letters 20}, 6 (2017), 693--707.
+
+\bibitem{tikhonov2017using}
+{\sc Tikhonov, G., Abrego, N., Dunson, D., and Ovaskainen, O.}
+\newblock Using joint species distribution models for evaluating how
+  species-to-species associations depend on the environmental context.
+\newblock {\em Methods in Ecology and Evolution 8}, 4 (2017), 443--452.
+
+\bibitem{wisz2013role}
+{\sc Wisz, M.~S., Pottier, J., Kissling, W.~D., Pellissier, L., Lenoir, J.,
+  Damgaard, C.~F., Dormann, C.~F., Forchhammer, M.~C., Grytnes, J.-A., Guisan,
+  A., et~al.}
+\newblock The role of biotic interactions in shaping distributions and realised
+  assemblages of species: implications for species distribution modelling.
+\newblock {\em Biological reviews 88}, 1 (2013), 15--30.
+
+\end{thebibliography}
