@@ -1,0 +1,32 @@
+\documentclass[10pt,a4paper]{article}
+\input{cust_defs}
+\input{cust_draw}
+
+%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{dummy}{}{}
+
+%%%<
+\usepackage[active,tightpage]{preview}
+%\PreviewEnvironment{tabular}
+\PreviewEnvironment{tikzpicture}
+%\PreviewEnvironment{dummy}
+\setlength\PreviewBorder{1pt}%
+%%%>
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\input{schema_types}
+\input{schema_prod}
+\input{schema_plate}
+\input{schema_exp}
+\input{scatter_simul}
+\input{box_simul}
+\input{box_AlpsHSMw}
+\input{scatter_AlpsPlantScores}
+\input{hist_AlpsMIEff}
+\input{hist_AlpsMIRes}
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

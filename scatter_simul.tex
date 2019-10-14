@@ -1,0 +1,83 @@
+\renewcommand{\datafile}{xps/data_simulStats.csv}
+
+
+\begin{tikzpicture}[node distance=.2em]%[trim axis left, trim axis right]
+\draw[opacity=0] (-1.2,-.8) rectangle ++(\textwidth, 7.);
+\pgfmathsetmacro{\factX}{2.5}\pgfmathsetmacro{\offX}{3}%
+\pgfmathsetmacro{\vXmin}{0}\pgfmathsetmacro{\vXmax}{.5}%
+\pgfmathsetmacro{\factY}{5}\pgfmathsetmacro{\offY}{0}%
+\pgfmathsetmacro{\vYmin}{0}\pgfmathsetmacro{\vYmax}{1}%
+
+\node[anchor=south] at ({0.56*\factX},{1.14*\factY}) {Abiotic filter +};
+\node[anchor=south] at ({0.56*\factX+1*\offX},{1.14*\factY}) {Abiotic filter +};
+\node[anchor=south] at ({0.58*\factX+2*\offX},{1.14*\factY}) {Abiotic filter +};
+\node[anchor=south] at ({0.56*\factX},{1.07*\factY}) {positive assoc.};
+\node[anchor=south] at ({0.56*\factX+1*\offX},{1.07*\factY}) {negative assoc.};
+\node[anchor=south] at ({0.58*\factX+2*\offX},{1.07*\factY}) {pos.\ and neg. assoc.};
+
+\node[anchor=north] at ({0.5*\factX},{-.07*\factY}) {precision};
+\node[anchor=north] at ({0.5*\factX+1*\offX},{-.07*\factY}) {precision};
+\node[anchor=north] at ({0.5*\factX+2*\offX},{-.07*\factY}) {precision};
+\node[anchor=south, rotate=90] at ({-.25*\factX},{.5*\factY}) {recall};
+
+\foreach \l in {0.2, 0.4, 0.6, 0.8, 1}{
+  \pgfmathsetmacro{\marky}{\factY*(\l-\vYmin)/(\vYmax-\vYmin)}%
+  \node[anchor=east, font=\footnotesize] at (-.06, \marky) {$\l$};
+}
+
+\foreach \ox in {0,1,2}{
+\path ({0+\ox*\offX},0) edge ({\factX+.1+\ox*\offX},0)
+({0+\ox*\offX},0) edge ({0+\ox*\offX},{\factY+.1});
+  \node[anchor=north, font=\footnotesize] at (\ox*\offX,-.06) {$0$};
+  \foreach \l in {0.2, 0.4}{
+  \pgfmathsetmacro{\markx}{\factX*(\l-\vXmin)/(\vXmax-\vXmin)+\ox*\offX}%
+  \draw (\markx, -.05) -- ++(0,.1);
+  \node[anchor=north, font=\footnotesize] at (\markx,-.06) {$\l$};
+}
+\foreach \l in {0.2, 0.4, 0.6, 0.8, 1}{
+  \pgfmathsetmacro{\marky}{\factY*(\l-\vYmin)/(\vYmax-\vYmin)}%
+  \draw ({-.05+\ox*\offX},\marky) -- ++(.1,0);
+  %\node[anchor=east, font=\footnotesize] at ({-.06+\ox*\offX}, \marky) {$\l$};
+}
+}
+\csvreader[head to column names]{\datafile}{}{%
+  \pgfmathsetmacro{\markx}{\factX*(\precision-\vXmin)/(\vXmax-\vXmin)}%
+  \pgfmathsetmacro{\marky}{\factY*(\recall-\vYmin)/(\vYmax-\vYmin)}%
+  \ifthenelse{\equal{\group}{C}}{%
+    \pgfmathsetmacro{\markx}{\markx+\offX}%
+  }{}%
+  \ifthenelse{\equal{\group}{B}}{%
+    \pgfmathsetmacro{\markx}{\markx+2*\offX}%
+  }{}%
+  \node[sct\density\direction, cs\poolsize\assoc] at (\markx,\marky) {};
+}
+
+\pgfmathsetmacro{\markx}{3.55*\offX}%
+\node[fill, thick, rectangle, inner sep=2] (nsym) at (\markx,0.15*\factY) {};
+\node[fill, thick, diamond, inner sep=1.5] (nasym) at (\markx,0.22*\factY) {};
+
+\node[draw, thick, circle, inner sep=1.8] (nspar) at (\markx,0.35*\factY) {};
+\node[fill, circle, inner sep=1.8, opacity=0.8] (nden) at (\markx,0.42*\factY) {};
+
+\node[fill, circle, inner sep=1.8, TolDivA] (npos) at (\markx,0.55*\factY) {};
+\node[fill, circle, inner sep=1.8, TolDivK] (nneg) at (\markx,0.62*\factY) {};
+
+\node[fill, circle, inner sep=1.8, black!40] (n5) at (\markx,0.75*\factY) {};
+\node[fill, circle, inner sep=1.8, black!70] (n10) at (\markx,0.82*\factY) {};
+\node[fill, circle, inner sep=1.8, black] (n20) at (\markx,0.89*\factY) {};
+
+\node[left of=nsym, anchor=base east, yshift=-2pt, font=\footnotesize] {symmetric};
+\node[left of=nasym, anchor=base east, yshift=-2pt, font=\footnotesize] {asymmetric};
+\node[left of=nspar, anchor=base east, yshift=-2pt, font=\footnotesize] {sparse};
+\node[left of=nden, anchor=base east, yshift=-2pt, font=\footnotesize] {dense};
+\node[left of=npos, anchor=base east, yshift=-2pt, font=\footnotesize] {positive};
+\node[left of=nneg, anchor=base east, yshift=-2pt, font=\footnotesize] {negative};
+\node[left of=n5, anchor=base east, yshift=-2pt, font=\footnotesize] {$\phantom{0}5$ species};
+\node[left of=n10, anchor=base east, yshift=-2pt, font=\footnotesize] {$10$ species};
+\node[left of=n20, anchor=base east, yshift=-2pt, font=\footnotesize] {$20$ species};
+\end{tikzpicture}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "tikz_figures"
+%%% End:

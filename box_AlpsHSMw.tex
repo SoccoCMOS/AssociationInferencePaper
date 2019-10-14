@@ -1,0 +1,31 @@
+\renewcommand{\datafile}{xps/data_AlpsHSMw.csv}
+\begin{tikzpicture}%[trim axis left, trim axis right]
+\begin{axis}[width = .6\textwidth, height = 0.3\textwidth,
+  ytick={1,2,3,4,5,6,7,8},
+  yticklabels={\trtForm,\trtAspect,\trtZoogD,\trtPhysD,\trtSnow,\trtSlope},
+  % yticklabels={\trtSlope,\trtSnow,\trtPhysD,\trtZoogD,\trtAspect,\trtForm},
+  % x tick label style = {rotate=40, anchor=north, xshift=-2pt},
+  % x tick label style = {font=\footnotesize},
+  x label style = {yshift=5pt},
+  y label style = {yshift=-2pt},
+  % ytick={0,0.1,0.2},  
+  % yticklabels={$0$,$0.1$,$0.2$},
+  xmin=-9,
+  xmax=9,
+  % xmin=0.5,
+  % xmax=8.5,
+  boxplot/draw direction=x,
+  cycle list name=divBlue,
+  xlabel = {weight}, ylabel = {}
+]
+% \foreach \x/\c in {{Slope}/{3},{Snow}/{4},{PhysD}/{2},{ZoogD}/{5},{Aspect}/{0},{Form}/{1}}{
+\foreach \x/\c in {{Form}/{1},{Aspect}/{0},{ZoogD}/{5},{PhysD}/{2},{Snow}/{4},{Slope}/{3}}{
+  \addplot +[boxplot] table [y index=\c, col sep=comma] {\datafile};
+}
+\end{axis}
+\end{tikzpicture}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "tikz_figures"
+%%% End:

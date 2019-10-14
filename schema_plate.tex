@@ -1,0 +1,30 @@
+\begin{tikzpicture}[node distance=1.4cm]
+  %%%%%%%%%%%%%%%%%%
+  \node[plate circ, double] (nd) at (0,0) {$d$};
+  \node[draw=none, right of=nd, node distance=1.4cm] (no) {};
+  \node[plate circ, above of=no, node distance=0.7cm] (nr) {$\Resv$};
+  \node[plate circ, below of=no, node distance=0.7cm] (na) {$\Effv$};
+  \node[plate circ, right of=nr, fill=lightgrey] (ny) {$\abdv$};
+  \node[plate circ, right of=na] (nz) {$\BioEff$};
+  \node[plate circ, right of=ny] (ns) {$\ssuit$};
+  \node[plate sqr, right of=nz] (nC) {$\BioCont$};
+  \node[plate sqr, right of=ns] (nx) {$\abiov$};
+  \path[plate arrow]
+  (nd) edge (nr)
+  (nd) edge (na)
+  (nr) edge (ny)
+  (na) edge (nz)
+  (nz) edge (ny)
+  (ns) edge (ny)
+  (nC) edge (nz)
+  (nx) edge (ns);
+  \draw[thick, darkgrey] (.7,-1.6) rectangle (5,1.4);
+  \draw[thick, darkgrey] (2.,-1.4) rectangle (6.2,1.6);
+  \node[anchor=south west, darkgrey] at (.7,-1.6) {$m$};
+  \node[anchor=south east, darkgrey]  at (6.2,-1.4) {$n$};
+\end{tikzpicture}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "tikz_figures"
+%%% End:

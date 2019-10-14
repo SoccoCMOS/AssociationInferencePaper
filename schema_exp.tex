@@ -1,0 +1,149 @@
+\newcommand\myY{-.38}
+\newcommand\myCa{-0.01}
+\newcommand\myCb{0}
+\newcommand\myCc{1.15}
+\newcommand\myCd{2.3}
+\newcommand\myCe{3.8}
+\newcommand\myCz{4}
+\newcommand\myDa{3.4}
+\newcommand\myDz{3.6}
+
+\newcommand\myBc{1.1}
+\newcommand\myBd{2.1}
+
+\newcommand\margB{.2}
+
+\newlength{\mytw}
+\setlength{\mytw}{1.5cm}
+
+\newlength{\myshfX}
+\setlength{\myshfX}{6.2cm}
+\newlength{\myshfYa}
+\setlength{\myshfYa}{-2.cm}
+\newlength{\myshfYb}
+\setlength{\myshfYb}{-4.5cm}
+
+\begin{tikzpicture}
+\draw[thick] ({\myCa*\mytw}, {-2.7*\myY}) -- ({(2*\myCz+.2)*\mytw}, {-2.7*\myY});
+\draw[thick] ({\myCa*\mytw}, {18.4*\myY}) -- ({(2*\myCz+.2)*\mytw}, {18.4*\myY});
+  
+\node[tbl node, text width=\mytw] at ({\myCb*\mytw}, {-1.7*\myY}) {\textit{pool size}};
+\node[tbl node, text width=\mytw] at ({\myCc*\mytw}, {-1.7*\myY}) {\textit{density}};
+\node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {-1.7*\myY}) {\textit{directionality}};
+%\node[anchor=base east] at ({\myCz*\mytw}, {-1.7*\myY}) {\textit{ID}};
+
+\begin{scope}[yshift=0cm,xshift=\myshfX]
+\node[tbl node, text width=\mytw] at ({\myCb*\mytw}, {-1.7*\myY}) {\textit{pool size}};
+\node[tbl node, text width=\mytw] at ({\myCc*\mytw}, {-1.7*\myY}) {\textit{density}};
+\node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {-1.7*\myY}) {\textit{directionality}};
+%\node[anchor=base east] at ({\myCz*\mytw}, {-1.7*\myY}) {\textit{ID}};
+\end{scope}
+
+\begin{scope}[yshift=\myshfYb]
+\draw[thin] ({\myCa*\mytw}, {0.1*\myY}) -- ({\myCz*\mytw}, {0.1*\myY});
+% \node[anchor=south,align=center, rotate=90, text width=1.5cm] at (\myCa, {1.5*\myY}) {Abiotic \\ only};
+\node[tbl node] at (\myCa, {-0.3*\myY}) {Abiotic only};
+\foreach \y/\l/\o in {{1}/{5}/{Ds},{2}/{10}/{Ds},{3}/{20}/{Ds}}{
+  \node[tbl node, text width=\mytw] at ({\myCb*\mytw}, {\y*\myY}) {$\l$~species};
+  \node[tbl node, text width=\mytw] at ({\myCc*\mytw}, {\y*\myY}) {dense};
+  \node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {(\y*\myY}) {symmetric};
+  % \draw[thin, dotted] ({\myDa*\mytw}, {(\y-.3)*\myY}) -- ({\myDz*\mytw}, {(\y-.3)*\myY});
+  % \node[anchor=base, align=center] at ({\myCe*\mytw}, {\y*\myY}) {$\y$};
+  \node[sct\o] at ({\myCe*\mytw}, {(\y-.25)*\myY}) {};
+}
+\end{scope}
+\begin{scope}[yshift=0]
+\draw[thin] ({\myCa*\mytw}, {0.1*\myY}) -- ({\myCz*\mytw}, {0.1*\myY});
+% \node[anchor=south,align=center, rotate=90, text width=4cm] at (\myCa, {5*\myY}) {Abiotic filter +\\ positive associations};
+\node[tbl node] at (\myCa, {-0.3*\myY}) {Abiotic filter + positive associations};
+\foreach \x/\b/\t in {{\myBc}/{.3}/{2.3},%
+  {\myBd}/{2.3}/{4.3},{\myBd}/{4.3}/{6.3},{\myBd}/{6.3}/{8.3},{\myBd}/{8.3}/{10.3},%
+  {\myBc}/{2.3}/{6.3},{\myBc}/{6.3}/{10.3}%
+}{
+  \draw [decorate,decoration={brace,amplitude=3pt,mirror}] ({(\x+.2)*\mytw},{(\b+\margB)*\myY}) -- ({(\x+.2)*\mytw},{(\t-\margB)*\myY});
+}
+\foreach \y/\l in {{1.5}/{5},{4.5}/{10},{8.5}/{20}}{
+  \node[tbl node, text width=\mytw] at ({\myCb*\mytw}, {\y*\myY}) {$\l$~species};
+}
+% \draw[thin] ({\myCa*\mytw}, {0.3*\myY}) -- ({\myCe*\mytw}, {0.3*\myY});
+\foreach \y/\l in {{1}/{sparse},{2}/{dense},{3.5}/{sparse},{5.5}/{dense},{7.5}/{sparse},{9.5}/{dense}}{
+   \node[tbl node, text width=\mytw] at ({\myCc*\mytw}, {\y*\myY}) {\l};
+}
+\foreach \y/\l in {{1}/{symmetric},{2}/{symmetric}}{
+   \node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {\y*\myY}) {\l};
+}
+\foreach \y in  {1,...,4}{
+  \node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {(2*\y+1)*\myY}) {symmetric};
+  \node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {(2*\y+2)*\myY}) {asymmetric};
+}
+
+\foreach \y/\o [count=\yi] in {{4}/{Ss},{5}/{Ds},%
+  {6}/{Ss},{7}/{Sa},{8}/{Ds},{9}/{Da},%
+  {10}/{Ss},{11}/{Sa},{12}/{Ds},{13}/{Da}}{%
+%   \draw[thin, dotted] ({\myDa*\mytw}, {(\yi-.3)*\myY}) -- ({\myDz*\mytw}, {(\yi-.3)*\myY});
+%   \node[anchor=base, align=center] at ({\myCe*\mytw}, {\yi*\myY}) {$\y$};
+  \node[sct\o] at ({\myCe*\mytw}, {(\yi-.25)*\myY}) {};
+}
+\end{scope}
+\begin{scope}[yshift=0,xshift=\myshfX]
+\draw[thin] ({\myCa*\mytw}, {0.1*\myY}) -- ({\myCz*\mytw}, {0.1*\myY});
+% \node[anchor=south,align=center, rotate=90, text width=4cm] at (\myCa, {5*\myY}) {Abiotic filter +\\ negative associations};
+\node[tbl node] at (\myCa, {-0.3*\myY}) {Abiotic filter + negative associations};
+\foreach \x/\b/\t in {{\myBc}/{.3}/{2.3},%
+  {\myBd}/{2.3}/{4.3},{\myBd}/{4.3}/{6.3},{\myBd}/{6.3}/{8.3},{\myBd}/{8.3}/{10.3},%
+  {\myBc}/{2.3}/{6.3},{\myBc}/{6.3}/{10.3}%
+}{
+  \draw [decorate,decoration={brace,amplitude=3pt,mirror}] ({(\x+.2)*\mytw},{(\b+\margB)*\myY}) -- ({(\x+.2)*\mytw},{(\t-\margB)*\myY});
+}
+\foreach \y/\l in {{1.5}/{5},{4.5}/{10},{8.5}/{20}}{
+   \node[tbl node, text width=\mytw] at ({\myCb*\mytw}, {\y*\myY}) {$\l$~species};
+}
+\foreach \y/\l in {{1}/{sparse},{2}/{dense},{3.5}/{sparse},{5.5}/{dense},{7.5}/{sparse},{9.5}/{dense}}{
+   \node[tbl node, text width=\mytw] at ({\myCc*\mytw}, {\y*\myY}) {\l};
+}
+\foreach \y/\l in {{1}/{symmetric},{2}/{symmetric}}{
+   \node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {\y*\myY}) {\l};
+}
+\foreach \y in  {1,...,4}{
+  \node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {(2*\y+1)*\myY}) {symmetric};
+  \node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {(2*\y+2)*\myY}) {asymmetric};
+}
+\foreach \y/\o [count=\yi] in {{14}/{Ss},{15}/{Ds},%
+  {16}/{Ss},{17}/{Sa},{18}/{Ds},{19}/{Da},%
+  {20}/{Ss},{21}/{Sa},{22}/{Ds},{23}/{Da}}{%
+%   \draw[thin, dotted] ({\myDa*\mytw}, {(\yi-.3)*\myY}) -- ({\myDz*\mytw}, {(\yi-.3)*\myY});
+%   \node[anchor=base, align=center] at ({\myCe*\mytw}, {\yi*\myY}) {$\y$};
+  \node[sct\o] at ({\myCe*\mytw}, {(\yi-.25)*\myY}) {};
+}
+\end{scope}
+\begin{scope}[yshift=\myshfYb,xshift=\myshfX]
+\draw[thin] ({\myCa*\mytw}, {0.1*\myY}) -- ({\myCz*\mytw}, {0.1*\myY});
+% \node[anchor=south,align=center, rotate=90, text width=3.cm] at (\myCa, {3.5*\myY}) {Abiotic filter +\\ pos.\ neg.\ assoc.};
+\node[tbl node] at (\myCa, {-0.3*\myY}) {Abiotic filter + pos.\ and neg.\ assoc.};
+\foreach \x/\b/\t in {{\myBc}/{.3}/{2.3},%
+  {\myBc}/{2.3}/{4.3},{\myBc}/{4.3}/{6.3}%
+}{
+  \draw [decorate,decoration={brace,amplitude=3pt,mirror}] ({(\x+.2)*\mytw},{(\b+\margB)*\myY}) -- ({(\x+.2)*\mytw},{(\t-\margB)*\myY});
+}
+\foreach \y/\l in {{1.5}/{5},{3.5}/{10},{5.5}/{20}}{
+   \node[tbl node, text width=\mytw] at ({\myCb*\mytw}, {\y*\myY}) {$\l$~species};
+}
+\foreach \y/\l in {{1}/{sparse},{2}/{dense},{3}/{sparse},{4}/{dense},{5}/{sparse},{6}/{dense}}{
+   \node[tbl node, text width=\mytw] at ({\myCc*\mytw}, {\y*\myY}) {\l};
+}
+\foreach \y in  {1,...,6}{
+  \node[tbl node, text width=\mytw] at ({\myCd*\mytw}, {\y*\myY}) {symmetric};
+}
+
+\foreach \y/\o [count=\yi] in {{24}/{Ss},{25}/{Ds},{26}/{Ss},{27}/{Ds},{28}/{Ss},{29}/{Ds}}{
+  % \draw[thin, dotted] ({\myDa*\mytw}, {(\yi-.3)*\myY}) -- ({\myDz*\mytw}, {(\yi-.3)*\myY});
+  % \node[anchor=base, align=center] at ({\myCe*\mytw}, {\yi*\myY}) {$\y$};
+  \node[sct\o] at ({\myCe*\mytw}, {(\yi-.25)*\myY}) {};
+}
+\end{scope}
+\end{tikzpicture}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "tikz_figures"
+%%% End:

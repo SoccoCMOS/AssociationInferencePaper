@@ -1,0 +1,137 @@
+\usepackage{color,url,xcolor,tikz,pgfplots}
+\usetikzlibrary{arrows,shapes,positioning,calc,decorations.pathreplacing,pgfplots.statistics}
+\usepackage{csvsimple}
+\newcommand{\datafile}{}
+
+%%%% Grays
+\definecolor{darkgrey}{gray}{0.4}
+\definecolor{midgrey}{gray}{0.6}
+\definecolor{lightgrey}{gray}{0.8}
+
+%%%% Tol color scheme
+\definecolor{TolDarkPurple}{HTML}{332288}
+\definecolor{TolDarkBlue}{HTML}{6699CC}
+\definecolor{TolLightBlue}{HTML}{88CCEE}
+\definecolor{TolLightGreen}{HTML}{44AA99}
+\definecolor{TolDarkGreen}{HTML}{117733}
+\definecolor{TolDarkBrown}{HTML}{999933}
+\definecolor{TolLightBrown}{HTML}{DDCC77}
+\definecolor{TolDarkRed}{HTML}{661100}
+\definecolor{TolLightRed}{HTML}{CC6677}
+\definecolor{TolLightPink}{HTML}{AA4466}
+\definecolor{TolDarkPink}{HTML}{882255}
+\definecolor{TolLightPurple}{HTML}{AA4499}
+
+%%%% Divergent
+\definecolor{TolDivA}{HTML}{3D52A1}
+\definecolor{TolDivB}{HTML}{3A89C9}
+\definecolor{TolDivC}{HTML}{77B7E5}
+\definecolor{TolDivD}{HTML}{B4DDF7}
+\definecolor{TolDivE}{HTML}{E6F5FE}
+\definecolor{TolDivF}{HTML}{FFFAD2}
+\definecolor{TolDivG}{HTML}{FFE3AA}
+\definecolor{TolDivH}{HTML}{F9BD7E}
+\definecolor{TolDivI}{HTML}{ED875E}
+\definecolor{TolDivJ}{HTML}{D24D3E}
+\definecolor{TolDivK}{HTML}{AE1C3E}
+
+%%%% Rainbow
+\definecolor{TolRbwA}{HTML}{781C81}
+\definecolor{TolRbwB}{HTML}{413B93}
+\definecolor{TolRbwC}{HTML}{4065B1}
+\definecolor{TolRbwD}{HTML}{488BC2}
+\definecolor{TolRbwE}{HTML}{55A1B1}
+\definecolor{TolRbwF}{HTML}{63AD99}
+\definecolor{TolRbwG}{HTML}{7FB972}
+\definecolor{TolRbwH}{HTML}{B5BD4C}
+\definecolor{TolRbwI}{HTML}{D9AD3C}
+\definecolor{TolRbwJ}{HTML}{E68E34}
+\definecolor{TolRbwK}{HTML}{E6642C}
+\definecolor{TolRbwL}{HTML}{D92120}
+
+%%%% Sequential
+\definecolor{TolSeqA}{HTML}{FFFFE5}
+\definecolor{TolSeqB}{HTML}{FFF7BC}
+\definecolor{TolSeqC}{HTML}{FEE391}
+\definecolor{TolSeqD}{HTML}{FEC44F}
+\definecolor{TolSeqE}{HTML}{FB9A29}
+\definecolor{TolSeqF}{HTML}{EC7014}
+\definecolor{TolSeqG}{HTML}{CC4C02}
+\definecolor{TolSeqH}{HTML}{993404}
+\definecolor{TolSeqI}{HTML}{662506}
+
+\definecolor{colMut}{HTML}{404096}
+\definecolor{colCom}{HTML}{529DB7}
+\definecolor{colTro}{HTML}{7DB874} 
+\definecolor{colAm}{HTML}{E39C37}
+\definecolor{colCmp}{HTML}{D92120}
+
+
+\tikzstyle{plate circ} = [style={draw, circle, minimum width=2.2em, minimum height=2.2em, inner sep=1, outer sep=1}]
+\tikzstyle{plate sqr} = [style={draw, rectangle, minimum width=2.em, minimum height=2.em, inner sep=1, outer sep=1}]
+\tikzstyle{plate arrow} = [style={->,shorten <=.5pt,shorten >=.5pt}]
+\tikzstyle{pil} = [style={->,thick,shorten <=2pt,shorten >=2pt}]
+\tikzstyle{net node} = [style={draw, circle, minimum width=1.8em, minimum height=1.8em, inner sep=1, outer sep=1}]
+\tikzstyle{lbl node} = [style={inner sep=2, outer sep=2}]
+\tikzstyle{rbl node} = [style={fill=white, inner sep=2, outer sep=2, rounded corners=2}]
+\tikzstyle{tbl node} = [style={anchor=base west, align=center}] %, minimum height=1.2em}]
+\tikzstyle{pnt node} = [style={fill, circle, inner sep=1}]
+\tikzstyle{blg node} = [style={font=\footnotesize, anchor=south}]
+
+%%% sparse/dense symetric/asymetric
+\tikzstyle{sctSa} = [style={draw, thick, diamond, inner sep=1.5}]
+\tikzstyle{sctDa} = [style={fill, diamond, inner sep=1.5, opacity=0.8}]
+\tikzstyle{sctSs} = [style={draw, thick, rectangle, inner sep=2}]
+\tikzstyle{sctDs} = [style={fill, rectangle, inner sep=2, opacity=0.8}]
+
+\colorlet{cs5P}{TolDivA!40}
+\colorlet{cs10P}{TolDivA!70}
+\colorlet{cs20P}{TolDivA}
+
+\colorlet{cs5N}{TolDivK!40}
+\colorlet{cs10N}{TolDivK!70}
+\colorlet{cs20N}{TolDivK}
+
+% \colorlet{cs5p1}{TolDivK}
+% \colorlet{cs10p1}{TolDivJ}
+% \colorlet{cs20p1}{TolDivI}
+
+
+\pgfplotscreateplotcyclelist{divBlue}{% 
+{TolDivA, fill=TolDivA, fill opacity=0.8},
+{TolDivB, fill=TolDivB, fill opacity=0.8},
+{TolDivC, fill=TolDivC, fill opacity=0.8},
+{TolDivD, fill=TolDivD, fill opacity=0.8}}
+
+\pgfplotscreateplotcyclelist{divRed}{% 
+{TolDivK, fill=TolDivK, fill opacity=0.8},
+{TolDivJ, fill=TolDivJ, fill opacity=0.8},
+{TolDivI, fill=TolDivI, fill opacity=0.8},
+{TolDivH, fill=TolDivH, fill opacity=0.8}}
+
+\pgfplotscreateplotcyclelist{divG}{%
+  {darkgrey, fill=darkgrey, fill opacity=0.6},
+  {darkgrey, fill=darkgrey, fill opacity=0.6},
+  {darkgrey, fill=darkgrey, fill opacity=0.6},
+  {darkgrey, fill=darkgrey, fill opacity=0.6}}
+
+
+\pgfplotsset{
+	compat=1.8,
+	clip = false,
+	clip marker paths = true,
+	tick align=outside,
+    tick align=inside,
+    xtick pos=left,
+    ytick pos=left,
+	x tick label style = {yshift=-1em, anchor=base},
+	major tick length = 2pt,
+    %every axis y label/.style = {at = {(ticklabel cs:0.5)}, rotate=90, anchor=center, font=\scriptsize, xshift = -2pt},
+	%every axis x label/.style = {at = {(ticklabel cs:0.5)}, anchor=base center, font=\scriptsize, yshift = -2pt},
+%	axis y line*=left, axis x line*=bottom,
+}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "modelE"
+%%% End:

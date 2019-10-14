@@ -1,0 +1,68 @@
+\newcommand\mysw{3.2}
+\newcommand\myeps{.8}
+\newcommand\mypmid{2.}
+\newcommand\mypout{2.8}
+\newcommand\mypin{.35}
+
+\begin{tikzpicture}
+  \draw[opacity=0] (-6.,-3.7) rectangle (3.8,3.7);
+  \node[net node] (ni) at (-5.5, 1.5) {$\spc$};
+  \node[net node] (nj) at (-4., 1.5) {$\ospc$};
+  \fill[lightgrey, opacity=0.2] (-\myeps,-\myeps) rectangle (\myeps,\myeps);
+  \fill[colCmp, opacity=0.2] (-\mysw,-\mysw) rectangle (-\myeps,-\myeps);
+  \fill[colMut, opacity=0.2] (\mysw,\mysw) rectangle (\myeps,\myeps);
+  \fill[colTro, opacity=0.2] (-\mysw,\mysw) rectangle (-\myeps,\myeps);
+  \fill[colTro, opacity=0.2] (\mysw,-\mysw) rectangle (\myeps,-\myeps);
+  \fill[colAm, opacity=0.2] (-\mysw,-\myeps) rectangle (-\myeps,\myeps);
+  \fill[colAm, opacity=0.2] (-\myeps,-\mysw) rectangle (\myeps,-\myeps);
+  \fill[colCom, opacity=0.2] (\mysw,\myeps) rectangle (\myeps,-\myeps);
+  \fill[colCom, opacity=0.2] (\myeps,\mysw) rectangle (-\myeps,\myeps);
+  \path[line width=2pt, midgrey] (-\mysw,-\mysw) edge (\mysw,\mysw);
+  \path[pil, bend left=12] 
+  (ni) edge node[above] {$\Assv_{\spc\ospc}$} (nj)
+  (nj) edge node[below] {$\Assv_{\ospc\spc}$} (ni);
+  \path[->,thick] 
+  (-\mysw,0) edge (\mysw,0) 
+  (0,-\mysw) edge (0,\mysw);
+  
+  \path[thick, dotted, midgrey] 
+  (-\myeps,-\mysw) edge (-\myeps,\mysw)
+  (\myeps,-\mysw) edge (\myeps,\mysw)
+  (-\mysw,-\myeps) edge (\mysw,-\myeps)
+  (-\mysw,\myeps) edge (\mysw,\myeps);
+  
+  % \draw (-.05, -\myeps) -- ++(.1, 0);
+  % \draw (-.05, \myeps) -- ++(.1, 0);
+  % \draw (-\myeps, -.05) -- ++(0, .1);
+  % \draw (\myeps, -.05) -- ++(0, .1); 
+  %\node[align=center, lbl node, text width=1.9cm, fill=white, opacity=0.85, text opacity=1] at (0, 0) {\textcolor{darkgrey}{neutral associations}};
+  \node[rotate=45, align=center, lbl node, text width=1.9cm] at (1.6, 1.6) {\textcolor{darkgrey}{symmetric associations}};
+
+  \node[lbl node, anchor=south, fill=white, opacity=0.9, text opacity=1] at (0, 0) {\textcolor{darkgrey}{neutral}};
+  \node[lbl node, anchor=north, fill=white, opacity=0.9, text opacity=1] at (0, 0) {\textcolor{darkgrey}{associations}};
+  \node[rbl node] at (-\mypmid, \mypin) {\textbf{\textcolor{colAm}{Amensalism}}};
+  \node[rbl node] at (0,-\mypmid) {\textbf{\textcolor{colAm}{Amensalism}}};
+  \node[rbl node] at (\mypmid, \mypin) {\textbf{\textcolor{colCom}{Commensalism}}};
+  \node[rbl node] at (0, \mypmid) {\textbf{\textcolor{colCom}{Commensalism}}};
+  \node[rbl node] at (\mypmid, \mypout) {\textbf{\textcolor{colMut}{Mutualism}}};
+  \node[rbl node] at (-\mypmid, -\mypout) {\textbf{\textcolor{colCmp}{Competition}}};
+  \node[rbl node] at (\mypmid, -\mypout) {\textbf{\textcolor{colTro}{Trophic/Parasitic}}};
+  \node[rbl node] at (-\mypmid, \mypout) {\textbf{\textcolor{colTro}{Trophic/Parasitic}}};
+
+  \node[right] at (\mysw,0) {$\Assv_{\spc\ospc}$};
+  \node[above] at (0,\mysw) {$\Assv_{\ospc\spc}$};
+
+  % \node[lbl node, font=\footnotesize, fill=white] at (0, 0) {$0$};
+  % \node[lbl node, anchor=east, font=\footnotesize] at (0,-\myeps) {$-\epsilon$};
+  % \node[lbl node, anchor=east, font=\footnotesize] at (0,\myeps) {$+\epsilon$};
+  % \node[lbl node, anchor=south, font=\footnotesize] at (-\myeps, 0) {$-\epsilon$};
+  % \node[lbl node, anchor=south, font=\footnotesize] at (\myeps, 0) {$+\epsilon$};
+  
+    % \path[pil] (-1,0) edge node[pos = below] {time} (1,0) 
+    % (0,-1) edge node[rotate=90, above] {} (0,1;
+\end{tikzpicture}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "tikz_figures"
+%%% End:

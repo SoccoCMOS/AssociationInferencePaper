@@ -1,0 +1,41 @@
+\renewcommand{\datafile}{xps/data_AlpsPlantScores.csv}
+
+\tikzstyle{every pin}=[font=\footnotesize, inner sep = 1pt]
+\tikzstyle{every pin edge}=[thin]
+
+\begin{tikzpicture}[node distance=.2em]%[trim axis left, trim axis right]
+\draw[opacity=0] (-.8,-.1) rectangle ++(\textwidth, 6.2);
+\pgfmathsetmacro{\factX}{11}\pgfmathsetmacro{\offX}{0}%
+\pgfmathsetmacro{\vXmin}{0.38}\pgfmathsetmacro{\vXmax}{.93}%
+\pgfmathsetmacro{\factY}{6}\pgfmathsetmacro{\offY}{0}%
+\pgfmathsetmacro{\vYmin}{0.65}\pgfmathsetmacro{\vYmax}{1.06}%
+
+\node[anchor=south, rotate=90, font=\footnotesize] at ({-.05*\factX},{.5*\factY}) {ROC AUC};
+
+\pgfmathsetmacro{\marky}{\factY*(1-\vYmin)/(\vYmax-\vYmin)}%
+\draw[thin, dotted, darkgrey] (0,\marky) -- ++({\factX+.2},0);
+
+\pgfmathsetmacro{\marky}{\factY*(0.91-\vYmin)/(\vYmax-\vYmin)}%
+%\path (0,0) edge ({\factX+.2},0);
+\path (0,0) edge (0,{\marky});
+\foreach \l in {0.7, 0.8, 0.9}{
+  \pgfmathsetmacro{\marky}{\factY*(\l-\vYmin)/(\vYmax-\vYmin)}%
+  \draw (-.05,\marky) -- ++(.1,0);
+  \draw[thin, dotted, darkgrey] (0,\marky) -- ++({\factX+.2},0);
+  \node[anchor=east, font=\footnotesize] at (-.06, \marky) {$\l$};
+}
+
+\csvreader[head to column names]{\datafile}{}{%
+  %\pgfmathsetmacro{\markx}{\factX*(sqrt(\prevalence+\avgcountnz)-\vXmin)/(\vXmax-\vXmin)}%
+  \pgfmathsetmacro{\markx}{\factX*(sqrt(sqrt(\prevalence))-\vXmin)/(\vXmax-\vXmin)}%
+  \pgfmathsetmacro{\marky}{\factY*(\score-\vYmin)/(\vYmax-\vYmin)}%
+  %\node[pnt node, TolRbw\gcl, pin={[pin distance = \pndst em] \pngl:{\genus}}] at (\markx,\marky) {};
+  \node[pnt node, TolRbw\gcl, pin={[pin distance = \pndst em] \pngl:{\slbl}}] at (\markx,\marky) {};
+  %\node[pnt node, TolRbw\gcl, font=\tiny, pin={[pin distance = .8em] {\pngl+\thecsvrow/15}:{\thecsvrow}}] at (\markx,\marky) {};
+}
+\end{tikzpicture}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "tikz_figures"
+%%% End:

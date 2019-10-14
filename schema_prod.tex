@@ -1,0 +1,47 @@
+\newcommand\mywh{.45}
+\newcommand\mynbLoc{9}
+\newcommand\mynbSpec{10}
+\newcommand\mynbDim{3.5}
+\newcommand\myspci{2}
+\newcommand\myspcj{8}
+
+
+\begin{tikzpicture}
+  \node[anchor=south] at ({0.5*\mynbSpec*\mywh}, {(\mynbDim+1)*\mywh}) {Species};
+  \node[rotate=90, anchor=south] at ({-(\mynbDim+1)*\mywh}, {-0.5*\mynbSpec*\mywh}) {Species};
+  %%%%%%%%%%%%%%%%%%
+  \node at ({-(0.5*\mynbDim+1)*\mywh}, {-0.45*\mynbSpec*\mywh}) {$\ResMat$};
+  \node at ({-(0.5*\mynbDim+1)*\mywh}, {-0.55*\mynbSpec*\mywh}) {responses};
+  \node[anchor=north east] at ({-(\mynbDim+1)*\mywh}, 0) {$1$};
+  \node[anchor=east] at ({-(\mynbDim+1)*\mywh}, {-\myspci*\mywh}) {$\spc$};
+  \draw[line width=2pt,midgrey] ({-(\mynbDim+1)*\mywh},{-\myspci*\mywh}) -- (-\mywh,{-\myspci*\mywh});
+  \node[fill=white] at ({-(0.5*\mynbDim+1)*\mywh}, {-\myspci*\mywh}) {$\Resv_\spc$};
+  \node[anchor=south east] at ({-(\mynbDim+1)*\mywh}, {-\mynbSpec*\mywh}) {$m$};
+  \node[anchor=south west] at ({-(\mynbDim+1)*\mywh}, 0) {$1$};
+  \node[anchor=south east] at ({-1*\mywh}, 0) {$d$};
+  %%%%%%%%%%%%%%%%%%
+  \node at ({0.5*\mynbSpec*\mywh}, {(0.6*\mynbDim+1)*\mywh}) {$\EffMat^{T}$};
+  \node at ({0.5*\mynbSpec*\mywh}, {(0.3*\mynbDim+1)*\mywh}) {effects};
+  \node[anchor=south east] at (0, {\mywh}) {$d$};
+  \node[anchor=north east] at (0, {(\mynbDim+1)*\mywh}) {$1$};
+  \node[anchor=south west] at (0, {(\mynbDim+1)*\mywh}) {$1$};
+  \node[anchor=south] at ({\myspcj*\mywh}, {(\mynbDim+1)*\mywh}) {$\ospc$};
+  \draw[line width=2pt,midgrey] ({\myspcj*\mywh},{(\mynbDim+1)*\mywh}) -- ({\myspcj*\mywh},\mywh);
+  \node[fill=white] at ({\myspcj*\mywh}, {(0.5*\mynbDim+1)*\mywh}) {$\Effv^{T}_\ospc$};
+  \node[anchor=south east] at ({\mynbSpec*\mywh}, {(\mynbDim+1)*\mywh}) {$m$};
+  %%%%%%%%%%%%%%%%%%
+  \node at ({0.5*\mynbSpec*\mywh}, {-0.45*\mynbSpec*\mywh}) {$\AssMat$};
+  \node at ({0.5*\mynbSpec*\mywh}, {-0.55*\mynbSpec*\mywh}) {associations};
+  \draw[line width=1pt,dotted,midgrey] ({\myspcj*\mywh},\mywh) -- ({\myspcj*\mywh},{-\myspci*\mywh});
+  \draw[line width=1pt,dotted,midgrey] (-\mywh,{-\myspci*\mywh}) -- ({\myspcj*\mywh},{-\myspci*\mywh});
+  \node[fill=white] at ({\myspcj*\mywh}, {-\myspci*\mywh}) {$\Assv_{\spc\ospc}$};
+  %%%%%%%%%%%%%%%%%%
+  \draw[thick] (0,0) rectangle +({\mynbSpec*\mywh}, {-\mynbSpec*\mywh});
+  \draw[thick] (-\mywh, 0) rectangle +({-\mynbDim*\mywh}, {-\mynbSpec*\mywh});
+  \draw[thick] (0, \mywh) rectangle +({\mynbSpec*\mywh}, {\mynbDim*\mywh});
+\end{tikzpicture}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "tikz_figures"
+%%% End:
