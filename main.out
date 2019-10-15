@@ -6,7 +6,7 @@
 \BOOKMARK [2][-]{subsection.2.2}{A conditional generative model of abundance}{section.2}% 6
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Formalization}{subsection.2.2}% 7
 \BOOKMARK [3][-]{subsubsection.2.2.2}{Inference}{subsection.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.3}{Unraveling inter-specific interactions}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Unraveling inter-specific association networks}{section.2}% 9
 \BOOKMARK [2][-]{subsection.2.4}{Validation on simulated data}{section.2}% 10
 \BOOKMARK [3][-]{subsubsection.2.4.1}{Data Generation}{subsection.2.4}% 11
 \BOOKMARK [3][-]{subsubsection.2.4.2}{Model training}{subsection.2.4}% 12
@@ -24,9 +24,8 @@
 \BOOKMARK [3][-]{subsubsection.3.2.4}{Plant associations on a mesotopographic gradient}{subsection.3.2}% 24
 \BOOKMARK [1][-]{section.4}{Discussion}{}% 25
 \BOOKMARK [1][-]{section.5}{Conclusion}{}% 26
-\BOOKMARK [1][-]{appendix.A}{Derivatives of the optimized objective}{}% 27
-\BOOKMARK [1][-]{appendix.B}{Extensions of the biotic context definition}{}% 28
-\BOOKMARK [2][-]{subsection.B.1}{Adding conditioning covariates}{appendix.B}% 29
-\BOOKMARK [2][-]{subsection.B.2}{Temporal extension}{appendix.B}% 30
-\BOOKMARK [2][-]{subsection.B.3}{Spatial extension}{appendix.B}% 31
-\BOOKMARK [2][-]{subsection.B.4}{Graph extension}{appendix.B}% 32
+\BOOKMARK [1][-]{appendix.A}{Extensions of the biotic context definition}{}% 27
+\BOOKMARK [2][-]{subsection.A.1}{Adding conditioning covariates}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.2}{Temporal extension}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.3}{Spatial extension}{appendix.A}% 30
+\BOOKMARK [2][-]{subsection.A.4}{Graph extension}{appendix.A}% 31

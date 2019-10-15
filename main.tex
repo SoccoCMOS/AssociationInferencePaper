@@ -17,11 +17,11 @@
 \maketitle
 
 \section{Background}
-Understanding the drivers of species distribution and their abundance has always been a long-lasting goal of biogeography \cite{humboldt1805essai}. Niche theory explains the spatial dynamics of species by a set of physiological and adaptive properties that lead them to thrive in specific conditions and decline in others (\cite{chase2003ecological}, \cite{pulliam2000relationship}). The ranges of abiotic variables, such as climate and soil characteristics, that match the ecophysiological requirements of a species delimit its potential niche (Grinnellian niche, \cite{grinnell1917niche}) or (Fundamental niche, \cite{hutchinson1957multivariate}).  Habitat suitability models (HSM) or species distribution models (SDMs) \cite{guisan2017habitat} aim to infer and model this niche by establishing statistical relationships between observed presences an absence or species' abundances and the environmental characteristics of the corresponding locations. \\
+Understanding the drivers of species distribution and their abundance has always been a long-lasting goal of biogeography \cite{humboldt1805essai}. Niche theory explains the spatial dynamics of species by a set of physiological and adaptive properties that lead them to thrive in specific conditions and decline in others (\cite{chase2003ecological}, \cite{pulliam2000relationship}). The ranges of abiotic variables, such as climate and soil characteristics, that match the ecophysiological requirements of a species delimit its potential niche (Grinnellian niche, \cite{grinnell1917niche}) or (Fundamental niche, \cite{hutchinson1957multivariate}).  Habitat suitability models (HSM) or species distribution models (SDMs) \cite{guisan2017habitat} aim to infer and model this niche by establishing statistical relationships between observed occurrences or abundances of species and the environmental characteristics of the corresponding locations. \\
 
-SDMs have proven useful to predict species ranges in response to climate change, providing operational tools to conservation biologists (\cite{guisan2005predicting}, \cite{elith2009species}). However, they predict multiple species distributions separately, ignoring possible dependencies that can restrict or extend species' ranges from what is expected when considering only abiotic factors.  Indeed, species may exclude one another locally (\textit{competitive exclusion}, \cite{hardin1960competitive}) or differentiate each other’s areas and resources (\textit{niche partitioning}, \cite{schoener1974resource}). Conversely, some species facilitate others by modifying the environment in a way that creates habitats or enables access to resources for other species (engineering and facilitation).  Although these interactions take place at a local scale, some of them may restrict the range of the species on a wider, macroscopic scale.  Thus, the inability to take into account the presence or absence of other species is an important source of underfitting for SDMs (\cite{wisz2013role}). \\
+HSMs have proven useful to predict species ranges in response to climate change, providing operational tools to conservation biologists (\cite{guisan2005predicting}, \cite{elith2009species}). However, as they model multiple species distributions separately, they fail to detect possible dependencies between species that can restrict or extend their ranges beyond what is expected when considering only abiotic factors.  Indeed, species may exclude one another locally (\textit{competitive exclusion}, \cite{hardin1960competitive}) or differentiate each other’s areas and resources (\textit{niche partitioning}, \cite{schoener1974resource}). Conversely, some species facilitate others by modifying the environment in a way that creates habitats or enables access to resources for other species (engineering and facilitation). Although these interactions take place at a local scale, some of them may alter the range of the species on a wider, macroscopic scale. Consequently, they induce consistent patterns of colocation and dislocation that are unexplained by the abiotic environment, referred to as \emph{associations}. The inability to take into account the presence or absence of other species is therefore an important source of underfitting for statistical models of species distributions (\cite{wisz2013role}). \\
 
-Over the last decade, several approaches have been proposed to infer interspecific associations within the latter models by jointly analyzing the co-distribution of multiple species. This led to the development of Joint Species Distribution Models, JSDM (\cite{pollock2014understanding},\cite{ovaskainen2017make}). The gist is that once we have accounted for abiotic factors, the unexplained variance, typically captured by the residuals' correlation matrix, is attributed to the effect of species on one another. As they rely purely on correlation, JSDMs are limited to inferring symmetric associations between species, such as mutualism and competition. Asymmetric interactions, such as commensalism, amensalism and predation, are therefore inherently out of reach for these models. \cite{lany2018asymmetric} proposed a JSDM that allows to capture asymmetric associations but it requires access to longitudinal data. \\
+Over the last decade, several approaches have been proposed to infer interspecific dependencies from the observations of many species. Probabilistic Graphical Models (PGM) \cite{koller2009probabilistic} have been used to infer either directed (Bayesian Networks, BN) or undirected (Markov Random Fields, MRF) networks \cite{faisal2010inferring} involving plants \cite{aderhold2012hierarchical}, parasites and potential hosts \cite{pilosof2014host}, predators and preys \cite{trifonova2015spatio}\cite{majdi2018there} or multi-trophic communities turnover \cite{ohlmann2018mapping}. More recently, Joint Species Distribution Models, JSDM (\cite{pollock2014understanding},\cite{ovaskainen2017make}) attempted to address the same question while jointly predicting co-occurrences of multiple species. Their gist is that once we have accounted for abiotic factors, the unexplained variance, typically captured by the residuals' correlation matrix, is attributed to the effect of species on one another.  As they rely purely on correlation, JSDMs and MRFs are limited to estimating symmetric associations where the involved parties influence one another with the same polarity and strength. \cite{lany2018asymmetric} proposed a JSDM that allows to capture asymmetric associations but it requires access to longitudinal data. On the other hand, BNs support directed relationships but they impose an acyclic structure that hinders the modeling of bidirectional influences. \\
 
 Another research domain that is also concerned with inferring associations from co-occurrence is natural language processing (NLP). NLP modelers try to understand semantic associations between words on the basis of the contexts they appear in. The context of a word is the list of words surrounding it in a sentence. A state of art method in this area is \texttt{word2vec} (\cite{mikolov2013distributed}). \texttt{word2vec}  learns distributed representations for words in the form of dense vectors called embeddings. The embedding of a word captures information about other words it co-occurs with. The probability of a word occurring in a particular sentence of a text depends on the semantic compatibility of this word with other words occurring in that sentence. Word embeddings, such as \texttt{word2vec} , aim to learn multidimensional representations of words that captures this contextual semantic compatibility. By analogy, in community ecology, the probability of the presence of a species in a given abiotically suitable site depends on its compatibility with other species occuring at that site, i.e. other species in the observed community. \\
 
@@ -41,18 +41,18 @@ A \textit{biogeographical association} describes the relative influence of a pai
 Formally, we represent the association between species $\spc$ and
 $\ospc$ with a pair of numerical values $\Assv_{\spc\ospc}$ and
 $\Assv_{\ospc\spc}$, representing the strength of the influence of species
-$\spc$ on species $\ospc$ and vice-versa, respectively. Specifically,
+$\ospc$ on species $\spc$ and vice-versa, respectively. Specifically,
 $\Assv_{\spc\ospc}$ represents the change (excess if
 positive, deficit if negative, none if null) in \textit{target}
-species $\ospc$'s abundance induced by the presence of an individual
-from \textit{source} species $\spc$.  These values across all pairs of
+species $\spc$'s abundance induced by the presence of an individual
+from \textit{source} species $\ospc$.  These values across all pairs of
 species can be collected into an $m \times m$ non-symetric association
 matrix $\AssMat$. \\
 
 \begin{figure}[bthp]
 	\centering
 	\includegraphics[page=1]{tikz_figures.pdf}
-	\caption{Mapping pairwise association strengths to potential interaction classes. The first bissector represents the association domain covered by correlation-based approaches including Joint Species Distribution Models. }
+	\caption{Mapping pairwise association strengths to potential interaction classes. The first bissector represents the association domain covered by correlation-based approaches and undirected graphical models.}
 	\label{assocdomain}
 \end{figure}
 
@@ -193,22 +193,22 @@ Negative examples are typically overrepresented in the dataset, leading to a hig
 
 Our model is then trained on this collection of labelled examples. Specifically, we maximize the likelihood of the observed abundances on each site for all positive examples and the selected subset of negative examples. \\
 
-In summary, given training data (abundances $\abdM$ and abiotic variables $\abioM$) together with user-defined hyperparameters (including hyperparameters for the abiotic suitability model $\hypHabs$, embedding dimension $\dst$, vector of species offsets $\offVect$, negative examples subsample rate $\sbRate$ and regularization coefficient on the constraint of embeddings sparsity $\lambda$) the model training procedure aims to infer the value of the model parameters (esp.\ the response and effect embeddings matrices $\ResMat$ and $\EffMat$, and the HSM parameters $\pHabs$) that optimize the objective function. \\
+In summary, given training data (abundances $\abdM$ and abiotic variables $\abioM$) together with user-defined hyperparameters (including hyperparameters for the abiotic suitability model $\hypHabs$, embedding dimension $\dst$, vector of species offsets $\offVect$, negative examples subsample rate $\sbRate$ and regularization coefficient on the constraint of embeddings sparsity $\lambda$) the model training procedure aims to infer the value of the model parameters (esp.\ the response and effect embeddings matrices $\ResMat$ and $\EffMat$, and the HSM parameters $\pHabs$) that optimize the objective function. 
 
-To do so, we use online stochastic gradient descent. Details of the objective function and its derivative with respect to each parameter are provided in the appendix (see Section~\ref{sec:derivatives}).\\
+To do so, we use online stochastic gradient descent with a scheduled learning rate decay and a glorot uniform initializer for the parameters.\\
 
 %%% Temporary %%%
 The resulting model can then be applied on previously unseen data, e.g.\ environment features for sites not included in the training data, to predict abundances at these sites for each of the species in the training data given the abundances of other species.
 %%% %%%%
 
-\subsection{Unraveling inter-specific interactions}
+\subsection{Unraveling inter-specific association networks}
 While the primary task addressed by our model is the prediction of abundances, the effect and responses embeddings are also learnt, as by-products of the inference. In fact, these embeddings for the different species, contained in matrices $\EffMat$ and $\ResMat$, as well as the resulting non-symmetric association matrix $\AssMat$ are of great interest, as they shed light on the ecological association between the species. \\
 
-In order to identify the most significative associations, we apply two filtering steps to the matrix $\AssMat$ returned by our model. First, the \emph{statistical filtering} step consists in setting to zero all associations with a confidence interval containing zero and keeping the mean value for the rest. Second, the \emph{biogeographical filtering} step aims to further eliminate associations that are predicted to exist from the latent representations of the species, but are not supported by the species occurences because they break some biogeographical constraints. \\
+In order to identify meaningful associations, we apply two filtering steps to the matrix $\AssMat$ returned by our model. First, the \emph{statistical filtering} step consists in setting to zero all associations with a confidence interval containing zero and keeping the mean value for the rest. Second, the \emph{biogeographical filtering} step aims to further eliminate associations that are predicted to potentially exist from the latent representations of the species, but are not realized by the species occurrences because they break some biogeographical constraints. \\
 
-For instance, facilitation between two species requires co-existence. Thus, we set to zero any inferred positive effect involving two non-co-occurring species (\cite{sanderson2015patterns}). On the other hand, competition does not require co-occurrence and may even explain the geographic separation. Hence, the involved species do not have to co-occur but should live in similar environments for us to consider a potential negative association to be valid. Specifically, we compute the ranges of the environmental values corresponding to the occurrences of either species and retain negative associations only if these ranges overlap or if the species are otherwise sufficiently similar (above a user-defined similarity threshold) in terms of their habitat suitability parameters, which capture the species' respective habitat preferences. \\
+For instance, mutualism or attraction between two species requires co-existence. Thus, we set to zero any inferred positive effect involving two non-co-occurring species (\cite{sanderson2015patterns}). On the other hand, repulsive relationships do not require co-occurrence and may even explain the geographic separation. Hence, the involved species do not have to co-occur but should live in similar environments for us to consider a potential negative association to be valid. Specifically, we compute the ranges of the environmental values corresponding to the occurrences of either species and retain negative associations only if these ranges overlap or if the species are otherwise sufficiently similar (above a user-defined similarity threshold) in terms of their habitat suitability parameters, which capture the species' respective habitat preferences. \\
 
-Furthermore, we are often more interested in the polarity of the associations, rather than their precise strength, hence we consider a discretized version of the association matrix, which we call the \emph{interaction matrix} defined as follows:
+Furthermore, we are often more interested in the polarity of the associations, rather than their precise strength, hence we consider a discretized version of the association matrix, which we call the \emph{adjacency matrix} defined as follows:
 \begin{equation*}
 \InterMat_{\spc\ospc} =  \left\{
 \begin{array}{ll}
@@ -221,19 +221,21 @@ Furthermore, we are often more interested in the polarity of the associations, r
 
 such that $\epsPos$ and $\epsNeg$ represent a user-defined threshold on the strength of the positive and negative associations, respectively. \\
 
-The interaction matrix can be seen as defining a network, where each species is represented by a vertex and a directed edge labelled as positive (resp.\ negative) from vertex $\spc$ to vertex $\ospc$ represents a positive (resp.\ negative) influence of species $\spc$ on species $\ospc$.
-In this context, infering associations can be seen as an edge prediction task, i.e.\ the task of predicting the existence and polarity of an edge for any ordered pair of species.\\
+The adjacency matrix describes a network, where each species is represented by a vertex and a directed edge labelled as positive (resp.\ negative) from vertex $\spc$ to vertex $\ospc$ represents a positive (resp.\ negative) influence of species $\spc$ on species $\ospc$. In this context, inferring associations can be seen as an edge prediction task, i.e.\ the task of predicting the existence and polarity of an edge for any ordered pair of species.\\
 
-Assuming that the ground-truth network of inter-species interactions is available (in the form of the simulation parameters in the case of simulated populations, for instance), we can evaluate the performance of our model on this prediction taks by comparing the network constructed from inferred parameters in matrix $\AssMat$ to the ground-truth using standard multi-class classification performance metrics (recall, precision, F1-score).\\
+Assuming that the ground-truth network is available (in the form of the simulation parameters in the case of simulated populations, for instance), we can evaluate the performance of our model on this prediction task by comparing the network constructed from inferred parameters in matrix $\AssMat$ to the ground-truth using standard multi-class classification performance metrics (recall, precision, F1-score).\\
 
-Note that species with similar response embeddings constitute clusters of rows in the association matrix, called \emph{response groups}. Conversely, species with similar effect embeddings constitute clusters of columns in the association matrix, called \textit{effect groups}. In the associated network, the product of both types of groups, results in the emergence of clusters of exchangeable species occupying the same \emph{structural roles} in the resulting interaction network \cite{gauzens2015trophic}. 
-
-%%% Sara stopped here %%%
+Note that species with similar response embeddings constitute clusters of rows in the adjacency matrix, called \emph{response groups}. Conversely, species with similar effect embeddings constitute clusters of columns called \textit{effect groups}. The product of both types of groups, results in the emergence of clusters of exchangeable or redundant species occupying the same \emph{structural roles} in the resulting network \cite{gauzens2015trophic}. 
 
 \subsection{Validation on simulated data}
-Before applying our proposed model on real-world datasets, we perform a validation experiment in a controlled setting. That is, we evaluate the ability of our model to recover interspecific interactions from simulated datasets of known interactions.\\
+Before applying our proposed model on real-world datasets, we perform a validation experiment in a controlled setting. That is, we evaluate the ability of our model to recover interspecific associations from simulated datasets of known associations.\\
 
-We set up an experiment similar to (Pollock et al, in prep) where multiple simulations are run on 500 random points on a gradient between 0 and 100 with different configurations of the prior interaction matrix. Specifically, four configuration modes were tested: absence of interaction, positive interactions only, negative interactions only and both positive and negative interactions. In each mode, we vary the number of species (5, 10 or 20), the proportion of interacting pairs (sparse or dense) and whether the interaction matrix includes asymmetric effects. Positive (resp.\ negative) effects were all set to $+1$ (resp.\ minus $-1$) as we are interested in the polarity of the interactions rather than their magnitude. The full-factorial design of this experiment produced 29 simulation datasets, summarized in Figure \ref{simexp}).\\
+\subsubsection{Data Generation}
+We use a process-based stochastic model adapted from \texttt{Virtualcomm} (Gallien and Münkemüller 2015) to simulate the assembly of individuals from a regional species pool into communities, on different locations sampled along an environmental gradient. The assembly process is controlled by three filtering mechanisms: the response to the abiotic environment, the outcome of biotic interactions and reproduction.  For simplicity, the spatial structure of communities and thus dispersal processes are ignored. In other words, there is no exchange of individuals between neighboring communities.\\
+
+The simulation starts with a given or random initial composition for each community independently. Individuals are replaced through time until an equilibrium state is reached or a user-defined number of iterations is completed. In the end, the final composition of the communities is returned as the result of the simulation.\\
+
+We set up an experiment similar to (Pollock et al, in prep) where multiple simulations are run on random points on a gradient between 0 and 100 with different hand-crafted configurations of the prior interaction matrix. Specifically, four configuration modes were tested: absence of association, positive associations only, negative associations only and both positive and negative associations. In each mode, we vary the number of species (5, 10 or 20), the proportion of associated pairs (sparse or dense) and whether the association matrix includes asymmetric effects. Positive (resp.\ negative) effects were all set to $+1$ (resp.\ minus $-1$) as we are interested in the polarity of the associations rather than their magnitude. The full-factorial design of this experiment produced 29 simulation datasets, summarized in Figure \ref{simexp}).\\
 
 \begin{figure}[bthp]
   \centering
@@ -242,23 +244,20 @@ We set up an experiment similar to (Pollock et al, in prep) where multiple simul
   \label{simexp}
 \end{figure}
 
-\mynote[author=EG]{I am not sure what it meant when a field was absent in the simulations configurations (except maybe dense/sparse for 5 species, as it is so small)}
-
-\mynote[author=EG]{the connection between the paragraphs above and below are not clear to me. Clarify what are the parameters given to the simulation (matrix of interactions, ...), and highlight them below. Did you use random or hand-crafted initial compositions?}
-
-\subsubsection{Data Generation}
-We use a process-based stochastic model adapted from \texttt{Virtualcomm} (Gallien and Münkemüller 2015) to simulate the assembly of individuals from a regional species pool into communities, on different locations sampled along an environmental gradient. The assembly process is controlled by three filtering mechanisms: the response to the abiotic environment, the outcome of biotic interactions and reproduction.  For simplicity, the spatial structure of communities and thus dispersal processes are ignored. In other words, there is no exchange of individuals between neighboring communities.\\
-
-The simulation starts with a given or random initial composition for each community independently. Individuals are replaced through time until an equilibrium state is reached or a user-defined number of iterations is completed. In the end, the final composition of the communities is returned as the result of the simulation.
-
 \subsubsection{Model training}
 For each simulated population dataset, we count the number of individuals of each species in each site to produce a site-by-species abundance matrix and binarize these counts to produce a site-by-species occurrence matrix. 
 As our HSM models for the abiotic response of the species, we use independent Generalized Linear Models (GLM) with logistic links and one quadratic term.\\
 
 We apply the proposed association inference model with a negative binomial distribution to fit the species counts. We set the offsets for each species as the average value of its abundance on its sites of presence (i.e.\ $o_\spc=\bar{\abdv}_{\spc}$). We also add lasso penalties with $\lambda=0.01$ on response and effect embeddings to promote the sparsity of their products. \\
 
-To adjust the embeddings dimension $d$, we use a $5$-fold cross-validation scheme where we monitor the deviance of the predicted abundances. Having set $d$ to the value that minimizes the deviance, we train the model on $1000$ bootstrap samples from the training set.
-\mynote[author=EG]{how do you measure deviance (is it really deviance or deviation?)}
+To adjust the embeddings dimension $d$, we use a $5$-fold cross-validation scheme where we monitor the deviance of the predicted abundances. Having set $d$ to the value that minimizes the deviance, we train the model on $1000$ bootstrap samples from the training set. \\
+
+Given the observed count $y$ and the predicted mean count $\mu$, the deviance is computed as two times the difference between the predicted and the maximum achievable likelihoods. The latter is simply the likelihood on the observed count value.  
+
+\begin{equation*}
+d(y,\mu) = 2 (\mathcal{L}(y) - \mathcal{L}(\mu)) 
+\end{equation*}
+
 
 \subsection{Evaluation on a dataset of Alpine plants}
 In this part, our objective is to evaluate the ability of the model to recover meaningful associations from empirical observations of species abundances.
@@ -291,25 +290,23 @@ In this section, we present and analyse the results of our validation experiment
 
 \subsubsection{Association classification performances}
 We begin by evaluating the performance of our model on an independent test set using two metrics: the area under the ROC curve (AUC) for the presence probabilities predicted by the HSM component and the deviance of predicted abundances on positive examples. Finally, we compute the $95\%$ confidence interval of the inferred association matrix's mean. \\
-\mynote[author=EG]{That does not seem to appear anywhere in the results plots}
 
 We compare the ability of our model to recover the simulated associations. To do so, we consider the simulation association classes to constitute the ground-truth, against which we compare the inferred associations using standard multi-class performance metrics (recall, precision, F1-score). \\  
 
 The results are presented in Table~\ref{classmet}.
-On average, recall does not vary significantly between positive and negative associations, whereas precision is higher for negative rather than for postive associations. The prediction of positive and negative has low precision, indicating the detection of spurious associations. Much higher precision is achieved for neutral associations. The prediction performance is better on smaller datasets, with higher recall on the dense configurations but higher precision on sparse ones. The sparse asymmetric positive simulation resulted in the worst predictive preformance. \\
-
-\mynote[author=EG]{what is the (average) distribution of negative/positive/neutral in the ground truth for the different cases?}
+On average, recall does not vary significantly between positive and negative associations, whereas precision is higher for negative rather than for positive associations. The prediction of positive and negative associations has low precision, indicating the detection of spurious associations. Much higher precision is achieved for neutral associations. The prediction performance is better on smaller datasets, with higher recall on the dense configurations but higher precision on sparse ones. The sparse asymmetric positive simulation resulted in the worst predictive performance. \\
 
 \begin{table}[tbhp]
 \centering
-\begin{tabular}{l@{\hspace{3em}}ccc}
+\begin{tabular}{l@{\hspace{3em}}cccc}
 	\toprule
-	Association type & Recall ($\%$) & Precision ($\%$) & F1-score ($\%$) \\ 
+	Association type & Support range & Recall ($\%$) & Precision ($\%$) & F1-score ($\%$) \\ 
 	\midrule 
-	Neutral & $60.75$ & $98.64$ & $74.50$ \\ 
-	Negative & $72.00$ & $34.02$ & $41.23$ \\ 
-	Positive & $77.60$ & $17.60$ & $26.72$ \\ 
-	Macro-averages & $62.45$ & $94.71$ & $73.09$ \\ 
+	Neutral & $[12,380]$ & $60.75$ & $98.64$ & $74.50$ \\ 
+	Negative & $[2,20]$ & $72.00$ & $34.02$ & $41.23$ \\ 
+	Positive & $[2,20]$ & $77.60$ & $17.60$ & $26.72$ \\ 
+	\midrule
+	Macro-averages & - & $62.45$ & $94.71$ & $73.09$ \\ 
   \bottomrule
 \end{tabular} 
 \caption{Association classification performances}
@@ -319,42 +316,38 @@ On average, recall does not vary significantly between positive and negative ass
 \begin{figure}[htbp]
   \centering
   \inclPlt{5}{scatter_simul}
-  \caption{Recall values per simulation groups. \url{https://chart-studio.plot.ly/~socco/53}}
+  \caption{Recall-precision values for the different simulation configurations.}
   \label{simperf}
 \end{figure}
 
-On the other hand, biogeographical filtering increases the recall on neutral associations(more correctly identified non interactions) and the precision of positive and negative associations (less spurious interactions).
+%On the other hand, biogeographical filtering increases the recall on neutral associations(more correctly identified non interactions) and the precision of positive and negative associations (less spurious interactions).
 
 \subsubsection{Simulated patterns vs.\ inferred associations}
 % \subsubsection{Simulation diagnosis and inference complexity}
-\mynote[author=EG]{This section is difficult to understand. As far as I get it, the point of the two measures below is to capture how clearly the association types specified by the simulation parameters actually appear in the simulated data. Where the pattern are a bit obfuscated, it explains why the model might not be able to recover the association as expected. So the results from the two measures are not an evaluation of the prediction but help explain it, when put next to the metric in the paragraph above, right?}
-
 In fact, the association types specified by the simulation parameters might not be clearly reflected in the simulated populations. As a proxy for the complexity of the inference problem and a simulation diagnosis tool, we evaluate the ambiguity of the patterns of species dependencies present in the simulated communities for the chosen simulation parameters. To do so, for a given pair of source $s$ and target $t$ species, we define two indices that quantify respectively the overlap in occurrences and the relative variation in abundance of the two species.\\  
 
 The \emph{co-occurrence index (\evJoc)} measures the overlap between the occurrences of the two species.  It is a symmetric index, computed as the Jaccard similarity between the set of occurrences of either species.
 \begin{equation*}
 J_{st} = J_{ts} = \dfrac{\abs{\{\site \in \siteS,  \abdv_{\site s} > 0 \text{ and } \abdv_{\site t} > 0\}}}{\abs{\{\site \in \siteS,  \abdv_{\site s} > 0 \text{ \;or\; } \abdv_{\site t} > 0\}}}
 \end{equation*}
-Values of $J_{s,t}$ close to $1$ indicate high overlap whereas values close to $0$ indicate near-separation. Values around $0.5$ could indicate average overlap, no conclusion can be drawn. \\
+Values of $J_{s,t}$ close to $1$ indicate high overlap whereas values close to $0$ indicate near-separation. Values around $0.5$ could indicate randomly induced overlap, no conclusion can be drawn. \\
 
-\mynote[author=EG]{I am not sure what average overlap means. The expected overlap also depends on the total number of sites} 
-
-The \emph{relative abundance increase (\evRAI)} measures the relative increase in the abundance of the target species when the source species is present. It is an asymmetric measure computed by comparing the abundances of the target species in sites where the source is also present to the average abundance of the target species over all sites where it occurs
+The \emph{relative abundance index (\evRAI)} measures the relative change in the abundance of the target species when the source species is present. It is an asymmetric measure computed by comparing the abundances of the target species in sites where the source is also present to the average abundance of the target species over all sites where it occurs
 \begin{align*}
   \bar{\abdv}_{t} & = \avg(\{ \abdv_{\site t},  \site \in \siteS\text{ s.t.\ }\abdv_{\site t} > 0\}) \\
   \Delta_{st} & = \{ \abdv_{\site t} - \bar{\abdv}_{t},  \site \in \siteS\text{ s.t.\ }\abdv_{\site t} > 0 \text{ and } \abdv_{\site s} > 0\}
-\end{align*} \\
+\end{align*}
 
-The larger the standard deviation $\std(\Delta_{st})$, the more ambiguous the strength of the effect of species $s$ on species $s$. If the interval $\avg(\Delta_{st}) \pm 1.96 \std(\Delta_{st})$ does not contain zero, then the simulated dependencies unambigously translate a polarized effect of species $s$ on species $s$. Otherwise, the polarity of the effect is ambiguous, often due to confounding effects of other species or a neutral association if the mean is close to zero.\\
+The larger the standard deviation $\std(\Delta_{st})$, the more ambiguous the strength of the effect of species $s$ on species $t$. If the interval $\avg(\Delta_{st}) \pm 1.96 \std(\Delta_{st})$ does not contain zero, then the simulated dependencies unambiguously translate a polarized effect of species $s$ on species $t$. Otherwise, the polarity of the effect is ambiguous, often due to confounding effects of other species or a neutral association if the mean is close to zero.\\
 
 We find that the observed patterns told different stories about the actual associations. The co-occurrence index was higher than $50\%$ for all species with at least one positive effect. However, the species pairs involved in negative associations appeared together more than expected under the independence assumption in some runs and less on others, in particular on bigger pools. Neutral associations induced co-occurrence indices spanning a large spectrum below $70\%$. \\
 
-The average relative abundance increase reflected well the simulated associations with negative (resp. positive) effects below or around (resp. above) zero, while neutral associations were centered around zero. However, most positive effects yielded small average RAI absolute values as compared to the negative effects. Although more clearly marked, the latter approached neutrality on bigger and more densely connected communities.\\
+The average relative abundance increase reflected well the simulated associations with negative (resp. positive) effects below or around (resp. above) zero, while neutral associations were centered around zero. However, most positive effects yielded small average RAI values as compared to the negative effects. Although more clearly marked, the latter approached neutrality on bigger and more densely connected communities.\\
 
 \begin{figure}[bthp]
   \centering
     \inclPlt{6}{box_simul}
-	\caption{Distribution of co-occurrence, relative abundance effect and inferred association strength per type of association. \url{https://chart-studio.plot.ly/~socco/30}{Interactive mode}}
+	\caption{Distribution of co-occurrence $J$, relative abundance effect $\Delta_y$ and inferred association strength $A$ per type of association.}
 	\label{patterns}
 \end{figure}
 
@@ -379,38 +372,33 @@ For each value of $d$, we apply the training procedure described previously with
 \end{figure}
 
 \subsubsection{Plant habitat suitability}
-\mynote[author=EG]{does that mean you evaluate the prediction performance of the entire model, or only the HSM block?}
 Next, we analyze the parameters and performances of the HSM fitted on plant occurrences. Results are summarized by plant genus groups in Figure \ref{hsmaravo}. The model predicts habitat suitability with at least $70\%$ AUC score for all genuses. The analysis of environmental variable importance shows the dominance of Snow duration followed by zoogenic disturbances, the site form and aspect. Physical disturbance and slope weights were neglectible, probably due to their correlation with Snow. 
 
 \begin{figure}[bthp]
   \centering
   \inclPlt{7}{box_AlpsHSMw}
   \inclPlt{8}{scatter_AlpsPlantScores}
-  \caption{Habitat Suitability Model parameter interpretability and prediction performances.\url{https://chart-studio.plot.ly/~socco/1/}}
+  \caption{Habitat Suitability Model variable importance and prediction performances per genus.}
   \label{hsmaravo}
 \end{figure}
 
 \subsubsection{Analyzing the functional meaning of plant embeddings}
-Then, we investigate the functional determinants of the associations diversity. To do so, we compute the mutual information between the learnt embeddings and the plant traits (a full list and documentation of the traits are provided in the Supplementary Materials). The Mutual Information \cite{shannon1949mathematical} is an unbounded symmetric and positive score that measures the amount of information contained in one random variable about another. It quantifies the reduction in uncertainty about one random variable given knowledge of another. Zero mutual information indicates independence.\\
+Then, we investigate the functional determinants of the associations diversity. To do so, we compute the mutual information between the learnt embeddings and the plant traits (reported in \cite{choler2005consistent}). The Mutual Information \cite{shannon1949mathematical} is an unbounded symmetric and positive score that measures the amount of information contained in one random variable about another. It quantifies the reduction in uncertainty about one random variable given knowledge of another. Zero mutual information indicates independence.\\
 
-In general, we expect traits related to dispersal capabilities (seed, spread) to impact the prevalence of the species, consequently increasing or decreasing the opportunity to affect other species (interaction probability). As a result, we expect that such traits to have a higher mutual information with effect embeddings than with response embeddings. Conversely, traits related to nutrient uptake and biomass accumulation capture competitive or cooperative abilities of the plant species. Hence, we would expect a high mutual information between these traits and both responses and effects embeddings.\\
+In general, we expect traits related to dispersal capabilities (seed, spread) to impact the prevalence of the species, consequently increasing or decreasing the opportunity to affect other species (interaction probability). As a result, we expect such traits to have a higher mutual information with effect embeddings than with response embeddings. Conversely, traits related to nutrient uptake and biomass accumulation potential capture competitive or cooperative abilities of the plant species. Hence, we would expect a high mutual information between these traits and both responses and effects embeddings.\\
 
-A histogram of the mutual information between pairs of trait and embeddings is shown in Figure~\ref{mitraitemb}.  The result show a relatively significant contribution of the Nitrogen mass and Spread to the plants response, whereas the angle was found independent. The Specific Leaf Area contributes significantly to the effect in addition to the Nitrogen mass and on a lesser extent height, spread and seed.\\
-
-\mynote[author=EG]{I think it is somewhat missleading to present them stacked in this way because the information is not necessarily additive like this,  some of the same information about the traits might be encoded in different dimensions of the embedding, if I understand correctly}
+A histogram of the mutual information between each trait and embedding dimension is shown in Figure~\ref{mitraitemb}.  The result indicate a relatively significant contribution of the Nitrogen mass and Spread to the plants response, whereas the angle was found independent. The Specific Leaf Area contributes significantly to the effect in addition to the Nitrogen mass and on a lesser extent Spread. Height is reported as related to both parameters. \\
 
 \begin{figure}[bthp]
   \inclPlt{9}{hist_AlpsMIEff}
   \inclPlt{10}{hist_AlpsMIRes}
-	\caption{Mutual information between plant traits and their latent representations. Each bar concerns a specific trait, it represents the stack of mutual information scores from the first to the last (fourth) embedding dimension. The lower (resp. upper) figure shows the results for the response (resp. effect) embeddings. \url{https://chart-studio.plot.ly/~socco/70}} \label{mitraitemb}
+	\caption{Mutual information between plant traits and their latent representations. Each bar concerns a specific trait, it represents the stack of mutual information scores from the first to the last (fourth) embedding dimension. The lower (resp. upper) figure shows the results for the response (resp. effect) embeddings.} \label{mitraitemb}
 \end{figure}
 
 \subsubsection{Plant associations on a mesotopographic gradient}
-Finally, we analyze the inferred associations and the overall network structure in light of existing literature on alpine plants interactions \cite{choler2001facilitation}.\\
+Finally, we analyze the inferred associations and the overall network topology in light of existing literature on alpine plants interactions \cite{choler2001facilitation}.\\
 
-We perform a hierarchical clustering on both rows and columns of the association matrix to obtain effect and response groups, which are displayed in Figure~\ref{assocplant:a}. In parallel, we apply the modularity maximization algorithm on the association network to identify densely connected modules, referred to as communities \cite{gauzens2015trophic}. After that, we map the structural roles to the modules to create the group-level network.\\
-
-\mynote[author=EG]{this needs more explanations}
+We perform a hierarchical clustering on both rows and columns of the association matrix to obtain effect and response groups (structural roles), which are displayed in Figure~\ref{assocplant:a}. In parallel, we apply the modularity maximization algorithm on the association network to identify densely connected modules, referred to as communities \cite{gauzens2015trophic}. After that, we map the structural roles within the modules to create the group-level network.\\
 
 Four densely connected modules stand out. They are structured along the mesotopographical gradient. 
 \begin{enumerate}
@@ -420,7 +408,7 @@ Four densely connected modules stand out. They are structured along the mesotopo
 	\item North-facing isolated communities dominated by Salix Herbacea negatively associated with high-altitude communities and characterized by high eccentricity.
 \end{enumerate}
 
-Modules identified on the basis of link density by the modularity maximization algorithm are spatially structured. Hence, the network of modules reflect the spatial connectivity and as a result the turnover over the gradient. Within each commmunity, we identify various subgroups based on different responses (incoming edges) or effects (outgoing edges) to other groups.\\
+Modules identified on the basis of link density by the modularity maximization algorithm are spatially structured. Hence, the network of modules reflect the spatial connectivity and as a result the turnover over the gradient. Within each community, we identify various subgroups based on different responses (incoming edges) or effects (outgoing edges) to other groups.\\
 
 For instance, the high-elevation module (pink nodes) comprises three subgroups with different structural roles. Graminoids dominate these communities, they provide wind protection to forbs and some tall herbs (Festucal Violacea, Trifolium Alpinum). The latter also occur on grasslands where they compete with each other. Hence, this subgroup is separated from other forbs despite their cohabitation and the similar response to graminoids.\\ 
 
@@ -442,18 +430,18 @@ As reported in the literature (\cite{callaway2002positive},\cite{choler2005consi
 
 \section{Discussion}
 %Qu'est-ce qu'on propose ?%
-We first develop a probabilistic model of multispecies abundances that accounts for habitat suitability as well as biotic associations. We parameterize this model with an asymmetric association matrix computed from two sets of low-dimensional embeddings representing: the effect present species have on others' abundance, and the response to other species' effects. We then use the model to infer associations given species abundances. \\
+We first develop a probabilistic model of multispecies abundances that accounts for habitat suitability as well as biotic associations. We parameterize this model with an asymmetric association matrix computed from two sets of low-dimensional embeddings representing: the effect present species have on others' abundance, and the response to other species' effects. We then use the model to recover meaningful associations given species abundances. \\
 
 %Rebondir sur les résultats%
 We use a process-based simulation model to generate synthetic community datasets. By analyzing the observed co-occurrence and pairwise conditional abundances, we note that co-occurrence levels can be high even on known competing pairs if the species pool is small and the communities' carrying capacity is large. On the other hand, the abundance reflects better the nature of associations as it is lower than average in presence of negative associations and higher with positive associates. Nonetheless, pairwise abundance effects may turn out to be neutral in presence of multiple confounding effects (Boulangeat et al 2012). Consequently, one should model the pairwise associations conditioned on all other species in order to isolate the different opposing influences. For instance, given a triplet A, B, C such that A (resp. C) influences B positively (resp. negatively). If the same strength is applied by A and B we may observe that all pairs are independent, unless we evaluate the association $ A -> B $ conditioned on C and $C -> B$ conditioned on A. In any case, we still need separate observations where we could quantify both associations separately. \\
 
-Thereafter, we test the ability of the model to recover simulated associations. We find that the model is able to disentange positive, negative and neutral associations. But, it generates many spurious associations due to high levels of co-occurrence induced by the simulation model. As opposed to Joint Species Distribution Models, our model is able to recover positive associations between species with similar abiotic niches, for two reasons. First, it does not rely on residuals unexplained by the SDM. Instead, it conditions on the habitat suitability for both species hence the probability of them co-occurring would induce a potential for facilitation. Second, the association is evaluated on the basis of abundance variation in presence of the other species. \\ 
+Thereafter, we test the ability of the model to recover simulated associations. We find that the model is able to disentange positive, negative and neutral associations. But, it generates many spurious associations due to high levels of co-occurrence induced by the simulation model. Our model is able to recover positive associations between species with similar abiotic niches, for two reasons. First, it does not rely on residuals unexplained by the SDM. Instead, it conditions on the habitat suitability for both species hence the probability of them co-occurring would induce a potential for facilitation. Second, the association is evaluated on the basis of abundance variation in presence of the other species. \\ 
 
 Afterwards, we apply the inference model on plants distributed along a mesotopographical gradient in the French Alps. The associations identified by the algorithm conformed to most of the important specific relationships that we expect to find in the upland plant community (\cite{choler2001facilitation}), giving us confidence in the novel methods presented here. We observe more positive associations in extreme conditions (dry, windy or frozen) and negative ones in favorable sites, confirming the stress-gradient hypothesis (\cite{callaway2002positive}). We illustrate using the results on Aravo dataset some of the possibilities allowed by the model. For instance, we can use the association matrix to populate a network, study its modular structure through community detection algorithms and analyze the structural roles, including effect and response groups, occupied by species within communities. Such information is useful to evaluate the functional redundancy within communities. Second, we argue that the learnt representations can be related to functional traits of the species, providing the appropriate traits are measured, to identify the functional drivers of network structure. \\
 
 It is now agreed upon that inferred associations are not biological interactions. They represent significant spatial colocation or dislocation patterns, that are informative in a predictive rather than causal way (\cite{milns2010revealing}). The specific mechanism that led to these patterns may vary from pair to pair, ranging from direct interactions (e.g trophic), to indirect interactions (e.g engineering). \\
 
-The problem of inferring associations from co-occurrence is a major part of ecological modeling publications, as much as biomedical and bioinformatics literature. Existing approaches include JSDMs (\cite{ovaskainen2017make}) which rely on explaining residual correlations by biotic effects but cannot by design model asymmetric associations. Other major state of art methods are based on probabilistic graphical models including Markov Random Fields (\cite{harris2016inferring},\cite{chiquet2018variational}) and Bayesian networks (Mils, Trifonova, Aderhold et al 2012). The former yields undirected networks while the latter impose a directed acyclic structure to the network of associations forbiding feedbacks and the modeling of asymetric effects. \\
+The problem of inferring associations from co-occurrence is a major part of ecological modeling publications, as much as biomedical and bioinformatics literature. Existing approaches include JSDMs (\cite{ovaskainen2017make}) which rely on explaining residual correlations by biotic effects but cannot by design model asymmetric associations. Other major state of art methods are based on probabilistic graphical models including Markov Random Fields (\cite{harris2016inferring},\cite{chiquet2018variational}) and Bayesian networks (\cite{trifonova2015spatio} \cite{aderhold2012hierarchical}). The former yields undirected networks while the latter impose a directed acyclic structure to the network of associations forbidding feedbacks and the modeling of asymmetric effects. \\
 
 The most challenging part of this task is that it is completely unsupervised, with no prior or guidance on the expected associations or network. Hence, validating the resulting associations is tricky. It is still feasible to evaluate the veracity of the type of associations by using an edge classification scheme and a list of potential interactions as we've shown. However, it is far more difficult to validate the strength of associations especially when working with snapshot data. As many associations would have a strength around zero, it is also valuable to ask whether one should use higher thresholds to decrease the amount of spurious associations and increase model precision and how to select these thresholds ? Moreover, because many processes influence community assembly, multiple scenarios could lead to the same communities making this problem unidentifiable. In this case, we need not one expected list of associations but all the possible ones or a goodness-of-fit measure that accounts for equivalence between different association combinations. \\
 
@@ -461,25 +449,21 @@ A possible way to prevent the unidentifiability issue is to include known inform
 
 There is now growing evidence that ecological interactions are context-dependent (\cite{poisot2015beyond}, \cite{tikhonov2017using}), we show in appendix B how to infer associations whose strength is modulated by other covariates (e.g: stress, presence of predator, etc.) Recently developed models account for association variability as a function of the environmental context (Tikhonov et al 2017, Clark et al in prep). Despite the new possibilities offered by these developments, the question of how to validate their results still araises itself. \\
 
-Finally, although the main purpose of the model is to infer species associations, it is also useful to make conditional predictions of abundances. Another possible usage is to perform link prediction on an incomplete network. The idea is to complete the associations involving a target species by leveraging information from similar node species. \\ 
+Finally, the model is also useful to make conditional predictions of abundances. Another possible usage is to perform link prediction on an incomplete network. The idea is to complete the associations involving a target species by leveraging information from similar node species. \\ 
  
 \section{Conclusion}
 Biological interactions and other processes induce spatial patterns of co-occurrence. Our objective is to disentangle these processes and isolate species dependencies. We present a model of species co-abundances as a function of the habitat and biotic associations. We propose an asymetric scheme for modeling associations that is based on learning latent representations of species responses and effects. Future efforts should be directed towards a combination of prior knowledge on the complete or partial topology of the association networks to guide the inference process. Along with that, a strong theory of how known ecological interactions influence the co-distribution of species is needed to support all these models.   
 
 \appendix
 
-\section{Derivatives of the optimized objective}
-\label{sec:derivatives}
-Canonic derivatives (refer to Liping liu et al 2017). 
-
 \section{Extensions of the biotic context definition}
 \label{sec:alt-bio}
 
 \subsection{Adding conditioning covariates}
-In the base model, the estimation of any pairwise interaction is oblivious to the abiotic or biotic conditions surrounding it. To account for these neighborhood conditions, we extend the base model by allowing the embeddings used to represent the biotic context to depend on some chosen variables.
+In the base model, the estimation of any pairwise interaction is oblivious to the abiotic or biotic conditions surrounding it. To account for these neighborhood conditions, we extend the base model by allowing the embeddings used to represent the biotic context to depend on some chosen variables.\\
 
 Each site is associated to $p$ conditioning covariates, These covariates are stored alongside an offset in a $n \times (p+1)$ matrix $V$, such that each of the first $p$ columns of $V$ contains the values of the corresponding covariate for the different sites while the last column is filled with ones. 
-Then, given an embedding dimension $d$, the covariates are mapped to $d$ dimensions by applying a regression with a weight matrix $W \in \mathbb{R}^{d \times (p+1)}$. The resulting conditioning vectors are such that $\condv_\site = Wv^{T}_{\site}$.
+Then, given an embedding dimension $d$, the covariates are mapped to $d$ dimensions by applying a regression with a weight matrix $W \in \mathbb{R}^{d \times (p+1)}$. The resulting conditioning vectors are such that $\condv_\site = Wv^{T}_{\site}$.\\
 
 The extended biotic context is then written as follows, where $\odot$ is the element-wise vector product: 
 \begin{equation*}
@@ -518,7 +502,7 @@ One can use multiple radius values customized to the dispersal abilities of each
 %space for time substitution, dispersal mechanisms (negative context and competition)
 
 \subsection{Graph extension}
-So far, we defined the biotic context using the community composition in terms of species, possibly involving their abundances. At this point, we are able to capture pairwise additive effects. However, we miss the impact of interactions between context species or the whole network structure around the target location on the abundance distribution of the target group. 
+So far, we defined the biotic context using the community composition in terms of species, possibly involving their abundances. At this point, we are able to capture pairwise additive effects. However, we miss the impact of interactions between context species or the whole network structure around the target location on the abundance distribution of the target group, \emph{contextual network}.\\ 
 
 Fortunately, graph embedding algorithms permit the incorporation of structured data such as knowledge graphs into predictive models. For instance, we can redefine the biotic context as the interaction network at site of interest $\site$ minus the target species $\spc$, noted $G_{\site/\spc}$. The context embedding is then obtained by applying a graph kernel function $\krnf$ with parameter $\theta$ on the contextual network
 

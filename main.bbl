@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{aderhold2012hierarchical}
+{\sc Aderhold, A., Husmeier, D., Lennon, J.~J., Beale, C.~M., and Smith, V.~A.}
+\newblock Hierarchical bayesian models in ecology: reconstructing species
+  interaction networks from non-homogeneous species abundance data.
+\newblock {\em Ecological Informatics 11\/} (2012), 55--64.
+
 \bibitem{callaway2002positive}
 {\sc Callaway, R.~M., Brooker, R., Choler, P., Kikvidze, Z., Lortie, C.~J.,
   Michalet, R., Paolini, L., Pugnaire, F.~I., Newingham, B., Aschehoug, E.~T.,
@@ -42,6 +48,12 @@
   across space and time.
 \newblock {\em Annual review of ecology, evolution, and systematics 40\/}
   (2009), 677--697.
+
+\bibitem{faisal2010inferring}
+{\sc Faisal, A., Dondelinger, F., Husmeier, D., and Beale, C.~M.}
+\newblock Inferring species interaction networks from species abundance data: A
+  comparative evaluation of various statistical and machine learning methods.
+\newblock {\em Ecological Informatics 5}, 6 (2010), 451--464.
 
 \bibitem{gauzens2015trophic}
 {\sc Gauzens, B., Th{\'e}bault, E., Lacroix, G., and Legendre, S.}
@@ -88,6 +100,11 @@
 \newblock In {\em Cold Spring Harbor Symposia on Quantitative Biology\/}
   (1957), vol.~22, pp.~415--421.
 
+\bibitem{koller2009probabilistic}
+{\sc Koller, D., and Friedman, N.}
+\newblock {\em Probabilistic graphical models: principles and techniques}.
+\newblock MIT press, 2009.
+
 \bibitem{lany2018asymmetric}
 {\sc Lany, N.~K., Zarnetske, P.~L., Schliep, E.~M., Schaeffer, R.~N., Orians,
   C.~M., Orwig, D.~A., and Preisser, E.~L.}
@@ -100,6 +117,14 @@
 \newblock Zero-inflated exponential family embeddings.
 \newblock In {\em Proceedings of the 34th International Conference on Machine
   Learning-Volume 70\/} (2017), JMLR. org, pp.~2140--2148.
+
+\bibitem{majdi2018there}
+{\sc Majdi, N., Hette-Tronquart, N., Auclair, E., Bec, A., Chouvelon, T.,
+  Cognie, B., Danger, M., Decottignies, P., Dessier, A., Desvilettes, C.,
+  et~al.}
+\newblock There's no harm in having too much: A comprehensive toolbox of
+  methods in trophic ecology.
+\newblock {\em Food webs 17\/} (2018), e00100.
 
 \bibitem{mikolov2013distributed}
 {\sc Mikolov, T., Sutskever, I., Chen, K., Corrado, G.~S., and Dean, J.}
@@ -120,12 +145,25 @@
 \newblock {\em Proceedings of the national academy of sciences 103}, 23 (2006),
   8577--8582.
 
+\bibitem{ohlmann2018mapping}
+{\sc Ohlmann, M., Mazel, F., Chalmandrier, L., Bec, S., Coissac, E., Gielly,
+  L., Pansu, J., Schilling, V., Taberlet, P., Zinger, L., et~al.}
+\newblock Mapping the imprint of biotic interactions on $\beta$-diversity.
+\newblock {\em Ecology letters 21}, 11 (2018), 1660--1669.
+
 \bibitem{ovaskainen2017make}
 {\sc Ovaskainen, O., Tikhonov, G., Norberg, A., Guillaume~Blanchet, F., Duan,
   L., Dunson, D., Roslin, T., and Abrego, N.}
 \newblock How to make more out of community data? a conceptual framework and
   its implementation as models and software.
 \newblock {\em Ecology Letters 20}, 5 (2017), 561--576.
+
+\bibitem{pilosof2014host}
+{\sc Pilosof, S., Fortuna, M.~A., Cosson, J.-F., Galan, M., Kittipong, C.,
+  Ribas, A., Segal, E., Krasnov, B.~R., Morand, S., and Bascompte, J.}
+\newblock Host--parasite network structure is associated with community-level
+  immunogenetic diversity.
+\newblock {\em Nature communications 5\/} (2014), 5172.
 
 \bibitem{poisot2015beyond}
 {\sc Poisot, T., Stouffer, D.~B., and Gravel, D.}
@@ -178,6 +216,13 @@
 \newblock Using joint species distribution models for evaluating how
   species-to-species associations depend on the environmental context.
 \newblock {\em Methods in Ecology and Evolution 8}, 4 (2017), 443--452.
+
+\bibitem{trifonova2015spatio}
+{\sc Trifonova, N., Kenny, A., Maxwell, D., Duplisea, D., Fernandes, J., and
+  Tucker, A.}
+\newblock Spatio-temporal bayesian network models with latent variables for
+  revealing trophic dynamics and functional networks in fisheries ecology.
+\newblock {\em Ecological informatics 30\/} (2015), 142--158.
 
 \bibitem{wisz2013role}
 {\sc Wisz, M.~S., Pottier, J., Kissling, W.~D., Pellissier, L., Lenoir, J.,

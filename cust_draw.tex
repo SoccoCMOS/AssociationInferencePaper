@@ -60,11 +60,11 @@
 \definecolor{TolSeqH}{HTML}{993404}
 \definecolor{TolSeqI}{HTML}{662506}
 
-\definecolor{colMut}{HTML}{404096}
-\definecolor{colCom}{HTML}{529DB7}
+\definecolor{colCmp}{HTML}{404096}
+\definecolor{colAm}{HTML}{529DB7}
 \definecolor{colTro}{HTML}{7DB874} 
-\definecolor{colAm}{HTML}{E39C37}
-\definecolor{colCmp}{HTML}{D92120}
+\definecolor{colCom}{HTML}{E39C37}
+\definecolor{colMut}{HTML}{D92120}
 
 
 \tikzstyle{plate circ} = [style={draw, circle, minimum width=2.2em, minimum height=2.2em, inner sep=1, outer sep=1}]
@@ -84,13 +84,13 @@
 \tikzstyle{sctSs} = [style={draw, thick, rectangle, inner sep=2}]
 \tikzstyle{sctDs} = [style={fill, rectangle, inner sep=2, opacity=0.8}]
 
-\colorlet{cs5P}{TolDivA!40}
-\colorlet{cs10P}{TolDivA!70}
-\colorlet{cs20P}{TolDivA}
+\colorlet{cs5P}{TolDivK!40}
+\colorlet{cs10P}{TolDivK!70}
+\colorlet{cs20P}{TolDivK}
 
-\colorlet{cs5N}{TolDivK!40}
-\colorlet{cs10N}{TolDivK!70}
-\colorlet{cs20N}{TolDivK}
+\colorlet{cs5N}{TolDivA!40}
+\colorlet{cs10N}{TolDivA!70}
+\colorlet{cs20N}{TolDivA}
 
 % \colorlet{cs5p1}{TolDivK}
 % \colorlet{cs10p1}{TolDivJ}
@@ -98,22 +98,22 @@
 
 
 \pgfplotscreateplotcyclelist{divBlue}{% 
-{TolDivA, fill=TolDivA, fill opacity=0.8},
-{TolDivB, fill=TolDivB, fill opacity=0.8},
-{TolDivC, fill=TolDivC, fill opacity=0.8},
-{TolDivD, fill=TolDivD, fill opacity=0.8}}
+	{TolDivA, fill=TolDivA, fill opacity=0.8},
+	{TolDivB, fill=TolDivB, fill opacity=0.8},
+	{TolDivC, fill=TolDivC, fill opacity=0.8},
+	{TolDivD, fill=TolDivD, fill opacity=0.8}}
 
 \pgfplotscreateplotcyclelist{divRed}{% 
-{TolDivK, fill=TolDivK, fill opacity=0.8},
-{TolDivJ, fill=TolDivJ, fill opacity=0.8},
-{TolDivI, fill=TolDivI, fill opacity=0.8},
-{TolDivH, fill=TolDivH, fill opacity=0.8}}
+	{TolDivK, fill=TolDivK, fill opacity=0.8},
+	{TolDivJ, fill=TolDivJ, fill opacity=0.8},
+	{TolDivI, fill=TolDivI, fill opacity=0.8},
+	{TolDivH, fill=TolDivH, fill opacity=0.8}}
 
 \pgfplotscreateplotcyclelist{divG}{%
-  {darkgrey, fill=darkgrey, fill opacity=0.6},
-  {darkgrey, fill=darkgrey, fill opacity=0.6},
-  {darkgrey, fill=darkgrey, fill opacity=0.6},
-  {darkgrey, fill=darkgrey, fill opacity=0.6}}
+	{darkgrey, fill=darkgrey, fill opacity=0.6},
+	{darkgrey, fill=darkgrey, fill opacity=0.6},
+	{darkgrey, fill=darkgrey, fill opacity=0.6},
+	{darkgrey, fill=darkgrey, fill opacity=0.6}}
 
 
 \pgfplotsset{
@@ -121,14 +121,14 @@
 	clip = false,
 	clip marker paths = true,
 	tick align=outside,
-    tick align=inside,
-    xtick pos=left,
-    ytick pos=left,
+	tick align=inside,
+	xtick pos=left,
+	ytick pos=left,
 	x tick label style = {yshift=-1em, anchor=base},
 	major tick length = 2pt,
-    %every axis y label/.style = {at = {(ticklabel cs:0.5)}, rotate=90, anchor=center, font=\scriptsize, xshift = -2pt},
+	%every axis y label/.style = {at = {(ticklabel cs:0.5)}, rotate=90, anchor=center, font=\scriptsize, xshift = -2pt},
 	%every axis x label/.style = {at = {(ticklabel cs:0.5)}, anchor=base center, font=\scriptsize, yshift = -2pt},
-%	axis y line*=left, axis x line*=bottom,
+	%	axis y line*=left, axis x line*=bottom,
 }
 
 %%% Local Variables:

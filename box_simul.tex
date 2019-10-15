@@ -1,66 +1,66 @@
-\colorlet{drP}{TolDivA}
-\colorlet{drN}{TolDivK}
+\colorlet{drP}{TolDivK}
+\colorlet{drN}{TolDivA}
 
 \newcommand{\srsfile}[2]{xps/data_simul_#1#2.csv}
 %%% group/nb species/density/column/offset
 \newcommand{\boxblock}[5]{
-\foreach \s [count=\j] in {S,D}{%
-  \foreach \d [count=\k] in {#3}{%
-    \ifthenelse{\equal{#3}{s} \OR \equal{#3}{a}}{%
-      \pgfmathsetmacro{\markx}{1.5*(\j-1)+#5}%
-    }{%
-      \pgfmathsetmacro{\markx}{2.5*(\j-1)+(\k-1)+#5}%
-    }%
-    \addplot +[boxplot={draw position={\markx}}] table [y index=#4, col sep=comma] {\srsfile{#1\s\d}{#2O}};
-    \ifthenelse{\equal{#1}{F} \OR \equal{#1}{B}}{%
-      \addplot +[only marks, drP, mark size=1.5pt] table [x expr={\markx-.22}, y index=#4, col sep=comma] {\srsfile{#1\s\d}{#2P}};%
-    }{}%
-    \ifthenelse{\equal{#1}{C} \OR \equal{#1}{B}}{%
-      \addplot +[only marks, drN, mark size=1.5pt] table [x expr={\markx+.22}, y index=#4, col sep=comma] {\srsfile{#1\s\d}{#2N}};%
-    }{}%
-  }
-}
+	\foreach \s [count=\j] in {S,D}{%
+		\foreach \d [count=\k] in {#3}{%
+			\ifthenelse{\equal{#3}{s} \OR \equal{#3}{a}}{%
+				\pgfmathsetmacro{\markx}{1.5*(\j-1)+#5}%
+			}{%
+				\pgfmathsetmacro{\markx}{2.5*(\j-1)+(\k-1)+#5}%
+			}%
+			\addplot +[boxplot={draw position={\markx}}] table [y index=#4, col sep=comma] {\srsfile{#1\s\d}{#2O}};
+			\ifthenelse{\equal{#1}{F} \OR \equal{#1}{B}}{%
+				\addplot +[only marks, drP, mark size=1.5pt] table [x expr={\markx-.22}, y index=#4, col sep=comma] {\srsfile{#1\s\d}{#2P}};%
+			}{}%
+			\ifthenelse{\equal{#1}{C} \OR \equal{#1}{B}}{%
+				\addplot +[only marks, drN, mark size=1.5pt] table [x expr={\markx+.22}, y index=#4, col sep=comma] {\srsfile{#1\s\d}{#2N}};%
+			}{}%
+		}
+	}
 }
 
 \begin{tikzpicture}%[trim axis left, trim axis right]
 \begin{axis}[width=\textwidth, height = 0.3*\textwidth,
-  xtick pos=both,
-  xtick={-4, -3, -2, 0, 1.5, 3.5, 4.5, 6.0, 7.0, 9.0, 10.0, 11.5, 12.5, 15.0, 16.5, 18.5, 19.5, 21.0, 22.0, 24.0, 25.0, 26.5, 27.5, 30.0, 31.5, 33.5, 35.0, 37.0, 38.5},
-  xticklabel pos=right,
-  xticklabel style={anchor=south},
-  xticklabels={},
-  ytick={20,50,80},  
-  yticklabels={$0.2$,$0.5$,$.8$},
-  xmin=-5.5,
-  xmax=40,
-  ymin=0,
-  ymax=100,
-  cycle list name=divG,
-  %every boxplot/.style = {darkgrey, fill=midgrey, fill opacity=0.6},
-  boxplot/draw direction=y,
-  % boxplot={
-  %   draw position={\plotnumofactualtype}, %/2) + 1/3*mod(\plotnumofactualtype,2)},
-  %   % draw position={1/3}, % + floor(\plotnumofactualtype/2) + 1/3*mod(\plotnumofactualtype,2)},
-  %   % box extend=0.3
-  % },
-  %   xlabel = {},
-  ylabel = {\evJoc}
-  ]
-  \addplot +[boxplot={draw position={-4}}] table [y index=0, col sep=comma] {\srsfile{EDs}{5O}};
-  \addplot +[boxplot={draw position={-3}}] table [y index=0, col sep=comma] {\srsfile{EDs}{10O}};
-  \addplot +[boxplot={draw position={-2}}] table [y index=0, col sep=comma] {\srsfile{EDs}{20O}};
+xtick pos=both,
+xtick={-4, -3, -2, 0, 1.5, 3.5, 4.5, 6.0, 7.0, 9.0, 10.0, 11.5, 12.5, 15.0, 16.5, 18.5, 19.5, 21.0, 22.0, 24.0, 25.0, 26.5, 27.5, 30.0, 31.5, 33.5, 35.0, 37.0, 38.5},
+xticklabel pos=right,
+xticklabel style={anchor=south},
+xticklabels={},
+ytick={20,50,80},  
+yticklabels={$0.2$,$0.5$,$.8$},
+xmin=-5.5,
+xmax=40,
+ymin=0,
+ymax=100,
+cycle list name=divG,
+%every boxplot/.style = {darkgrey, fill=midgrey, fill opacity=0.6},
+boxplot/draw direction=y,
+% boxplot={
+%   draw position={\plotnumofactualtype}, %/2) + 1/3*mod(\plotnumofactualtype,2)},
+%   % draw position={1/3}, % + floor(\plotnumofactualtype/2) + 1/3*mod(\plotnumofactualtype,2)},
+%   % box extend=0.3
+% },
+%   xlabel = {},
+ylabel = {\evJoc}
+]
+\addplot +[boxplot={draw position={-4}}] table [y index=0, col sep=comma] {\srsfile{EDs}{5O}};
+\addplot +[boxplot={draw position={-3}}] table [y index=0, col sep=comma] {\srsfile{EDs}{10O}};
+\addplot +[boxplot={draw position={-2}}] table [y index=0, col sep=comma] {\srsfile{EDs}{20O}};
 
-  \boxblock{F}{5}{s}{0}{0}%
-  \boxblock{F}{10}{a,s}{0}{3.5}%
-  \boxblock{F}{20}{a,s}{0}{9}%
+\boxblock{F}{5}{s}{0}{0}%
+\boxblock{F}{10}{a,s}{0}{3.5}%
+\boxblock{F}{20}{a,s}{0}{9}%
 
-  \boxblock{C}{5}{s}{0}{15}%
-  \boxblock{C}{10}{a,s}{0}{18.5}%
-  \boxblock{C}{20}{a,s}{0}{24}%
+\boxblock{C}{5}{s}{0}{15}%
+\boxblock{C}{10}{a,s}{0}{18.5}%
+\boxblock{C}{20}{a,s}{0}{24}%
 
-  \boxblock{B}{5}{s}{0}{30}%
-  \boxblock{B}{10}{s}{0}{33.5}%
-  \boxblock{B}{20}{s}{0}{37}%
+\boxblock{B}{5}{s}{0}{30}%
+\boxblock{B}{10}{s}{0}{33.5}%
+\boxblock{B}{20}{s}{0}{37}%
 
 \coordinate (tO) at (axis cs:-5.5,100) {};%
 \coordinate (tEDs5) at (axis cs:-4,100) {};%
@@ -94,78 +94,78 @@
 \coordinate (tBDs20) at (axis cs:38.5,100) {};%
 \end{axis}
 \begin{axis}[width=\textwidth, height = 0.3*\textwidth, at={(0,-0.18*\textwidth)},
-  xtick pos=both,
-  xtick={-4, -3, -2, 0, 1.5, 3.5, 4.5, 6.0, 7.0, 9.0, 10.0, 11.5, 12.5, 15.0, 16.5, 18.5, 19.5, 21.0, 22.0, 24.0, 25.0, 26.5, 27.5, 30.0, 31.5, 33.5, 35.0, 37.0, 38.5},
-  xticklabels={},
-  ytick={-4,0,4},  
-  yticklabels={$-4$,$0$,$4$},
-  xmin=-5.5,
-  xmax=40,
-  ymin=-7,
-  ymax=5,
-  cycle list name=divG,
-  %every boxplot/.style = {darkgrey, fill=midgrey, fill opacity=0.6},
-  boxplot/draw direction=y,
-  % boxplot={
-  %   draw position={\plotnumofactualtype}, %/2) + 1/3*mod(\plotnumofactualtype,2)},
-  %   % draw position={1/3}, % + floor(\plotnumofactualtype/2) + 1/3*mod(\plotnumofactualtype,2)},
-  %   % box extend=0.3
-  % },
-  %   xlabel = {},
-  ylabel = {\evRAI}
-  ]
-  \addplot +[boxplot={draw position={-4}}] table [y index=1, col sep=comma] {\srsfile{EDs}{5O}};
-  \addplot +[boxplot={draw position={-3}}] table [y index=1, col sep=comma] {\srsfile{EDs}{10O}};
-  \addplot +[boxplot={draw position={-2}}] table [y index=1, col sep=comma] {\srsfile{EDs}{20O}};
-  
-  \boxblock{F}{5}{s}{1}{0}%
-  \boxblock{F}{10}{a,s}{1}{3.5}%
-  \boxblock{F}{20}{a,s}{1}{9}%
+xtick pos=both,
+xtick={-4, -3, -2, 0, 1.5, 3.5, 4.5, 6.0, 7.0, 9.0, 10.0, 11.5, 12.5, 15.0, 16.5, 18.5, 19.5, 21.0, 22.0, 24.0, 25.0, 26.5, 27.5, 30.0, 31.5, 33.5, 35.0, 37.0, 38.5},
+xticklabels={},
+ytick={-4,0,4},  
+yticklabels={$-4$,$0$,$4$},
+xmin=-5.5,
+xmax=40,
+ymin=-7,
+ymax=5,
+cycle list name=divG,
+%every boxplot/.style = {darkgrey, fill=midgrey, fill opacity=0.6},
+boxplot/draw direction=y,
+% boxplot={
+%   draw position={\plotnumofactualtype}, %/2) + 1/3*mod(\plotnumofactualtype,2)},
+%   % draw position={1/3}, % + floor(\plotnumofactualtype/2) + 1/3*mod(\plotnumofactualtype,2)},
+%   % box extend=0.3
+% },
+%   xlabel = {},
+ylabel = {\evRAI}
+]
+\addplot +[boxplot={draw position={-4}}] table [y index=1, col sep=comma] {\srsfile{EDs}{5O}};
+\addplot +[boxplot={draw position={-3}}] table [y index=1, col sep=comma] {\srsfile{EDs}{10O}};
+\addplot +[boxplot={draw position={-2}}] table [y index=1, col sep=comma] {\srsfile{EDs}{20O}};
 
-  \boxblock{C}{5}{s}{1}{15}%
-  \boxblock{C}{10}{a,s}{1}{18.5}%
-  \boxblock{C}{20}{a,s}{1}{24}%
+\boxblock{F}{5}{s}{1}{0}%
+\boxblock{F}{10}{a,s}{1}{3.5}%
+\boxblock{F}{20}{a,s}{1}{9}%
 
-  \boxblock{B}{5}{s}{1}{30}%
-  \boxblock{B}{10}{s}{1}{33.5}%
-  \boxblock{B}{20}{s}{1}{37}%
+\boxblock{C}{5}{s}{1}{15}%
+\boxblock{C}{10}{a,s}{1}{18.5}%
+\boxblock{C}{20}{a,s}{1}{24}%
+
+\boxblock{B}{5}{s}{1}{30}%
+\boxblock{B}{10}{s}{1}{33.5}%
+\boxblock{B}{20}{s}{1}{37}%
 \end{axis}
 \begin{axis}[width=\textwidth, height = 0.3*\textwidth, at={(0,-0.36*\textwidth)},
-  xtick pos=both,
-  xtick={-4, -3, -2, 0, 1.5, 3.5, 4.5, 6.0, 7.0, 9.0, 10.0, 11.5, 12.5, 15.0, 16.5, 18.5, 19.5, 21.0, 22.0, 24.0, 25.0, 26.5, 27.5, 30.0, 31.5, 33.5, 35.0, 37.0, 38.5},
-  xticklabels={},
-  ytick={-4,0,4},  
-  yticklabels={$-4$,$0$,$4$},
-  xmin=-5.5,
-  xmax=40,
-  ymin=-6,
-  ymax=6,
-  cycle list name=divG,
-  %every boxplot/.style = {darkgrey, fill=midgrey, fill opacity=0.6},
-  boxplot/draw direction=y,
-  % boxplot={
-  %   draw position={\plotnumofactualtype}, %/2) + 1/3*mod(\plotnumofactualtype,2)},
-  %   % draw position={1/3}, % + floor(\plotnumofactualtype/2) + 1/3*mod(\plotnumofactualtype,2)},
-  %   % box extend=0.3
-  % },
-  %   xlabel = {},
-  ylabel = {\evStr}
-  ]
-  \addplot +[boxplot={draw position={-4}}] table [y index=2, col sep=comma] {\srsfile{EDs}{5O}};
-  \addplot +[boxplot={draw position={-3}}] table [y index=2, col sep=comma] {\srsfile{EDs}{10O}};
-  \addplot +[boxplot={draw position={-2}}] table [y index=2, col sep=comma] {\srsfile{EDs}{20O}};
+xtick pos=both,
+xtick={-4, -3, -2, 0, 1.5, 3.5, 4.5, 6.0, 7.0, 9.0, 10.0, 11.5, 12.5, 15.0, 16.5, 18.5, 19.5, 21.0, 22.0, 24.0, 25.0, 26.5, 27.5, 30.0, 31.5, 33.5, 35.0, 37.0, 38.5},
+xticklabels={},
+ytick={-4,0,4},  
+yticklabels={$-4$,$0$,$4$},
+xmin=-5.5,
+xmax=40,
+ymin=-6,
+ymax=6,
+cycle list name=divG,
+%every boxplot/.style = {darkgrey, fill=midgrey, fill opacity=0.6},
+boxplot/draw direction=y,
+% boxplot={
+%   draw position={\plotnumofactualtype}, %/2) + 1/3*mod(\plotnumofactualtype,2)},
+%   % draw position={1/3}, % + floor(\plotnumofactualtype/2) + 1/3*mod(\plotnumofactualtype,2)},
+%   % box extend=0.3
+% },
+%   xlabel = {},
+ylabel = {\evStr}
+]
+\addplot +[boxplot={draw position={-4}}] table [y index=2, col sep=comma] {\srsfile{EDs}{5O}};
+\addplot +[boxplot={draw position={-3}}] table [y index=2, col sep=comma] {\srsfile{EDs}{10O}};
+\addplot +[boxplot={draw position={-2}}] table [y index=2, col sep=comma] {\srsfile{EDs}{20O}};
 
-  \boxblock{F}{5}{s}{2}{0}%
-  \boxblock{F}{10}{a,s}{2}{3.5}%
-  \boxblock{F}{20}{a,s}{2}{9}%
+\boxblock{F}{5}{s}{2}{0}%
+\boxblock{F}{10}{a,s}{2}{3.5}%
+\boxblock{F}{20}{a,s}{2}{9}%
 
-  \boxblock{C}{5}{s}{2}{15}%
-  \boxblock{C}{10}{a,s}{2}{18.5}%
-  \boxblock{C}{20}{a,s}{2}{24}%
+\boxblock{C}{5}{s}{2}{15}%
+\boxblock{C}{10}{a,s}{2}{18.5}%
+\boxblock{C}{20}{a,s}{2}{24}%
 
-  \boxblock{B}{5}{s}{2}{30}%
-  \boxblock{B}{10}{s}{2}{33.5}%
-  \boxblock{B}{20}{s}{2}{37}%
+\boxblock{B}{5}{s}{2}{30}%
+\boxblock{B}{10}{s}{2}{33.5}%
+\boxblock{B}{20}{s}{2}{37}%
 
 \coordinate (bO) at (axis cs:-5.5,-6) {};%
 \coordinate (bEDs5) at (axis cs:-4,-6) {};%
@@ -200,46 +200,46 @@
 \end{axis}
 % \draw[red] (0,0) -- (.9*\textwidth, 0);
 \foreach \ni/\x/\g/\m/\d/\s/\nO/\nP/\nN [count=\i] in {%
-{EDs5}/{-4}/{E}/{5}/{D}/{s}/{20}/{-}/{-},%
-{EDs10}/{-3}/{E}/{10}/{D}/{s}/{90}/{-}/{-},%
-{EDs20}/{-2}/{E}/{20}/{D}/{s}/{380}/{-}/{-},%
-{FSs5}/{0.0}/{F}/{5}/{S}/{s}/{18}/{2}/{-},%
-{FDs5}/{1.5}/{F}/{5}/{D}/{s}/{16}/{4}/{-},%
-{FSs10}/{3.5}/{F}/{10}/{S}/{s}/{86}/{4}/{-},%
-{FSa10}/{4.5}/{F}/{10}/{S}/{a}/{87}/{3}/{-},%
-{FDs10}/{6.0}/{F}/{10}/{D}/{s}/{80}/{10}/{-},%
-{FDa10}/{7.0}/{F}/{10}/{D}/{a}/{83}/{7}/{-},%
-{FSs20}/{9.0}/{F}/{20}/{S}/{s}/{372}/{8}/{-},%
-{FSa20}/{10.0}/{F}/{20}/{S}/{a}/{374}/{6}/{-},%
-{FDs20}/{11.5}/{F}/{20}/{D}/{s}/{360}/{20}/{-},%
-{FDa20}/{12.5}/{F}/{20}/{D}/{a}/{365}/{15}/{-},%
-{CSs5}/{15.0}/{C}/{5}/{S}/{s}/{18}/{-}/{2},%
-{CDs5}/{16.5}/{C}/{5}/{D}/{s}/{16}/{-}/{4},%
-{CSs10}/{18.5}/{C}/{10}/{S}/{s}/{86}/{-}/{4},%
-{CSa10}/{19.5}/{C}/{10}/{S}/{a}/{87}/{-}/{3},%
-{CDs10}/{21.0}/{C}/{10}/{D}/{s}/{80}/{-}/{10},%
-{CDa10}/{22.0}/{C}/{10}/{D}/{a}/{82}/{-}/{8},%
-{CSs20}/{24.0}/{C}/{20}/{S}/{s}/{372}/{-}/{8},%
-{CSa20}/{25.0}/{C}/{20}/{S}/{a}/{373}/{-}/{7},%
-{CDs20}/{26.5}/{C}/{20}/{D}/{s}/{360}/{-}/{20},%
-{CDa20}/{27.5}/{C}/{20}/{D}/{a}/{365}/{-}/{15},%
-{BSs5}/{30.0}/{B}/{5}/{S}/{s}/{16}/{2}/{2},%
-{BDs5}/{31.5}/{B}/{5}/{D}/{s}/{12}/{4}/{4},%
-{BSs10}/{33.5}/{B}/{10}/{S}/{s}/{82}/{4}/{4},%
-{BDs10}/{35.0}/{B}/{10}/{D}/{s}/{70}/{10}/{10},%
-{BSs20}/{37.0}/{B}/{20}/{S}/{s}/{364}/{8}/{8},%
-{BDs20}/{38.5}/{B}/{20}/{D}/{s}/{344}/{18}/{18}%
+	{EDs5}/{-4}/{E}/{5}/{D}/{s}/{20}/{-}/{-},%
+	{EDs10}/{-3}/{E}/{10}/{D}/{s}/{90}/{-}/{-},%
+	{EDs20}/{-2}/{E}/{20}/{D}/{s}/{380}/{-}/{-},%
+	{FSs5}/{0.0}/{F}/{5}/{S}/{s}/{18}/{2}/{-},%
+	{FDs5}/{1.5}/{F}/{5}/{D}/{s}/{16}/{4}/{-},%
+	{FSs10}/{3.5}/{F}/{10}/{S}/{s}/{86}/{4}/{-},%
+	{FSa10}/{4.5}/{F}/{10}/{S}/{a}/{87}/{3}/{-},%
+	{FDs10}/{6.0}/{F}/{10}/{D}/{s}/{80}/{10}/{-},%
+	{FDa10}/{7.0}/{F}/{10}/{D}/{a}/{83}/{7}/{-},%
+	{FSs20}/{9.0}/{F}/{20}/{S}/{s}/{372}/{8}/{-},%
+	{FSa20}/{10.0}/{F}/{20}/{S}/{a}/{374}/{6}/{-},%
+	{FDs20}/{11.5}/{F}/{20}/{D}/{s}/{360}/{20}/{-},%
+	{FDa20}/{12.5}/{F}/{20}/{D}/{a}/{365}/{15}/{-},%
+	{CSs5}/{15.0}/{C}/{5}/{S}/{s}/{18}/{-}/{2},%
+	{CDs5}/{16.5}/{C}/{5}/{D}/{s}/{16}/{-}/{4},%
+	{CSs10}/{18.5}/{C}/{10}/{S}/{s}/{86}/{-}/{4},%
+	{CSa10}/{19.5}/{C}/{10}/{S}/{a}/{87}/{-}/{3},%
+	{CDs10}/{21.0}/{C}/{10}/{D}/{s}/{80}/{-}/{10},%
+	{CDa10}/{22.0}/{C}/{10}/{D}/{a}/{82}/{-}/{8},%
+	{CSs20}/{24.0}/{C}/{20}/{S}/{s}/{372}/{-}/{8},%
+	{CSa20}/{25.0}/{C}/{20}/{S}/{a}/{373}/{-}/{7},%
+	{CDs20}/{26.5}/{C}/{20}/{D}/{s}/{360}/{-}/{20},%
+	{CDa20}/{27.5}/{C}/{20}/{D}/{a}/{365}/{-}/{15},%
+	{BSs5}/{30.0}/{B}/{5}/{S}/{s}/{16}/{2}/{2},%
+	{BDs5}/{31.5}/{B}/{5}/{D}/{s}/{12}/{4}/{4},%
+	{BSs10}/{33.5}/{B}/{10}/{S}/{s}/{82}/{4}/{4},%
+	{BDs10}/{35.0}/{B}/{10}/{D}/{s}/{70}/{10}/{10},%
+	{BSs20}/{37.0}/{B}/{20}/{S}/{s}/{364}/{8}/{8},%
+	{BDs20}/{38.5}/{B}/{20}/{D}/{s}/{344}/{18}/{18}%
 }{%
-  \node (c\ni) at (b\ni) {}; % {\g};
-  \node[yshift=.5em] (l\ni) at (t\ni) {};
-  \node[yshift=1em] (sp\ni) at (t\ni) {};
-  \node[yshift=2.5em] (md\ni) at (t\ni) {};
-  \node[font=\tiny, rotate=90, anchor=east] at (c\ni) {$\nO$};
-  \ifthenelse{\equal{\g}{E}}{}{%
-    \node[sct\d\s] at (l\ni) {};
-    \node[font=\tiny, anchor=east, yshift=-1.3em, rotate=90] at (c\ni) {$\nP/\nN$};
-  }
-  % \node[below of=\ni] {\g\m\d\s};
+	\node (c\ni) at (b\ni) {}; % {\g};
+	\node[yshift=.5em] (l\ni) at (t\ni) {};
+	\node[yshift=1em] (sp\ni) at (t\ni) {};
+	\node[yshift=2.5em] (md\ni) at (t\ni) {};
+	\node[font=\tiny, rotate=90, anchor=east] at (c\ni) {$\nO$};
+	\ifthenelse{\equal{\g}{E}}{}{%
+		\node[sct\d\s] at (l\ni) {};
+		\node[font=\tiny, anchor=east, yshift=-1.3em, rotate=90] at (c\ni) {$\nP/\nN$};
+	}
+	% \node[below of=\ni] {\g\m\d\s};
 }
 \node[yshift=.5em] (lO) at (tO) {};
 \node[yshift=1em] (spO) at (tO) {};

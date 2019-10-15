@@ -1,0 +1,2343 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.15)  15 OCT 2019 13:31
+entering extended mode
+**./tikz_figures.tex
+(tikz_figures.tex
+LaTeX2e <2017-04-15>
+Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cl
+s"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (cust_defs.tex
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath
+.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext
+.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.
+sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.
+sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.
+sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks15
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssym
+b.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfon
+ts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphi
+cx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval
+.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphi
+cs.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.s
+ty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\gr
+aphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pd
+ftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcapt
+ion.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption
+.sty"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption
+3.sty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@caption@flags=\count99
+\c@ContinuedFloat=\count100
+)
+\c@subfigure=\count101
+\c@subtable=\count102
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks20
+\float@box=\box28
+\@float@everytoks=\toks21
+\@floatcapt=\box29
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperr
+ef.sty"
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobs
+ub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobs
+ub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxet
+ex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhoo
+k.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvopti
+ons.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen121
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc
+.def"
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count106
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperr
+ef.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count107
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen122
+\Fld@menulength=\count108
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count109
+\c@Item=\count110
+\c@Hfootnote=\count111
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdfte
+x.def"
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count112
+\c@bookmark@seq@number=\count113
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunf
+ilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip46
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\bookta
+bs.sty"
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+\heavyrulewidth=\dimen125
+\lightrulewidth=\dimen126
+\cmidrulewidth=\dimen127
+\belowrulesep=\dimen128
+\belowbottomsep=\dimen129
+\aboverulesep=\dimen130
+\abovetopsep=\dimen131
+\cmidrulesep=\dimen132
+\cmidrulekern=\dimen133
+\defaultaddspace=\dimen134
+\@cmidla=\count114
+\@cmidlb=\count115
+\@aboverulesep=\dimen135
+\@belowrulesep=\dimen136
+\@thisruleclass=\count116
+\@lastruleclass=\count117
+\@thisrulewidth=\dimen137
+) (chato-notes.sty
+Package: chato-notes 2015/09/22 v0.001a ChaTo notes
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.
+sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\co
+lor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\helvet.s
+ty"
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marvosym\marvos
+ym.sty"
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval
+.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyv
+al.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvut
+ils.tex"
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+)
+\XKV@depth=\count118
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.st
+y"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.st
+y"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.s
+ty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu
+"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu
+"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))) (cust_draw.tex
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.s
+ty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\co
+lor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlay
+er\tikz.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\
+pgf.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\p
+gfrcs.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities
+\pgfutil-common.tex"
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen138
+\pgfutil@tempdimb=\dimen139
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities
+\pgfutil-common-lists.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities
+\pgfutil-latex.def"
+\pgfutil@abb=\box30
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty
+"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities
+\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\
+pgfcore.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer
+\pgfsys.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlay
+er\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities
+\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities
+\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks29
+))
+\pgf@x=\dimen140
+\pgf@y=\dimen141
+\pgf@xa=\dimen142
+\pgf@ya=\dimen143
+\pgf@xb=\dimen144
+\pgf@yb=\dimen145
+\pgf@xc=\dimen146
+\pgf@yc=\dimen147
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count119
+\c@pgf@countb=\count120
+\c@pgf@countc=\count121
+\c@pgf@countd=\count122
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlay
+er\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlay
+er\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlay
+er\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlay
+er\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count123
+\pgfsyssoftpath@bigbuffer@items=\count124
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlay
+er\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+ath.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athcalc.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athutil.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athparser.code.tex"
+\pgfmath@dimen=\dimen148
+\pgfmath@count=\count125
+\pgfmath@box=\box31
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.basic.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.trigonometric.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.random.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.comparison.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.base.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.round.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.misc.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfunctions.integerarithmetics.code.tex")))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+athfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count126
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen149
+\pgf@picmaxx=\dimen150
+\pgf@picminy=\dimen151
+\pgf@picmaxy=\dimen152
+\pgf@pathminx=\dimen153
+\pgf@pathmaxx=\dimen154
+\pgf@pathminy=\dimen155
+\pgf@pathmaxy=\dimen156
+\pgf@xx=\dimen157
+\pgf@xy=\dimen158
+\pgf@yx=\dimen159
+\pgf@yy=\dimen160
+\pgf@zx=\dimen161
+\pgf@zy=\dimen162
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen163
+\pgf@path@lasty=\dimen164
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen165
+\pgf@shorten@start@additional=\dimen166
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box32
+\pgf@hbox=\box33
+\pgf@layerbox@main=\box34
+\pgf@picture@serial@count=\count127
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen167
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen168
+\pgf@pt@y=\dimen169
+\pgf@pt@temp=\dimen170
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen171
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen172
+\pgf@sys@shading@range@num=\count128
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box35
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclaye
+r\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\p
+gfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box36
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\p
+gfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibili
+ty\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen173
+\pgf@nodesepend=\dimen174
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibili
+ty\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\p
+gffor.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\p
+gfkeys.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities
+\pgfkeys.code.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmat
+h.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+ath.code.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities
+\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfm
+ath.code.tex")
+\pgffor@iter=\dimen175
+\pgffor@skip=\dimen176
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count129
+\pgfplotmarksize=\dimen177
+)
+\tikz@lastx=\dimen178
+\tikz@lasty=\dimen179
+\tikz@lastxsaved=\dimen180
+\tikz@lastysaved=\dimen181
+\tikzleveldistance=\dimen182
+\tikzsiblingdistance=\dimen183
+\tikz@figbox=\box37
+\tikz@figbox@bg=\box38
+\tikz@tempbox=\box39
+\tikz@tempbox@bg=\box40
+\tikztreelevel=\count130
+\tikznumberofchildren=\count131
+\tikznumberofcurrentchild=\count132
+\tikz@fig@count=\count133
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\p
+gfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count134
+\pgfmatrixcurrentcolumn=\count135
+\pgf@matrix@numberofcolumns=\count136
+)
+\tikz@expandcount=\count137
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplo
+ts.sty"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lots.revision.tex")
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lots.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lotscore.code.tex"
+\t@pgfplots@toka=\toks38
+\t@pgfplots@tokb=\toks39
+\t@pgfplots@tokc=\toks40
+\pgfplots@tmpa=\dimen184
+\c@pgfplots@coordindex=\count138
+\c@pgfplots@scanlineindex=\count139
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\
+pgfplotssysgeneric.code.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs
+\pgfplotslibrary.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldp
+gfcompatib\pgfplotsoldpgfsupp_loader.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\pgflibraryfpu.code.tex")
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldp
+gfcompatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldp
+gfcompatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count140
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldp
+gfcompatib\pgfplotsoldpgfsupp_leq.code.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util
+\pgfplotsutil.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\list
+structure\pgfplotsliststructure.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\list
+structure\pgfplotsliststructureext.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\list
+structure\pgfplotsarray.code.tex"
+\c@pgfplotsarray@tmp=\count141
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\list
+structure\pgfplotsmatrix.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numt
+able\pgfplotstableshared.code.tex"
+\c@pgfplotstable@counta=\count142
+\t@pgfplotstable@a=\toks41
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\list
+structure\pgfplotsdeque.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util
+\pgfplotsbinary.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util
+\pgfplotsbinary.data.code.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util
+\pgfplotsutil.verb.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs
+\pgflibrarypgfplots.surfshading.code.tex"
+\c@pgfplotslibrarysurf@no=\count143
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\
+pgflibrarypgfplots.surfshading.pgfsys-pdftex.def")))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util
+\pgfplotscolormap.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util
+\pgfplotscolor.code.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lotsstackedplots.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lotsplothandlers.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lotsmeshplothandler.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lotsmeshplotimage.code.tex")))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lots.scaling.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lotscoordprocessing.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lots.errorbars.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lots.markers.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lotsticks.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfp
+lots.paths.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\p
+gfmoduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen185
+\pgfdecoratedremainingdistance=\dimen186
+\pgfdecoratedinputsegmentcompleteddistance=\dimen187
+\pgfdecoratedinputsegmentremainingdistance=\dimen188
+\pgf@decorate@distancetomove=\dimen189
+\pgf@decorate@repeatstate=\count144
+\pgfdecorationsegmentamplitude=\dimen190
+\pgfdecorationsegmentlength=\dimen191
+)
+\tikz@lib@dec@box=\box41
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\decorations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\decorations\pgflibrarydecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count145
+\pgfplots@xmin@reg=\dimen192
+\pgfplots@xmax@reg=\dimen193
+\pgfplots@ymin@reg=\dimen194
+\pgfplots@ymax@reg=\dimen195
+\pgfplots@zmin@reg=\dimen196
+\pgfplots@zmax@reg=\dimen197
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\pgflibraryplotmarks.code.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\pgflibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen198
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryshapes.code.tex"
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\shapes\pgflibraryshapes.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\shapes\pgflibraryshapes.misc.code.tex"
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryshapes.symbols.code.tex"
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\shapes\pgflibraryshapes.symbols.code.tex"
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryshapes.arrows.code.tex"
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\shapes\pgflibraryshapes.arrows.code.tex"
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryshapes.callouts.code.tex"
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\shapes\pgflibraryshapes.callouts.code.tex"))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
+\shapes\pgflibraryshapes.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box42
+\pgfnodeparttwobox=\box43
+\pgfnodepartthreebox=\box44
+\pgfnodepartfourbox=\box45
+\pgfnodeparttwentybox=\box46
+\pgfnodepartnineteenbox=\box47
+\pgfnodeparteighteenbox=\box48
+\pgfnodepartseventeenbox=\box49
+\pgfnodepartsixteenbox=\box50
+\pgfnodepartfifteenbox=\box51
+\pgfnodepartfourteenbox=\box52
+\pgfnodepartthirteenbox=\box53
+\pgfnodeparttwelvebox=\box54
+\pgfnodepartelevenbox=\box55
+\pgfnodeparttenbox=\box56
+\pgfnodepartninebox=\box57
+\pgfnodeparteightbox=\box58
+\pgfnodepartsevenbox=\box59
+\pgfnodepartsixbox=\box60
+\pgfnodepartfivebox=\box61
+)))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendl
+ayer\tikz\libraries\tikzlibrarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs
+\tikzlibrarypgfplots.statistics.code.tex")
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csvsimple\csvsi
+mple.sty"
+Package: csvsimple 2019/04/09 version 1.21 LaTeX CSV file processing
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolb
+ox.sty"
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count146
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\shellesc.
+sty"
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+\csv@file=\read2
+\c@csvinputline=\count147
+\c@csvrow=\count148
+\c@csvcol=\count149
+\csv@out=\write4
+))
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preview\preview
+.sty"
+Package: preview 2017/04/24 11.91 (AUCTeX/preview-latex)
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\luatex85\luat
+ex85.sty"
+Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preview\prtight
+page.def"
+\PreviewBorder=\dimen199
+)
+\pr@snippet=\count150
+\pr@box=\box62
+\pr@output=\toks42
+) (tikz_figures.aux)
+\openout1 = `tikz_figures.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf
+.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count151
+\scratchdimen=\dimen256
+\scratchbox=\box63
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen257
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks44
+)
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstop
+df-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext
+.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box64
+Package hyperref Info: Link coloring OFF on input line 17.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\namere
+f.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gett
+itlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count157
+)
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
+ (tikz_figures.out) (tikz_figures.out)
+\@outlinefile=\write5
+\openout5 = `tikz_figures.out'.
+
+
+ABD: EveryShipout initializing macros
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.16} (current compat level: 1.8).
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+(schema_types2.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.f
+d"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.f
+d"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Preview: Tightpage -65536 -65536 65536 65536
+[1{C:/Users/simoussi/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+(schema_prod.tex [2]) (schema_plate.tex [3]) (schema_exp.tex
+\mytw=\skip47
+\myshfX=\skip48
+\myshfYa=\skip49
+\myshfYb=\skip50
+
+Overfull \hbox (14.79701pt too wide) in paragraph at lines 32--32
+ [][][][]\T1/cmr/m/it/10 directionality 
+ []
+
+
+Overfull \hbox (14.79701pt too wide) in paragraph at lines 38--38
+ [][][][]\T1/cmr/m/it/10 directionality 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 74--74
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 74--74
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 78--78
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (7.6697pt too wide) in paragraph at lines 78--78
+ [][][][]\T1/cmr/m/n/10 asymmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 78--78
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (7.6697pt too wide) in paragraph at lines 78--78
+ [][][][]\T1/cmr/m/n/10 asymmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 78--78
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (7.6697pt too wide) in paragraph at lines 78--78
+ [][][][]\T1/cmr/m/n/10 asymmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 78--78
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (7.6697pt too wide) in paragraph at lines 78--78
+ [][][][]\T1/cmr/m/n/10 asymmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 106--106
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 106--106
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 110--110
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (7.6697pt too wide) in paragraph at lines 110--110
+ [][][][]\T1/cmr/m/n/10 asymmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 110--110
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (7.6697pt too wide) in paragraph at lines 110--110
+ [][][][]\T1/cmr/m/n/10 asymmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 110--110
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (7.6697pt too wide) in paragraph at lines 110--110
+ [][][][]\T1/cmr/m/n/10 asymmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 110--110
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (7.6697pt too wide) in paragraph at lines 110--110
+ [][][][]\T1/cmr/m/n/10 asymmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 136--136
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 136--136
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 136--136
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 136--136
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 136--136
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (2.67091pt too wide) in paragraph at lines 136--136
+ [][][][]\T1/cmr/m/n/10 symmetric 
+ []
+
+
+Overfull \hbox (6.1952pt too wide) in paragraph at lines 144--144
+[][] 
+ []
+
+[4]) (scatter_simul.tex [5]) (box_simul.tex
+PGFPlots: reading {xps/data_simul_EDs5O.csv}
+Package pgfplots info on input line 49: boxplot: got lower quartile=1.8e1
+Package pgfplots info on input line 49: boxplot: got median=3.8e1
+Package pgfplots info on input line 49: boxplot: got upper quartile=6.8e1
+Package pgfplots info on input line 49: boxplot: got sample size=2.0e1
+Package pgfplots info on input line 49: boxplot: got lower whisker=1.3e1
+Package pgfplots info on input line 49: boxplot: got upper whisker=7.4e1
+PGFPlots: reading {xps/data_simul_EDs10O.csv}
+Package pgfplots info on input line 50: boxplot: got lower quartile=2.6e1
+Package pgfplots info on input line 50: boxplot: got median=5.3e1
+Package pgfplots info on input line 50: boxplot: got upper quartile=7.4000015e1
+
+Package pgfplots info on input line 50: boxplot: got sample size=9.0e1
+Package pgfplots info on input line 50: boxplot: got lower whisker=1.2e1
+Package pgfplots info on input line 50: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_EDs20O.csv}
+Package pgfplots info on input line 51: boxplot: got lower quartile=3.1e1
+Package pgfplots info on input line 51: boxplot: got median=5.7e1
+Package pgfplots info on input line 51: boxplot: got upper quartile=7.5e1
+Package pgfplots info on input line 51: boxplot: got sample size=3.8e2
+Package pgfplots info on input line 51: boxplot: got lower whisker=1.3e1
+Package pgfplots info on input line 51: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_FSs5O.csv}
+Package pgfplots info on input line 53: boxplot: got lower quartile=1.3e1
+Package pgfplots info on input line 53: boxplot: got median=3.1e1
+Package pgfplots info on input line 53: boxplot: got upper quartile=6.0e1
+Package pgfplots info on input line 53: boxplot: got sample size=1.8e1
+Package pgfplots info on input line 53: boxplot: got lower whisker=1.1e1
+Package pgfplots info on input line 53: boxplot: got upper whisker=7.8e1
+PGFPlots: reading {xps/data_simul_FSs5P.csv}
+PGFPlots: reading {xps/data_simul_FDs5O.csv}
+Package pgfplots info on input line 53: boxplot: got lower quartile=1.9e1
+Package pgfplots info on input line 53: boxplot: got median=2.3e1
+Package pgfplots info on input line 53: boxplot: got upper quartile=5.2e1
+Package pgfplots info on input line 53: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 53: boxplot: got lower whisker=1.8e1
+Package pgfplots info on input line 53: boxplot: got upper whisker=5.8e1
+PGFPlots: reading {xps/data_simul_FDs5P.csv}
+PGFPlots: reading {xps/data_simul_FSa10O.csv}
+Package pgfplots info on input line 54: boxplot: got lower quartile=3.6e1
+Package pgfplots info on input line 54: boxplot: got median=5.5e1
+Package pgfplots info on input line 54: boxplot: got upper quartile=6.9000015e1
+
+Package pgfplots info on input line 54: boxplot: got sample size=8.7e1
+Package pgfplots info on input line 54: boxplot: got lower whisker=9.0e0
+Package pgfplots info on input line 54: boxplot: got upper whisker=8.9e1
+PGFPlots: reading {xps/data_simul_FSa10P.csv}
+PGFPlots: reading {xps/data_simul_FSs10O.csv}
+Package pgfplots info on input line 54: boxplot: got lower quartile=2.9e1
+Package pgfplots info on input line 54: boxplot: got median=5.2e1
+Package pgfplots info on input line 54: boxplot: got upper quartile=7.0e1
+Package pgfplots info on input line 54: boxplot: got sample size=8.6e1
+Package pgfplots info on input line 54: boxplot: got lower whisker=1.0e1
+Package pgfplots info on input line 54: boxplot: got upper whisker=8.3e1
+PGFPlots: reading {xps/data_simul_FSs10P.csv}
+PGFPlots: reading {xps/data_simul_FDa10O.csv}
+Package pgfplots info on input line 54: boxplot: got lower quartile=3.7e1
+Package pgfplots info on input line 54: boxplot: got median=5.5e1
+Package pgfplots info on input line 54: boxplot: got upper quartile=6.300003e1
+Package pgfplots info on input line 54: boxplot: got sample size=8.3e1
+Package pgfplots info on input line 54: boxplot: got lower whisker=7.0e0
+Package pgfplots info on input line 54: boxplot: got upper whisker=7.7e1
+PGFPlots: reading {xps/data_simul_FDa10P.csv}
+PGFPlots: reading {xps/data_simul_FDs10O.csv}
+Package pgfplots info on input line 54: boxplot: got lower quartile=2.5e1
+Package pgfplots info on input line 54: boxplot: got median=3.7e1
+Package pgfplots info on input line 54: boxplot: got upper quartile=6.7e1
+Package pgfplots info on input line 54: boxplot: got sample size=8.0e1
+Package pgfplots info on input line 54: boxplot: got lower whisker=9.0e0
+Package pgfplots info on input line 54: boxplot: got upper whisker=8.5e1
+PGFPlots: reading {xps/data_simul_FDs10P.csv}
+PGFPlots: reading {xps/data_simul_FSa20O.csv}
+Package pgfplots info on input line 55: boxplot: got lower quartile=4.1e1
+Package pgfplots info on input line 55: boxplot: got median=5.949997e1
+Package pgfplots info on input line 55: boxplot: got upper quartile=7.199997e1
+Package pgfplots info on input line 55: boxplot: got sample size=3.74e2
+Package pgfplots info on input line 55: boxplot: got lower whisker=1.0e1
+Package pgfplots info on input line 55: boxplot: got upper whisker=8.0e1
+PGFPlots: reading {xps/data_simul_FSa20P.csv}
+PGFPlots: reading {xps/data_simul_FSs20O.csv}
+Package pgfplots info on input line 55: boxplot: got lower quartile=2.75e1
+Package pgfplots info on input line 55: boxplot: got median=5.5e1
+Package pgfplots info on input line 55: boxplot: got upper quartile=7.4000015e1
+
+Package pgfplots info on input line 55: boxplot: got sample size=3.72e2
+Package pgfplots info on input line 55: boxplot: got lower whisker=1.3e1
+Package pgfplots info on input line 55: boxplot: got upper whisker=8.7e1
+PGFPlots: reading {xps/data_simul_FSs20P.csv}
+PGFPlots: reading {xps/data_simul_FDa20O.csv}
+Package pgfplots info on input line 55: boxplot: got lower quartile=3.8e1
+Package pgfplots info on input line 55: boxplot: got median=5.300003e1
+Package pgfplots info on input line 55: boxplot: got upper quartile=6.5999985e1
+
+Package pgfplots info on input line 55: boxplot: got sample size=3.65e2
+Package pgfplots info on input line 55: boxplot: got lower whisker=1.3e1
+Package pgfplots info on input line 55: boxplot: got upper whisker=8.2e1
+PGFPlots: reading {xps/data_simul_FDa20P.csv}
+PGFPlots: reading {xps/data_simul_FDs20O.csv}
+Package pgfplots info on input line 55: boxplot: got lower quartile=2.6e1
+Package pgfplots info on input line 55: boxplot: got median=5.2e1
+Package pgfplots info on input line 55: boxplot: got upper quartile=7.2e1
+Package pgfplots info on input line 55: boxplot: got sample size=3.6e2
+Package pgfplots info on input line 55: boxplot: got lower whisker=1.2e1
+Package pgfplots info on input line 55: boxplot: got upper whisker=8.9e1
+PGFPlots: reading {xps/data_simul_FDs20P.csv}
+PGFPlots: reading {xps/data_simul_CSs5O.csv}
+Package pgfplots info on input line 57: boxplot: got lower quartile=2.6e1
+Package pgfplots info on input line 57: boxplot: got median=4.3e1
+Package pgfplots info on input line 57: boxplot: got upper quartile=6.4000015e1
+
+Package pgfplots info on input line 57: boxplot: got sample size=1.8e1
+Package pgfplots info on input line 57: boxplot: got lower whisker=2.1e1
+Package pgfplots info on input line 57: boxplot: got upper whisker=7.1e1
+PGFPlots: reading {xps/data_simul_CSs5N.csv}
+PGFPlots: reading {xps/data_simul_CDs5O.csv}
+Package pgfplots info on input line 57: boxplot: got lower quartile=1.8e1
+Package pgfplots info on input line 57: boxplot: got median=3.6e1
+Package pgfplots info on input line 57: boxplot: got upper quartile=6.2e1
+Package pgfplots info on input line 57: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 57: boxplot: got lower whisker=1.6e1
+Package pgfplots info on input line 57: boxplot: got upper whisker=7.4e1
+PGFPlots: reading {xps/data_simul_CDs5N.csv}
+PGFPlots: reading {xps/data_simul_CSa10O.csv}
+Package pgfplots info on input line 58: boxplot: got lower quartile=3.4e1
+Package pgfplots info on input line 58: boxplot: got median=5.199997e1
+Package pgfplots info on input line 58: boxplot: got upper quartile=6.6500015e1
+
+Package pgfplots info on input line 58: boxplot: got sample size=8.7e1
+Package pgfplots info on input line 58: boxplot: got lower whisker=1.3e1
+Package pgfplots info on input line 58: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_CSa10N.csv}
+PGFPlots: reading {xps/data_simul_CSs10O.csv}
+Package pgfplots info on input line 58: boxplot: got lower quartile=3.4e1
+Package pgfplots info on input line 58: boxplot: got median=5.4e1
+Package pgfplots info on input line 58: boxplot: got upper quartile=6.5999985e1
+
+Package pgfplots info on input line 58: boxplot: got sample size=8.6e1
+Package pgfplots info on input line 58: boxplot: got lower whisker=1.5e1
+Package pgfplots info on input line 58: boxplot: got upper whisker=8.3e1
+PGFPlots: reading {xps/data_simul_CSs10N.csv}
+PGFPlots: reading {xps/data_simul_CDa10O.csv}
+Package pgfplots info on input line 58: boxplot: got lower quartile=3.0e1
+Package pgfplots info on input line 58: boxplot: got median=4.5e1
+Package pgfplots info on input line 58: boxplot: got upper quartile=6.5e1
+Package pgfplots info on input line 58: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 58: boxplot: got lower whisker=1.5e1
+Package pgfplots info on input line 58: boxplot: got upper whisker=8.3e1
+PGFPlots: reading {xps/data_simul_CDa10N.csv}
+PGFPlots: reading {xps/data_simul_CDs10O.csv}
+Package pgfplots info on input line 58: boxplot: got lower quartile=3.3e1
+Package pgfplots info on input line 58: boxplot: got median=4.1e1
+Package pgfplots info on input line 58: boxplot: got upper quartile=6.7e1
+Package pgfplots info on input line 58: boxplot: got sample size=8.0e1
+Package pgfplots info on input line 58: boxplot: got lower whisker=1.4e1
+Package pgfplots info on input line 58: boxplot: got upper whisker=8.2e1
+PGFPlots: reading {xps/data_simul_CDs10N.csv}
+PGFPlots: reading {xps/data_simul_CSa20O.csv}
+Package pgfplots info on input line 59: boxplot: got lower quartile=3.3e1
+Package pgfplots info on input line 59: boxplot: got median=5.550003e1
+Package pgfplots info on input line 59: boxplot: got upper quartile=7.050003e1
+Package pgfplots info on input line 59: boxplot: got sample size=3.73e2
+Package pgfplots info on input line 59: boxplot: got lower whisker=1.4e1
+Package pgfplots info on input line 59: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_CSa20N.csv}
+PGFPlots: reading {xps/data_simul_CSs20O.csv}
+Package pgfplots info on input line 59: boxplot: got lower quartile=2.9e1
+Package pgfplots info on input line 59: boxplot: got median=5.5e1
+Package pgfplots info on input line 59: boxplot: got upper quartile=7.25e1
+Package pgfplots info on input line 59: boxplot: got sample size=3.72e2
+Package pgfplots info on input line 59: boxplot: got lower whisker=1.2e1
+Package pgfplots info on input line 59: boxplot: got upper whisker=8.7e1
+PGFPlots: reading {xps/data_simul_CSs20N.csv}
+PGFPlots: reading {xps/data_simul_CDa20O.csv}
+Package pgfplots info on input line 59: boxplot: got lower quartile=3.8e1
+Package pgfplots info on input line 59: boxplot: got median=5.0e1
+Package pgfplots info on input line 59: boxplot: got upper quartile=6.5999985e1
+
+Package pgfplots info on input line 59: boxplot: got sample size=3.65e2
+Package pgfplots info on input line 59: boxplot: got lower whisker=1.3e1
+Package pgfplots info on input line 59: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_CDa20N.csv}
+PGFPlots: reading {xps/data_simul_CDs20O.csv}
+Package pgfplots info on input line 59: boxplot: got lower quartile=3.5e1
+Package pgfplots info on input line 59: boxplot: got median=5.1e1
+Package pgfplots info on input line 59: boxplot: got upper quartile=6.9e1
+Package pgfplots info on input line 59: boxplot: got sample size=3.6e2
+Package pgfplots info on input line 59: boxplot: got lower whisker=1.2e1
+Package pgfplots info on input line 59: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_CDs20N.csv}
+PGFPlots: reading {xps/data_simul_BSs5O.csv}
+Package pgfplots info on input line 61: boxplot: got lower quartile=2.6e1
+Package pgfplots info on input line 61: boxplot: got median=3.6e1
+Package pgfplots info on input line 61: boxplot: got upper quartile=4.2e1
+Package pgfplots info on input line 61: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 61: boxplot: got lower whisker=2.3e1
+Package pgfplots info on input line 61: boxplot: got upper whisker=4.8e1
+PGFPlots: reading {xps/data_simul_BSs5P.csv}
+PGFPlots: reading {xps/data_simul_BSs5N.csv}
+PGFPlots: reading {xps/data_simul_BDs5O.csv}
+Package pgfplots info on input line 61: boxplot: got lower quartile=1.4e1
+Package pgfplots info on input line 61: boxplot: got median=2.9e1
+Package pgfplots info on input line 61: boxplot: got upper quartile=5.1e1
+Package pgfplots info on input line 61: boxplot: got sample size=1.2e1
+Package pgfplots info on input line 61: boxplot: got lower whisker=1.1e1
+Package pgfplots info on input line 61: boxplot: got upper whisker=7.5e1
+PGFPlots: reading {xps/data_simul_BDs5P.csv}
+PGFPlots: reading {xps/data_simul_BDs5N.csv}
+PGFPlots: reading {xps/data_simul_BSs10O.csv}
+Package pgfplots info on input line 62: boxplot: got lower quartile=2.85e1
+Package pgfplots info on input line 62: boxplot: got median=5.1e1
+Package pgfplots info on input line 62: boxplot: got upper quartile=6.699997e1
+Package pgfplots info on input line 62: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 62: boxplot: got lower whisker=9.0e0
+Package pgfplots info on input line 62: boxplot: got upper whisker=8.4e1
+PGFPlots: reading {xps/data_simul_BSs10P.csv}
+PGFPlots: reading {xps/data_simul_BSs10N.csv}
+PGFPlots: reading {xps/data_simul_BDs10O.csv}
+Package pgfplots info on input line 62: boxplot: got lower quartile=2.3e1
+Package pgfplots info on input line 62: boxplot: got median=4.2e1
+Package pgfplots info on input line 62: boxplot: got upper quartile=6.949997e1
+Package pgfplots info on input line 62: boxplot: got sample size=7.0e1
+Package pgfplots info on input line 62: boxplot: got lower whisker=1.2e1
+Package pgfplots info on input line 62: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_BDs10P.csv}
+PGFPlots: reading {xps/data_simul_BDs10N.csv}
+PGFPlots: reading {xps/data_simul_BSs20O.csv}
+Package pgfplots info on input line 63: boxplot: got lower quartile=2.7e1
+Package pgfplots info on input line 63: boxplot: got median=5.5e1
+Package pgfplots info on input line 63: boxplot: got upper quartile=7.1500015e1
+
+Package pgfplots info on input line 63: boxplot: got sample size=3.64e2
+Package pgfplots info on input line 63: boxplot: got lower whisker=1.3e1
+Package pgfplots info on input line 63: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_BSs20P.csv}
+PGFPlots: reading {xps/data_simul_BSs20N.csv}
+PGFPlots: reading {xps/data_simul_BDs20O.csv}
+Package pgfplots info on input line 63: boxplot: got lower quartile=3.2e1
+Package pgfplots info on input line 63: boxplot: got median=5.0999985e1
+Package pgfplots info on input line 63: boxplot: got upper quartile=6.800003e1
+Package pgfplots info on input line 63: boxplot: got sample size=3.44e2
+Package pgfplots info on input line 63: boxplot: got lower whisker=1.3e1
+Package pgfplots info on input line 63: boxplot: got upper whisker=8.6e1
+PGFPlots: reading {xps/data_simul_BDs20P.csv}
+PGFPlots: reading {xps/data_simul_BDs20N.csv}
+PGFPlots: reading {xps/data_simul_EDs5O.csv}
+Package pgfplots info on input line 117: boxplot: got lower quartile=-1.77e0
+Package pgfplots info on input line 117: boxplot: got median=-5.6e-1
+Package pgfplots info on input line 117: boxplot: got upper quartile=4.0e-2
+Package pgfplots info on input line 117: boxplot: got sample size=2.0e1
+Package pgfplots info on input line 117: boxplot: got lower whisker=-2.45e0
+Package pgfplots info on input line 117: boxplot: got upper whisker=6.3e-1
+PGFPlots: reading {xps/data_simul_EDs10O.csv}
+Package pgfplots info on input line 118: boxplot: got lower quartile=-1.125e0
+Package pgfplots info on input line 118: boxplot: got median=-1.4e-1
+Package pgfplots info on input line 118: boxplot: got upper quartile=9.5e-2
+Package pgfplots info on input line 118: boxplot: got sample size=9.0e1
+Package pgfplots info on input line 118: boxplot: got lower whisker=-2.43e0
+Package pgfplots info on input line 118: boxplot: got upper whisker=6.5e-1
+PGFPlots: reading {xps/data_simul_EDs20O.csv}
+Package pgfplots info on input line 119: boxplot: got lower quartile=-9.0e-1
+Package pgfplots info on input line 119: boxplot: got median=-7.0e-2
+Package pgfplots info on input line 119: boxplot: got upper quartile=1.5e-1
+Package pgfplots info on input line 119: boxplot: got sample size=3.8e2
+Package pgfplots info on input line 119: boxplot: got lower whisker=-2.45e0
+Package pgfplots info on input line 119: boxplot: got upper whisker=8.5e-1
+PGFPlots: reading {xps/data_simul_FSs5O.csv}
+Package pgfplots info on input line 121: boxplot: got lower quartile=-1.7550003
+e0
+Package pgfplots info on input line 121: boxplot: got median=-8.9e-1
+Package pgfplots info on input line 121: boxplot: got upper quartile=-9.0e-2
+Package pgfplots info on input line 121: boxplot: got sample size=1.8e1
+Package pgfplots info on input line 121: boxplot: got lower whisker=-2.63e0
+Package pgfplots info on input line 121: boxplot: got upper whisker=4.7e-1
+PGFPlots: reading {xps/data_simul_FSs5P.csv}
+PGFPlots: reading {xps/data_simul_FDs5O.csv}
+Package pgfplots info on input line 121: boxplot: got lower quartile=-1.32e0
+Package pgfplots info on input line 121: boxplot: got median=-8.7e-1
+Package pgfplots info on input line 121: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 121: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 121: boxplot: got lower whisker=-2.24e0
+Package pgfplots info on input line 121: boxplot: got upper whisker=7.6e-1
+PGFPlots: reading {xps/data_simul_FDs5P.csv}
+PGFPlots: reading {xps/data_simul_FSa10O.csv}
+Package pgfplots info on input line 122: boxplot: got lower quartile=-1.475e0
+Package pgfplots info on input line 122: boxplot: got median=-1.1e-1
+Package pgfplots info on input line 122: boxplot: got upper quartile=1.05e-1
+Package pgfplots info on input line 122: boxplot: got sample size=8.7e1
+Package pgfplots info on input line 122: boxplot: got lower whisker=-3.6e0
+Package pgfplots info on input line 122: boxplot: got upper whisker=1.4e0
+PGFPlots: reading {xps/data_simul_FSa10P.csv}
+PGFPlots: reading {xps/data_simul_FSs10O.csv}
+Package pgfplots info on input line 122: boxplot: got lower quartile=-1.225e0
+Package pgfplots info on input line 122: boxplot: got median=-1.5e-1
+Package pgfplots info on input line 122: boxplot: got upper quartile=1.3e-1
+Package pgfplots info on input line 122: boxplot: got sample size=8.6e1
+Package pgfplots info on input line 122: boxplot: got lower whisker=-2.92e0
+Package pgfplots info on input line 122: boxplot: got upper whisker=1.0e0
+PGFPlots: reading {xps/data_simul_FSs10P.csv}
+PGFPlots: reading {xps/data_simul_FDa10O.csv}
+Package pgfplots info on input line 122: boxplot: got lower quartile=-9.699997e
+-1
+Package pgfplots info on input line 122: boxplot: got median=-3.5e-2
+Package pgfplots info on input line 122: boxplot: got upper quartile=1.0e-1
+Package pgfplots info on input line 122: boxplot: got sample size=8.3e1
+Package pgfplots info on input line 122: boxplot: got lower whisker=-2.5e0
+Package pgfplots info on input line 122: boxplot: got upper whisker=1.17e0
+PGFPlots: reading {xps/data_simul_FDa10P.csv}
+PGFPlots: reading {xps/data_simul_FDs10O.csv}
+Package pgfplots info on input line 122: boxplot: got lower quartile=-1.18e0
+Package pgfplots info on input line 122: boxplot: got median=-2.2e-1
+Package pgfplots info on input line 122: boxplot: got upper quartile=8.0e-2
+Package pgfplots info on input line 122: boxplot: got sample size=8.0e1
+Package pgfplots info on input line 122: boxplot: got lower whisker=-3.06e0
+Package pgfplots info on input line 122: boxplot: got upper whisker=8.1e-1
+PGFPlots: reading {xps/data_simul_FDs10P.csv}
+PGFPlots: reading {xps/data_simul_FSa20O.csv}
+Package pgfplots info on input line 123: boxplot: got lower quartile=-4.75e-1
+Package pgfplots info on input line 123: boxplot: got median=1.0e-2
+Package pgfplots info on input line 123: boxplot: got upper quartile=1.9e-1
+Package pgfplots info on input line 123: boxplot: got sample size=3.74e2
+Package pgfplots info on input line 123: boxplot: got lower whisker=-1.41e0
+Package pgfplots info on input line 123: boxplot: got upper whisker=6.7e-1
+PGFPlots: reading {xps/data_simul_FSa20P.csv}
+PGFPlots: reading {xps/data_simul_FSs20O.csv}
+Package pgfplots info on input line 123: boxplot: got lower quartile=-9.699997e
+-1
+Package pgfplots info on input line 123: boxplot: got median=-1.4e-1
+Package pgfplots info on input line 123: boxplot: got upper quartile=1.6e-1
+Package pgfplots info on input line 123: boxplot: got sample size=3.72e2
+Package pgfplots info on input line 123: boxplot: got lower whisker=-2.65e0
+Package pgfplots info on input line 123: boxplot: got upper whisker=1.38e0
+PGFPlots: reading {xps/data_simul_FSs20P.csv}
+PGFPlots: reading {xps/data_simul_FDa20O.csv}
+Package pgfplots info on input line 123: boxplot: got lower quartile=-9.0e-1
+Package pgfplots info on input line 123: boxplot: got median=-8.0e-2
+Package pgfplots info on input line 123: boxplot: got upper quartile=1.0e-1
+Package pgfplots info on input line 123: boxplot: got sample size=3.65e2
+Package pgfplots info on input line 123: boxplot: got lower whisker=-2.38e0
+Package pgfplots info on input line 123: boxplot: got upper whisker=1.46e0
+PGFPlots: reading {xps/data_simul_FDa20P.csv}
+PGFPlots: reading {xps/data_simul_FDs20O.csv}
+Package pgfplots info on input line 123: boxplot: got lower quartile=-1.07e0
+Package pgfplots info on input line 123: boxplot: got median=-1.3e-1
+Package pgfplots info on input line 123: boxplot: got upper quartile=1.4e-1
+Package pgfplots info on input line 123: boxplot: got sample size=3.6e2
+Package pgfplots info on input line 123: boxplot: got lower whisker=-2.87e0
+Package pgfplots info on input line 123: boxplot: got upper whisker=1.75e0
+PGFPlots: reading {xps/data_simul_FDs20P.csv}
+PGFPlots: reading {xps/data_simul_CSs5O.csv}
+Package pgfplots info on input line 125: boxplot: got lower quartile=-1.7099998
+5e0
+Package pgfplots info on input line 125: boxplot: got median=-7.0e-1
+Package pgfplots info on input line 125: boxplot: got upper quartile=1.0e-2
+Package pgfplots info on input line 125: boxplot: got sample size=1.8e1
+Package pgfplots info on input line 125: boxplot: got lower whisker=-2.77e0
+Package pgfplots info on input line 125: boxplot: got upper whisker=6.9e-1
+PGFPlots: reading {xps/data_simul_CSs5N.csv}
+PGFPlots: reading {xps/data_simul_CDs5O.csv}
+Package pgfplots info on input line 125: boxplot: got lower quartile=-3.19e0
+Package pgfplots info on input line 125: boxplot: got median=-1.27e0
+Package pgfplots info on input line 125: boxplot: got upper quartile=-6.1e-1
+Package pgfplots info on input line 125: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 125: boxplot: got lower whisker=-6.18e0
+Package pgfplots info on input line 125: boxplot: got upper whisker=4.2e-1
+PGFPlots: reading {xps/data_simul_CDs5N.csv}
+PGFPlots: reading {xps/data_simul_CSa10O.csv}
+Package pgfplots info on input line 126: boxplot: got lower quartile=-1.35e0
+Package pgfplots info on input line 126: boxplot: got median=-3.15e-1
+Package pgfplots info on input line 126: boxplot: got upper quartile=1.2e-1
+Package pgfplots info on input line 126: boxplot: got sample size=8.7e1
+Package pgfplots info on input line 126: boxplot: got lower whisker=-3.44e0
+Package pgfplots info on input line 126: boxplot: got upper whisker=1.65e0
+PGFPlots: reading {xps/data_simul_CSa10N.csv}
+PGFPlots: reading {xps/data_simul_CSs10O.csv}
+Package pgfplots info on input line 126: boxplot: got lower quartile=-1.1800003
+e0
+Package pgfplots info on input line 126: boxplot: got median=-3.3e-1
+Package pgfplots info on input line 126: boxplot: got upper quartile=1.45e-1
+Package pgfplots info on input line 126: boxplot: got sample size=8.6e1
+Package pgfplots info on input line 126: boxplot: got lower whisker=-2.98e0
+Package pgfplots info on input line 126: boxplot: got upper whisker=1.46e0
+PGFPlots: reading {xps/data_simul_CSs10N.csv}
+PGFPlots: reading {xps/data_simul_CDa10O.csv}
+Package pgfplots info on input line 126: boxplot: got lower quartile=-1.1849998
+5e0
+Package pgfplots info on input line 126: boxplot: got median=-2.7e-1
+Package pgfplots info on input line 126: boxplot: got upper quartile=1.25e-1
+Package pgfplots info on input line 126: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 126: boxplot: got lower whisker=-2.77e0
+Package pgfplots info on input line 126: boxplot: got upper whisker=1.0e0
+PGFPlots: reading {xps/data_simul_CDa10N.csv}
+PGFPlots: reading {xps/data_simul_CDs10O.csv}
+Package pgfplots info on input line 126: boxplot: got lower quartile=-1.39e0
+Package pgfplots info on input line 126: boxplot: got median=-3.3e-1
+Package pgfplots info on input line 126: boxplot: got upper quartile=1.9e-1
+Package pgfplots info on input line 126: boxplot: got sample size=8.0e1
+Package pgfplots info on input line 126: boxplot: got lower whisker=-3.56e0
+Package pgfplots info on input line 126: boxplot: got upper whisker=1.08e0
+PGFPlots: reading {xps/data_simul_CDs10N.csv}
+PGFPlots: reading {xps/data_simul_CSa20O.csv}
+Package pgfplots info on input line 127: boxplot: got lower quartile=-8.75e-1
+Package pgfplots info on input line 127: boxplot: got median=-1.0e-1
+Package pgfplots info on input line 127: boxplot: got upper quartile=1.5e-1
+Package pgfplots info on input line 127: boxplot: got sample size=3.73e2
+Package pgfplots info on input line 127: boxplot: got lower whisker=-2.4e0
+Package pgfplots info on input line 127: boxplot: got upper whisker=1.03e0
+PGFPlots: reading {xps/data_simul_CSa20N.csv}
+PGFPlots: reading {xps/data_simul_CSs20O.csv}
+Package pgfplots info on input line 127: boxplot: got lower quartile=-8.5999985
+e-1
+Package pgfplots info on input line 127: boxplot: got median=-1.0e-1
+Package pgfplots info on input line 127: boxplot: got upper quartile=1.45e-1
+Package pgfplots info on input line 127: boxplot: got sample size=3.72e2
+Package pgfplots info on input line 127: boxplot: got lower whisker=-2.35e0
+Package pgfplots info on input line 127: boxplot: got upper whisker=1.05e0
+PGFPlots: reading {xps/data_simul_CSs20N.csv}
+PGFPlots: reading {xps/data_simul_CDa20O.csv}
+Package pgfplots info on input line 127: boxplot: got lower quartile=-7.1500015
+e-1
+Package pgfplots info on input line 127: boxplot: got median=-4.0e-2
+Package pgfplots info on input line 127: boxplot: got upper quartile=1.5e-1
+Package pgfplots info on input line 127: boxplot: got sample size=3.65e2
+Package pgfplots info on input line 127: boxplot: got lower whisker=-2.01e0
+Package pgfplots info on input line 127: boxplot: got upper whisker=1.21e0
+PGFPlots: reading {xps/data_simul_CDa20N.csv}
+PGFPlots: reading {xps/data_simul_CDs20O.csv}
+Package pgfplots info on input line 127: boxplot: got lower quartile=-8.1e-1
+Package pgfplots info on input line 127: boxplot: got median=-3.0e-2
+Package pgfplots info on input line 127: boxplot: got upper quartile=1.6e-1
+Package pgfplots info on input line 127: boxplot: got sample size=3.6e2
+Package pgfplots info on input line 127: boxplot: got lower whisker=-2.23e0
+Package pgfplots info on input line 127: boxplot: got upper whisker=1.01e0
+PGFPlots: reading {xps/data_simul_CDs20N.csv}
+PGFPlots: reading {xps/data_simul_BSs5O.csv}
+Package pgfplots info on input line 129: boxplot: got lower quartile=-2.86e0
+Package pgfplots info on input line 129: boxplot: got median=-1.22e0
+Package pgfplots info on input line 129: boxplot: got upper quartile=-5.4e-1
+Package pgfplots info on input line 129: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 129: boxplot: got lower whisker=-5.57e0
+Package pgfplots info on input line 129: boxplot: got upper whisker=5.9e-1
+PGFPlots: reading {xps/data_simul_BSs5P.csv}
+PGFPlots: reading {xps/data_simul_BSs5N.csv}
+PGFPlots: reading {xps/data_simul_BDs5O.csv}
+Package pgfplots info on input line 129: boxplot: got lower quartile=-2.12e0
+Package pgfplots info on input line 129: boxplot: got median=-1.3e0
+Package pgfplots info on input line 129: boxplot: got upper quartile=-1.13e0
+Package pgfplots info on input line 129: boxplot: got sample size=1.2e1
+Package pgfplots info on input line 129: boxplot: got lower whisker=-2.97e0
+Package pgfplots info on input line 129: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_BDs5P.csv}
+PGFPlots: reading {xps/data_simul_BDs5N.csv}
+PGFPlots: reading {xps/data_simul_BSs10O.csv}
+Package pgfplots info on input line 130: boxplot: got lower quartile=-1.35e0
+Package pgfplots info on input line 130: boxplot: got median=-3.9e-1
+Package pgfplots info on input line 130: boxplot: got upper quartile=1.2e-1
+Package pgfplots info on input line 130: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 130: boxplot: got lower whisker=-3.54e0
+Package pgfplots info on input line 130: boxplot: got upper whisker=1.71e0
+PGFPlots: reading {xps/data_simul_BSs10P.csv}
+PGFPlots: reading {xps/data_simul_BSs10N.csv}
+PGFPlots: reading {xps/data_simul_BDs10O.csv}
+Package pgfplots info on input line 130: boxplot: got lower quartile=-1.2050003
+e0
+Package pgfplots info on input line 130: boxplot: got median=-5.1e-1
+Package pgfplots info on input line 130: boxplot: got upper quartile=8.5e-2
+Package pgfplots info on input line 130: boxplot: got sample size=7.0e1
+Package pgfplots info on input line 130: boxplot: got lower whisker=-3.1e0
+Package pgfplots info on input line 130: boxplot: got upper whisker=1.09e0
+PGFPlots: reading {xps/data_simul_BDs10P.csv}
+PGFPlots: reading {xps/data_simul_BDs10N.csv}
+PGFPlots: reading {xps/data_simul_BSs20O.csv}
+Package pgfplots info on input line 131: boxplot: got lower quartile=-9.1500015
+e-1
+Package pgfplots info on input line 131: boxplot: got median=-1.2e-1
+Package pgfplots info on input line 131: boxplot: got upper quartile=1.5e-1
+Package pgfplots info on input line 131: boxplot: got sample size=3.64e2
+Package pgfplots info on input line 131: boxplot: got lower whisker=-2.24e0
+Package pgfplots info on input line 131: boxplot: got upper whisker=1.23e0
+PGFPlots: reading {xps/data_simul_BSs20P.csv}
+PGFPlots: reading {xps/data_simul_BSs20N.csv}
+PGFPlots: reading {xps/data_simul_BDs20O.csv}
+Package pgfplots info on input line 131: boxplot: got lower quartile=-9.1500015
+e-1
+Package pgfplots info on input line 131: boxplot: got median=-1.2e-1
+Package pgfplots info on input line 131: boxplot: got upper quartile=1.25e-1
+Package pgfplots info on input line 131: boxplot: got sample size=3.44e2
+Package pgfplots info on input line 131: boxplot: got lower whisker=-2.47e0
+Package pgfplots info on input line 131: boxplot: got upper whisker=1.26e0
+PGFPlots: reading {xps/data_simul_BDs20P.csv}
+PGFPlots: reading {xps/data_simul_BDs20N.csv}
+PGFPlots: reading {xps/data_simul_EDs5O.csv}
+Package pgfplots info on input line 154: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 154: boxplot: got median=0.0e0
+Package pgfplots info on input line 154: boxplot: got upper quartile=7.0e-2
+Package pgfplots info on input line 154: boxplot: got sample size=2.0e1
+Package pgfplots info on input line 154: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 154: boxplot: got upper whisker=1.7e-1
+PGFPlots: reading {xps/data_simul_EDs10O.csv}
+Package pgfplots info on input line 155: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 155: boxplot: got median=0.0e0
+Package pgfplots info on input line 155: boxplot: got upper quartile=2.4e-1
+Package pgfplots info on input line 155: boxplot: got sample size=9.0e1
+Package pgfplots info on input line 155: boxplot: got lower whisker=-3.6e-1
+Package pgfplots info on input line 155: boxplot: got upper whisker=5.8e-1
+PGFPlots: reading {xps/data_simul_EDs20O.csv}
+Package pgfplots info on input line 156: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 156: boxplot: got median=0.0e0
+Package pgfplots info on input line 156: boxplot: got upper quartile=3.8e-1
+Package pgfplots info on input line 156: boxplot: got sample size=3.8e2
+Package pgfplots info on input line 156: boxplot: got lower whisker=-5.7e-1
+Package pgfplots info on input line 156: boxplot: got upper whisker=9.5e-1
+PGFPlots: reading {xps/data_simul_FSs5O.csv}
+Package pgfplots info on input line 158: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 158: boxplot: got median=0.0e0
+Package pgfplots info on input line 158: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 158: boxplot: got sample size=1.8e1
+Package pgfplots info on input line 158: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 158: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_FSs5P.csv}
+PGFPlots: reading {xps/data_simul_FDs5O.csv}
+Package pgfplots info on input line 158: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 158: boxplot: got median=0.0e0
+Package pgfplots info on input line 158: boxplot: got upper quartile=1.8e-1
+Package pgfplots info on input line 158: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 158: boxplot: got lower whisker=-1.2e-1
+Package pgfplots info on input line 158: boxplot: got upper whisker=2.9e-1
+PGFPlots: reading {xps/data_simul_FDs5P.csv}
+PGFPlots: reading {xps/data_simul_FSa10O.csv}
+Package pgfplots info on input line 159: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 159: boxplot: got median=0.0e0
+Package pgfplots info on input line 159: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 159: boxplot: got sample size=8.7e1
+Package pgfplots info on input line 159: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 159: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_FSa10P.csv}
+PGFPlots: reading {xps/data_simul_FSs10O.csv}
+Package pgfplots info on input line 159: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 159: boxplot: got median=0.0e0
+Package pgfplots info on input line 159: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 159: boxplot: got sample size=8.6e1
+Package pgfplots info on input line 159: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 159: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_FSs10P.csv}
+PGFPlots: reading {xps/data_simul_FDa10O.csv}
+Package pgfplots info on input line 159: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 159: boxplot: got median=0.0e0
+Package pgfplots info on input line 159: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 159: boxplot: got sample size=8.3e1
+Package pgfplots info on input line 159: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 159: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_FDa10P.csv}
+PGFPlots: reading {xps/data_simul_FDs10O.csv}
+Package pgfplots info on input line 159: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 159: boxplot: got median=0.0e0
+Package pgfplots info on input line 159: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 159: boxplot: got sample size=8.0e1
+Package pgfplots info on input line 159: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 159: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_FDs10P.csv}
+PGFPlots: reading {xps/data_simul_FSa20O.csv}
+Package pgfplots info on input line 160: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 160: boxplot: got median=0.0e0
+Package pgfplots info on input line 160: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 160: boxplot: got sample size=3.74e2
+Package pgfplots info on input line 160: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 160: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_FSa20P.csv}
+PGFPlots: reading {xps/data_simul_FSs20O.csv}
+Package pgfplots info on input line 160: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 160: boxplot: got median=0.0e0
+Package pgfplots info on input line 160: boxplot: got upper quartile=1.95e-1
+Package pgfplots info on input line 160: boxplot: got sample size=3.72e2
+Package pgfplots info on input line 160: boxplot: got lower whisker=-2.9e-1
+Package pgfplots info on input line 160: boxplot: got upper whisker=4.8e-1
+PGFPlots: reading {xps/data_simul_FSs20P.csv}
+PGFPlots: reading {xps/data_simul_FDa20O.csv}
+Package pgfplots info on input line 160: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 160: boxplot: got median=0.0e0
+Package pgfplots info on input line 160: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 160: boxplot: got sample size=3.65e2
+Package pgfplots info on input line 160: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 160: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_FDa20P.csv}
+PGFPlots: reading {xps/data_simul_FDs20O.csv}
+Package pgfplots info on input line 160: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 160: boxplot: got median=0.0e0
+Package pgfplots info on input line 160: boxplot: got upper quartile=2.0e-1
+Package pgfplots info on input line 160: boxplot: got sample size=3.6e2
+Package pgfplots info on input line 160: boxplot: got lower whisker=-2.9e-1
+Package pgfplots info on input line 160: boxplot: got upper whisker=5.0e-1
+PGFPlots: reading {xps/data_simul_FDs20P.csv}
+PGFPlots: reading {xps/data_simul_CSs5O.csv}
+Package pgfplots info on input line 162: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 162: boxplot: got median=0.0e0
+Package pgfplots info on input line 162: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 162: boxplot: got sample size=1.8e1
+Package pgfplots info on input line 162: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 162: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_CSs5N.csv}
+PGFPlots: reading {xps/data_simul_CDs5O.csv}
+Package pgfplots info on input line 162: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 162: boxplot: got median=0.0e0
+Package pgfplots info on input line 162: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 162: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 162: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 162: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_CDs5N.csv}
+PGFPlots: reading {xps/data_simul_CSa10O.csv}
+Package pgfplots info on input line 163: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 163: boxplot: got median=0.0e0
+Package pgfplots info on input line 163: boxplot: got upper quartile=1.05e-1
+Package pgfplots info on input line 163: boxplot: got sample size=8.7e1
+Package pgfplots info on input line 163: boxplot: got lower whisker=-1.2e-1
+Package pgfplots info on input line 163: boxplot: got upper whisker=2.6e-1
+PGFPlots: reading {xps/data_simul_CSa10N.csv}
+PGFPlots: reading {xps/data_simul_CSs10O.csv}
+Package pgfplots info on input line 163: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 163: boxplot: got median=0.0e0
+Package pgfplots info on input line 163: boxplot: got upper quartile=1.6e-1
+Package pgfplots info on input line 163: boxplot: got sample size=8.6e1
+Package pgfplots info on input line 163: boxplot: got lower whisker=-2.0e-1
+Package pgfplots info on input line 163: boxplot: got upper whisker=3.7e-1
+PGFPlots: reading {xps/data_simul_CSs10N.csv}
+PGFPlots: reading {xps/data_simul_CDa10O.csv}
+Package pgfplots info on input line 163: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 163: boxplot: got median=0.0e0
+Package pgfplots info on input line 163: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 163: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 163: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 163: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_CDa10N.csv}
+PGFPlots: reading {xps/data_simul_CDs10O.csv}
+Package pgfplots info on input line 163: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 163: boxplot: got median=0.0e0
+Package pgfplots info on input line 163: boxplot: got upper quartile=2.4e-1
+Package pgfplots info on input line 163: boxplot: got sample size=8.0e1
+Package pgfplots info on input line 163: boxplot: got lower whisker=-3.5e-1
+Package pgfplots info on input line 163: boxplot: got upper whisker=5.8e-1
+PGFPlots: reading {xps/data_simul_CDs10N.csv}
+PGFPlots: reading {xps/data_simul_CSa20O.csv}
+Package pgfplots info on input line 164: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 164: boxplot: got median=0.0e0
+Package pgfplots info on input line 164: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 164: boxplot: got sample size=3.73e2
+Package pgfplots info on input line 164: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 164: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_CSa20N.csv}
+PGFPlots: reading {xps/data_simul_CSs20O.csv}
+Package pgfplots info on input line 164: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 164: boxplot: got median=0.0e0
+Package pgfplots info on input line 164: boxplot: got upper quartile=3.75e-1
+Package pgfplots info on input line 164: boxplot: got sample size=3.72e2
+Package pgfplots info on input line 164: boxplot: got lower whisker=-5.6e-1
+Package pgfplots info on input line 164: boxplot: got upper whisker=9.3e-1
+PGFPlots: reading {xps/data_simul_CSs20N.csv}
+PGFPlots: reading {xps/data_simul_CDa20O.csv}
+Package pgfplots info on input line 164: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 164: boxplot: got median=0.0e0
+Package pgfplots info on input line 164: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 164: boxplot: got sample size=3.65e2
+Package pgfplots info on input line 164: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 164: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_CDa20N.csv}
+PGFPlots: reading {xps/data_simul_CDs20O.csv}
+Package pgfplots info on input line 164: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 164: boxplot: got median=0.0e0
+Package pgfplots info on input line 164: boxplot: got upper quartile=4.4e-1
+Package pgfplots info on input line 164: boxplot: got sample size=3.6e2
+Package pgfplots info on input line 164: boxplot: got lower whisker=-6.3e-1
+Package pgfplots info on input line 164: boxplot: got upper whisker=1.1e0
+PGFPlots: reading {xps/data_simul_CDs20N.csv}
+PGFPlots: reading {xps/data_simul_BSs5O.csv}
+Package pgfplots info on input line 166: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 166: boxplot: got median=0.0e0
+Package pgfplots info on input line 166: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 166: boxplot: got sample size=1.6e1
+Package pgfplots info on input line 166: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 166: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_simul_BSs5P.csv}
+PGFPlots: reading {xps/data_simul_BSs5N.csv}
+PGFPlots: reading {xps/data_simul_BDs5O.csv}
+Package pgfplots info on input line 166: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 166: boxplot: got median=0.0e0
+Package pgfplots info on input line 166: boxplot: got upper quartile=7.9e-1
+Package pgfplots info on input line 166: boxplot: got sample size=1.2e1
+Package pgfplots info on input line 166: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 166: boxplot: got upper whisker=1.39e0
+PGFPlots: reading {xps/data_simul_BDs5P.csv}
+PGFPlots: reading {xps/data_simul_BDs5N.csv}
+PGFPlots: reading {xps/data_simul_BSs10O.csv}
+Package pgfplots info on input line 167: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 167: boxplot: got median=0.0e0
+Package pgfplots info on input line 167: boxplot: got upper quartile=3.0e-2
+Package pgfplots info on input line 167: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 167: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 167: boxplot: got upper whisker=6.0e-2
+PGFPlots: reading {xps/data_simul_BSs10P.csv}
+PGFPlots: reading {xps/data_simul_BSs10N.csv}
+PGFPlots: reading {xps/data_simul_BDs10O.csv}
+Package pgfplots info on input line 167: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 167: boxplot: got median=0.0e0
+Package pgfplots info on input line 167: boxplot: got upper quartile=3.1e-1
+Package pgfplots info on input line 167: boxplot: got sample size=7.0e1
+Package pgfplots info on input line 167: boxplot: got lower whisker=-3.3e-1
+Package pgfplots info on input line 167: boxplot: got upper whisker=6.7e-1
+PGFPlots: reading {xps/data_simul_BDs10P.csv}
+PGFPlots: reading {xps/data_simul_BDs10N.csv}
+PGFPlots: reading {xps/data_simul_BSs20O.csv}
+Package pgfplots info on input line 168: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 168: boxplot: got median=0.0e0
+Package pgfplots info on input line 168: boxplot: got upper quartile=3.05e-1
+Package pgfplots info on input line 168: boxplot: got sample size=3.64e2
+Package pgfplots info on input line 168: boxplot: got lower whisker=-4.5e-1
+Package pgfplots info on input line 168: boxplot: got upper whisker=7.5e-1
+PGFPlots: reading {xps/data_simul_BSs20P.csv}
+PGFPlots: reading {xps/data_simul_BSs20N.csv}
+PGFPlots: reading {xps/data_simul_BDs20O.csv}
+Package pgfplots info on input line 168: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 168: boxplot: got median=0.0e0
+Package pgfplots info on input line 168: boxplot: got upper quartile=2.35e-1
+Package pgfplots info on input line 168: boxplot: got sample size=3.44e2
+Package pgfplots info on input line 168: boxplot: got lower whisker=-3.5e-1
+Package pgfplots info on input line 168: boxplot: got upper whisker=5.5e-1
+PGFPlots: reading {xps/data_simul_BDs20P.csv}
+PGFPlots: reading {xps/data_simul_BDs20N.csv}
+ [6]) (box_AlpsHSMw.tex
+PGFPlots: reading {xps/data_AlpsHSMw.csv}
+Package pgfplots info on input line 24: boxplot: got lower quartile=-2.21600494
+e-1
+Package pgfplots info on input line 24: boxplot: got median=0.0e0
+Package pgfplots info on input line 24: boxplot: got upper quartile=1.0520401e-
+1
+Package pgfplots info on input line 24: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 24: boxplot: got lower whisker=-6.05822e-1
+Package pgfplots info on input line 24: boxplot: got upper whisker=4.37948e-1
+PGFPlots: reading {xps/data_AlpsHSMw.csv}
+Package pgfplots info on input line 24: boxplot: got lower quartile=-8.3361511e
+-2
+Package pgfplots info on input line 24: boxplot: got median=6.5169e-2
+Package pgfplots info on input line 24: boxplot: got upper quartile=2.02418518e
+-1
+Package pgfplots info on input line 24: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 24: boxplot: got lower whisker=-3.04769e-1
+Package pgfplots info on input line 24: boxplot: got upper whisker=5.07297e-1
+PGFPlots: reading {xps/data_AlpsHSMw.csv}
+Package pgfplots info on input line 24: boxplot: got lower quartile=-3.6878952e
+-1
+Package pgfplots info on input line 24: boxplot: got median=-3.9586e-2
+Package pgfplots info on input line 24: boxplot: got upper quartile=1.84567032e
+-1
+Package pgfplots info on input line 24: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 24: boxplot: got lower whisker=-1.112337e0
+Package pgfplots info on input line 24: boxplot: got upper whisker=7.73549e-1
+PGFPlots: reading {xps/data_AlpsHSMw.csv}
+Package pgfplots info on input line 24: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 24: boxplot: got median=0.0e0
+Package pgfplots info on input line 24: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 24: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 24: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 24: boxplot: got upper whisker=0.0e0
+PGFPlots: reading {xps/data_AlpsHSMw.csv}
+Package pgfplots info on input line 24: boxplot: got lower quartile=-3.70920563
+e0
+Package pgfplots info on input line 24: boxplot: got median=-5.88854e-1
+Package pgfplots info on input line 24: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 24: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 24: boxplot: got lower whisker=-8.336407e0
+Package pgfplots info on input line 24: boxplot: got upper whisker=5.17112e0
+PGFPlots: reading {xps/data_AlpsHSMw.csv}
+Package pgfplots info on input line 24: boxplot: got lower quartile=0.0e0
+Package pgfplots info on input line 24: boxplot: got median=0.0e0
+Package pgfplots info on input line 24: boxplot: got upper quartile=0.0e0
+Package pgfplots info on input line 24: boxplot: got sample size=8.2e1
+Package pgfplots info on input line 24: boxplot: got lower whisker=0.0e0
+Package pgfplots info on input line 24: boxplot: got upper whisker=0.0e0
+LaTeX Font Info:    Try loading font information for T1+phv on input line 25.
+
+("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd
+"
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+) [7]) (scatter_AlpsPlantScores.tex
+Overfull \hbox (5.46176pt too wide) in paragraph at lines 36--36
+[][] 
+ []
+
+[8]) (hist_AlpsMIEff.tex
+PGFPlots: reading {xps/data_AlpsMI.csv}
+PGFPlots: reading {xps/data_AlpsMI.csv}
+PGFPlots: reading {xps/data_AlpsMI.csv}
+PGFPlots: reading {xps/data_AlpsMI.csv}
+ [9]) (hist_AlpsMIRes.tex
+PGFPlots: reading {xps/data_AlpsMI.csv}
+PGFPlots: reading {xps/data_AlpsMI.csv}
+PGFPlots: reading {xps/data_AlpsMI.csv}
+PGFPlots: reading {xps/data_AlpsMI.csv}
+ [10])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
+ (tikz_figures.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
+Package rerunfilecheck Info: File `tikz_figures.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 28.
+ ) 
+Here is how much of TeX's memory you used:
+ 36318 strings out of 493303
+ 862304 string characters out of 3128479
+ 1516263 words of memory out of 3000000
+ 39163 multiletter control sequences out of 15000+200000
+ 15084 words of font info for 41 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 64i,18n,100p,938b,2944s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.
+enc} <C:\Users\simoussi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\ecrm0500.pk> <C:\Users\simoussi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecrm0800.pk> <C:\Users\simoussi\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\simoussi\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\simoussi\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk><C:/Users/
+simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb><C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi5.pfb><C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/simoussi/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/simoussi/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/sim
+oussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb
+><C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/simoussi/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/simoussi/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on tikz_figures.pdf (10 pages, 221353 bytes).
+PDF statistics:
+ 225 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.15)  14 OCT 2019 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.15)  15 OCT 2019 16:51
 entering extended mode
 **./main.tex
 (main.tex
@@ -1365,17 +1365,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-[2]
+
 Underfull \hbox (badness 10000) in paragraph at lines 41--51
 
  []
 
-<tikz_figures.pdf, id=187, page=1, 283.15788pt x 212.95058pt>
+<tikz_figures.pdf, id=194, page=1, 283.15788pt x 212.95058pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 1>
 Package pdftex.def Info: tikz_figures.pdf , page1 used on input line 54.
@@ -1390,17 +1390,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<tikz_figures.pdf, id=188, page=2, 203.7482pt x 203.7482pt>
+[3]
+<tikz_figures.pdf, id=204, page=2, 203.7482pt x 203.7482pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 2>
 Package pdftex.def Info: tikz_figures.pdf , page2 used on input line 71.
 (pdftex.def)             Requested size: 203.74768pt x 203.74768pt.
-[3] [4 <./tikz_figures.pdf> <./tikz_figures.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
-<tikz_figures.pdf, id=275, page=3, 190.50372pt x 93.84862pt>
+[4 <./tikz_figures.pdf>]
+<tikz_figures.pdf, id=280, page=3, 190.50372pt x 93.84862pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 3>
 Package pdftex.def Info: tikz_figures.pdf , page3 used on input line 102.
@@ -1415,7 +1417,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-[5 <./tikz_figures.pdf>]
+[5 <./tikz_figures.pdf> <./tikz_figures.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
@@ -1441,11 +1443,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--195
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
@@ -1460,299 +1457,311 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
+[7]
+Overfull \hbox (11.02783pt too wide) in paragraph at lines 209--210
+[]\T1/cmr/m/n/10 For in-stance, mu-tu-al-ism or at-trac-tion be-tween two speci
+es re-quires co-existence.
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 [8]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 236--237
 
  []
 
-<tikz_figures.pdf, id=310, page=4, 353.19554pt x 230.93678pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+ []
+
+<tikz_figures.pdf, id=313, page=4, 353.19554pt x 230.93678pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 4>
-Package pdftex.def Info: tikz_figures.pdf , page4 used on input line 240.
+Package pdftex.def Info: tikz_figures.pdf , page4 used on input line 242.
 (pdftex.def)             Requested size: 353.19467pt x 230.9362pt.
 
-Overfull \hbox (8.19467pt too wide) in paragraph at lines 240--241
+Overfull \hbox (8.19467pt too wide) in paragraph at lines 242--243
  [][] 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 245.
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
 
-LaTeX Font Info:    Try loading font information for T1+phv on input line 245.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+[9]
+LaTeX Font Info:    Try loading font information for T1+phv on input line 269.
+
 ("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd
 "
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 245.
-LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <10> not available
-(Font)              Font shape `T1/phv/b/sc' tried instead on input line 245.
-LaTeX Font Info:    Try loading font information for U+mvs on input line 245.
-
-("C:\Users\simoussi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marvosym\umvs.f
-d")
-Underfull \hbox (badness 1655) in paragraph at lines 245--245
-[]\U/mvs/m/n/10 Z \T1/phv/b/sc/10 Note[]: []\T1/phv/m/n/10 I am not sure what i
-t meant when a
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 247.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-
- []
-
-[9 <./tikz_figures.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 255--257
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 269.
+ [10 <./tikz_figures.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 261.
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
-
- []
-
-
-Package xcolor Warning: Incompatible color definition on input line 294.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--300
-
+Overfull \hbox (29.5098pt too wide) in paragraph at lines 301--312
+ [][] 
  []
 
-
-Package xcolor Warning: Incompatible color definition on input line 301.
-
-<tikz_figures.pdf, id=390, page=5, 347.39987pt x 204.16576pt>
+<tikz_figures.pdf, id=391, page=5, 347.39987pt x 204.16576pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 5>
-Package pdftex.def Info: tikz_figures.pdf , page5 used on input line 321.
+Package pdftex.def Info: tikz_figures.pdf , page5 used on input line 318.
 (pdftex.def)             Requested size: 347.39902pt x 204.16525pt.
 
-Overfull \hbox (2.39902pt too wide) in paragraph at lines 321--322
+Overfull \hbox (2.39902pt too wide) in paragraph at lines 318--319
  [][] 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 330.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
+[12 <./tikz_figures.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 332--334
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 340.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
-
- []
-
-[13 <./tikz_figures.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-<tikz_figures.pdf, id=497, page=6, 339.16814pt x 260.77727pt>
+<tikz_figures.pdf, id=490, page=6, 339.16814pt x 260.77727pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 6>
-Package pdftex.def Info: tikz_figures.pdf , page6 used on input line 356.
+Package pdftex.def Info: tikz_figures.pdf , page6 used on input line 349.
 (pdftex.def)             Requested size: 339.1673pt x 260.77663pt.
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+
+ []
+
 [14 <./tikz_figures.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
-
- []
-
-<./images/gridaravo.png, id=609, 702.625pt x 501.875pt>
+<./images/gridaravo.png, id=604, 702.625pt x 501.875pt>
 File: ./images/gridaravo.png Graphic file (type png)
 <use ./images/gridaravo.png>
-Package pdftex.def Info: ./images/gridaravo.png  used on input line 376.
+Package pdftex.def Info: ./images/gridaravo.png  used on input line 369.
 (pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
 
-Overfull \hbox (6.31163pt too wide) in paragraph at lines 376--377
+Overfull \hbox (6.31163pt too wide) in paragraph at lines 369--370
  [][] 
  []
 
-
-Package xcolor Warning: Incompatible color definition on input line 382.
-
-<tikz_figures.pdf, id=614, page=7, 200.51714pt x 85.55463pt>
+<tikz_figures.pdf, id=609, page=7, 200.51714pt x 85.55463pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 7>
-Package pdftex.def Info: tikz_figures.pdf , page7 used on input line 387.
+Package pdftex.def Info: tikz_figures.pdf , page7 used on input line 379.
 (pdftex.def)             Requested size: 200.51663pt x 85.55441pt.
-<tikz_figures.pdf, id=615, page=8, 352.46178pt x 178.80702pt>
+<tikz_figures.pdf, id=610, page=8, 352.46178pt x 178.80702pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 8>
-Package pdftex.def Info: tikz_figures.pdf , page8 used on input line 388.
+Package pdftex.def Info: tikz_figures.pdf , page8 used on input line 380.
 (pdftex.def)             Requested size: 352.4609pt x 178.80658pt.
 
-Overfull \hbox (7.4609pt too wide) in paragraph at lines 387--389
+Overfull \hbox (7.4609pt too wide) in paragraph at lines 379--381
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
 
  []
 
-[15] [16 <./images/gridaravo.png>] [17 <./tikz_figures.pdf> <./tikz_figures.pdf
->]
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+[15 <./images/gridaravo.png>] [16 <./tikz_figures.pdf> <./tikz_figures.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 400.
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
 
-<tikz_figures.pdf, id=734, page=9, 335.59377pt x 78.25737pt>
+ []
+
+<tikz_figures.pdf, id=724, page=9, 335.59377pt x 78.25737pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 9>
-Package pdftex.def Info: tikz_figures.pdf , page9 used on input line 403.
+Package pdftex.def Info: tikz_figures.pdf , page9 used on input line 393.
 (pdftex.def)             Requested size: 335.59294pt x 78.25716pt.
-<tikz_figures.pdf, id=735, page=10, 335.59377pt x 78.25737pt>
+<tikz_figures.pdf, id=725, page=10, 335.59377pt x 78.25737pt>
 File: tikz_figures.pdf Graphic file (type pdf)
 <use tikz_figures.pdf, page 10>
-Package pdftex.def Info: tikz_figures.pdf , page10 used on input line 404.
+Package pdftex.def Info: tikz_figures.pdf , page10 used on input line 394.
 (pdftex.def)             Requested size: 335.59294pt x 78.25716pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
-[18 <./tikz_figures.pdf> <./tikz_figures.pdf>]
+[17 <./tikz_figures.pdf> <./tikz_figures.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 411--412
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 413.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
-
- []
-
-[19]
-<./images/aravoassoc.png, id=808, 896.148pt x 492.3996pt>
+<./images/aravoassoc.png, id=784, 896.148pt x 492.3996pt>
 File: ./images/aravoassoc.png Graphic file (type png)
 <use ./images/aravoassoc.png>
-Package pdftex.def Info: ./images/aravoassoc.png  used on input line 432.
+Package pdftex.def Info: ./images/aravoassoc.png  used on input line 420.
 (pdftex.def)             Requested size: 358.45284pt x 196.95634pt.
 
-Overfull \hbox (13.45284pt too wide) in paragraph at lines 432--433
+Overfull \hbox (13.45284pt too wide) in paragraph at lines 420--421
 [][] 
  []
 
-<./images/groups.png, id=809, 741.4902pt x 504.4446pt>
+<./images/groups.png, id=785, 741.4902pt x 504.4446pt>
 File: ./images/groups.png Graphic file (type png)
 <use ./images/groups.png>
-Package pdftex.def Info: ./images/groups.png  used on input line 437.
+Package pdftex.def Info: ./images/groups.png  used on input line 425.
 (pdftex.def)             Requested size: 296.59082pt x 201.77426pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+[18] [19 <./images/aravoassoc.png> <./images/groups.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
+ []
+
+
+Overfull \hbox (15.69336pt too wide) in paragraph at lines 450--451
+[]\T1/cmr/m/n/10 There is now grow-ing ev-i-dence that eco-log-i-cal in-ter-ac-
+tions are context-dependent
  []
 
 
@@ -1765,71 +1774,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
-[20] [21 <./images/aravoassoc.png> <./images/groups.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
-
- []
-
-
-Overfull \hbox (15.69336pt too wide) in paragraph at lines 462--463
-[]\T1/cmr/m/n/10 There is now grow-ing ev-i-dence that eco-log-i-cal in-ter-ac-
-tions are context-dependent
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
-
- []
-
-
-Overfull \hbox (10.82977pt too wide) in paragraph at lines 467--468
+[21]
+Overfull \hbox (10.82977pt too wide) in paragraph at lines 455--456
 \T1/cmr/m/n/10 Biological in-ter-ac-tions and other pro-cesses in-duce spa-tial
  pat-terns of co-occurrence.
  []
 
-[23] [24] (main.bbl [25]
-Underfull \hbox (badness 10000) in paragraph at lines 124--129
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--467
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
+
+ []
+
+[23] (main.bbl [24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
 []\T1/cmr/m/sc/10 Ovaskainen, O., Tikhonov, G., Nor-berg, A., Guil-
  []
 
 [26]) [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 532.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 532.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 516.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 516.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 532.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 532.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 516.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 516.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 578CC90C8D5C579B57D62E67591963A2;2568.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 532.
+(rerunfilecheck)             Checksum: 062622B12B5C75718E3E502D4484405F;2500.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 516.
  ) 
 Here is how much of TeX's memory you used:
- 31876 strings out of 493303
- 775376 string characters out of 3128479
- 953885 words of memory out of 3000000
- 34752 multiletter control sequences out of 15000+200000
- 32303 words of font info for 63 fonts, out of 3000000 for 9000
+ 31873 strings out of 493303
+ 775390 string characters out of 3128479
+ 952967 words of memory out of 3000000
+ 34750 multiletter control sequences out of 15000+200000
+ 23918 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,14n,96p,1294b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,14n,96p,1507b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\simoussi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\eccc1000.pk> <C:\Users\simoussi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecrm0900.pk> <C:\Users\simoussi\AppData\Local\MiKTeX\2.9\fonts\
@@ -1861,14 +1849,12 @@ ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
 10.pfb><C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy5.pfb><C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/simoussi/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/marvosym/marvosym.pfb><C:/Users/simoussi/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Us
-ers/simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.
-pfb><C:/Users/simoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvet
-ic/uhvr8a.pfb>
-Output written on main.pdf (27 pages, 2593897 bytes).
+MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/simoussi/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/s
+imoussi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on main.pdf (27 pages, 2579877 bytes).
 PDF statistics:
- 1401 PDF objects out of 1440 (max. 8388607)
- 109 named destinations out of 1000 (max. 500000)
- 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1388 PDF objects out of 1440 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
